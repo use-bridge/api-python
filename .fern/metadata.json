@@ -1,0 +1,15 @@
+{
+  "cliVersion": "5.44.7",
+  "generatorName": "fernapi/fern-python-sdk",
+  "generatorVersion": "5.14.8",
+  "generatorConfig": {
+    "client_class_name": "BridgeApiClient",
+    "environment_class_name": "BridgeApiEnvironment"
+  },
+  "originGitCommit": "7350518524c46159df851dbe8f108021074d1fbb",
+  "originGitCommitIsDirty": true,
+  "invokedBy": "ci",
+  "requestedVersion": "0.1.0",
+  "ciProvider": "github",
+  "sdkVersion": "0.1.0"
+}
