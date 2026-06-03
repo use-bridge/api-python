@@ -4,7 +4,7 @@
 
 import typing_extensions
 
-from rtaylor_205.core.serialization import FieldMetadata
+from usebridge_api.core.serialization import FieldMetadata
 
 
 class CircleParams(typing_extensions.TypedDict):

@@ -1,6 +1,6 @@
 # Reference
 ## Billing EstimateCharges
-<details><summary><code>client.billing.estimate_charges.<a href="src/rtaylor_205/billing/estimate_charges/client.py">create_estimate_charge</a>(...) -> EstimateChargeCreateV1Response</code></summary>
+<details><summary><code>client.billing.estimate_charges.<a href="src/usebridge_api/billing/estimate_charges/client.py">create_estimate_charge</a>(...) -> EstimateChargeCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -27,8 +27,8 @@ This endpoint can only be used after setting up the billing integration. Refer t
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -74,7 +74,7 @@ client.billing.estimate_charges.create_estimate_charge(
 </dl>
 </details>
 
-<details><summary><code>client.billing.estimate_charges.<a href="src/rtaylor_205/billing/estimate_charges/client.py">authorize_stripe_estimate_charge</a>(...) -> EstimateChargeAuthorizeStripeV1Response</code></summary>
+<details><summary><code>client.billing.estimate_charges.<a href="src/usebridge_api/billing/estimate_charges/client.py">authorize_stripe_estimate_charge</a>(...) -> EstimateChargeAuthorizeStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -101,8 +101,8 @@ This endpoint can only be used after setting up the billing integration. Refer t
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -147,7 +147,7 @@ client.billing.estimate_charges.authorize_stripe_estimate_charge(
 </dl>
 </details>
 
-<details><summary><code>client.billing.estimate_charges.<a href="src/rtaylor_205/billing/estimate_charges/client.py">capture_stripe_estimate_charge</a>(...) -> EstimateChargeCaptureStripeV1Response</code></summary>
+<details><summary><code>client.billing.estimate_charges.<a href="src/usebridge_api/billing/estimate_charges/client.py">capture_stripe_estimate_charge</a>(...) -> EstimateChargeCaptureStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -174,8 +174,8 @@ This endpoint can only be used after setting up the billing integration. Refer t
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -220,7 +220,7 @@ client.billing.estimate_charges.capture_stripe_estimate_charge(
 </dl>
 </details>
 
-<details><summary><code>client.billing.estimate_charges.<a href="src/rtaylor_205/billing/estimate_charges/client.py">refund_stripe_estimate_charge</a>(...) -> EstimateChargeRefundStripeV1Response</code></summary>
+<details><summary><code>client.billing.estimate_charges.<a href="src/usebridge_api/billing/estimate_charges/client.py">refund_stripe_estimate_charge</a>(...) -> EstimateChargeRefundStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -247,8 +247,8 @@ This endpoint can only be used after setting up the billing integration. Refer t
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -293,7 +293,7 @@ client.billing.estimate_charges.refund_stripe_estimate_charge(
 </dl>
 </details>
 
-<details><summary><code>client.billing.estimate_charges.<a href="src/rtaylor_205/billing/estimate_charges/client.py">cancel_stripe_estimate_charge</a>(...) -> EstimateChargeCancelStripeV1Response</code></summary>
+<details><summary><code>client.billing.estimate_charges.<a href="src/usebridge_api/billing/estimate_charges/client.py">cancel_stripe_estimate_charge</a>(...) -> EstimateChargeCancelStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -320,8 +320,8 @@ This endpoint can only be used after setting up the billing integration. Refer t
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -367,7 +367,7 @@ client.billing.estimate_charges.cancel_stripe_estimate_charge(
 </details>
 
 ## Billing Fees
-<details><summary><code>client.billing.fees.<a href="src/rtaylor_205/billing/fees/client.py">create_fee</a>(...) -> FeeCreateV1Response</code></summary>
+<details><summary><code>client.billing.fees.<a href="src/usebridge_api/billing/fees/client.py">create_fee</a>(...) -> FeeCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -394,8 +394,8 @@ This endpoint can only be used after setting up the billing integration. Refer t
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -441,7 +441,7 @@ client.billing.fees.create_fee(
 </dl>
 </details>
 
-<details><summary><code>client.billing.fees.<a href="src/rtaylor_205/billing/fees/client.py">capture_stripe_fee</a>(...) -> FeeCaptureStripeV1Response</code></summary>
+<details><summary><code>client.billing.fees.<a href="src/usebridge_api/billing/fees/client.py">capture_stripe_fee</a>(...) -> FeeCaptureStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -468,8 +468,8 @@ This endpoint can only be used after setting up the billing integration. Refer t
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -514,7 +514,7 @@ client.billing.fees.capture_stripe_fee(
 </dl>
 </details>
 
-<details><summary><code>client.billing.fees.<a href="src/rtaylor_205/billing/fees/client.py">refund_stripe_fee</a>(...) -> FeeRefundStripeV1Response</code></summary>
+<details><summary><code>client.billing.fees.<a href="src/usebridge_api/billing/fees/client.py">refund_stripe_fee</a>(...) -> FeeRefundStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -541,8 +541,8 @@ This endpoint can only be used after setting up the billing integration. Refer t
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -588,7 +588,7 @@ client.billing.fees.refund_stripe_fee(
 </details>
 
 ## Billing SetupIntent
-<details><summary><code>client.billing.setup_intent.<a href="src/rtaylor_205/billing/setup_intent/client.py">create_stripe_setup_intent</a>(...) -> SetupIntentCreateStripeV1Response</code></summary>
+<details><summary><code>client.billing.setup_intent.<a href="src/usebridge_api/billing/setup_intent/client.py">create_stripe_setup_intent</a>(...) -> SetupIntentCreateStripeV1Response</code></summary>
 <dl>
 <dd>
 
@@ -615,8 +615,8 @@ This endpoint can only be used after setting up the billing integration. Refer t
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -662,7 +662,7 @@ client.billing.setup_intent.create_stripe_setup_intent(
 </details>
 
 ## ConsentVersions
-<details><summary><code>client.consent_versions.<a href="src/rtaylor_205/consent_versions/client.py">list_consent_versions</a>(...) -> ConsentVersionsListV1Response</code></summary>
+<details><summary><code>client.consent_versions.<a href="src/usebridge_api/consent_versions/client.py">list_consent_versions</a>(...) -> ConsentVersionsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -675,8 +675,8 @@ client.billing.setup_intent.create_stripe_setup_intent(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -728,7 +728,7 @@ client.consent_versions.list_consent_versions()
 </details>
 
 ## Consent
-<details><summary><code>client.consent.<a href="src/rtaylor_205/consent/client.py">list_patient_consents</a>(...) -> PatientConsentsListV1Response</code></summary>
+<details><summary><code>client.consent.<a href="src/usebridge_api/consent/client.py">list_patient_consents</a>(...) -> PatientConsentsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -741,8 +741,8 @@ client.consent_versions.list_consent_versions()
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -803,7 +803,7 @@ client.consent.list_patient_consents(
 </dl>
 </details>
 
-<details><summary><code>client.consent.<a href="src/rtaylor_205/consent/client.py">create_patient_consent</a>(...) -> PatientConsentCreateV1Response</code></summary>
+<details><summary><code>client.consent.<a href="src/usebridge_api/consent/client.py">create_patient_consent</a>(...) -> PatientConsentCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -816,8 +816,8 @@ client.consent.list_patient_consents(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 import datetime
 
 client = BridgeApiClient(
@@ -875,7 +875,7 @@ client.consent.create_patient_consent(
 </details>
 
 ## Events
-<details><summary><code>client.events.<a href="src/rtaylor_205/events/client.py">list_events</a>(...) -> EventsListV1Response</code></summary>
+<details><summary><code>client.events.<a href="src/usebridge_api/events/client.py">list_events</a>(...) -> EventsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -888,8 +888,8 @@ client.consent.create_patient_consent(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -972,7 +972,7 @@ client.events.list_events()
 </dl>
 </details>
 
-<details><summary><code>client.events.<a href="src/rtaylor_205/events/client.py">get_event</a>(...) -> EventGetV1Response</code></summary>
+<details><summary><code>client.events.<a href="src/usebridge_api/events/client.py">get_event</a>(...) -> EventGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -985,8 +985,8 @@ client.events.list_events()
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1032,7 +1032,7 @@ client.events.get_event(
 </details>
 
 ## Notes
-<details><summary><code>client.notes.<a href="src/rtaylor_205/notes/client.py">create_note</a>(...) -> NoteCreateV1Response</code></summary>
+<details><summary><code>client.notes.<a href="src/usebridge_api/notes/client.py">create_note</a>(...) -> NoteCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1045,9 +1045,9 @@ client.events.get_event(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
-from rtaylor_205.notes import NoteCreateV1RequestData, NoteCreateV1RequestSignature
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+from usebridge_api.notes import NoteCreateV1RequestData, NoteCreateV1RequestSignature
 import datetime
 
 client = BridgeApiClient(
@@ -1098,7 +1098,7 @@ client.notes.create_note(
 </dl>
 </details>
 
-<details><summary><code>client.notes.<a href="src/rtaylor_205/notes/client.py">get_note</a>(...) -> NoteGetV1Response</code></summary>
+<details><summary><code>client.notes.<a href="src/usebridge_api/notes/client.py">get_note</a>(...) -> NoteGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1111,8 +1111,8 @@ client.notes.create_note(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1157,7 +1157,7 @@ client.notes.get_note(
 </dl>
 </details>
 
-<details><summary><code>client.notes.<a href="src/rtaylor_205/notes/client.py">list_note_addenda</a>(...) -> NoteAddendaListV1Response</code></summary>
+<details><summary><code>client.notes.<a href="src/usebridge_api/notes/client.py">list_note_addenda</a>(...) -> NoteAddendaListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1170,8 +1170,8 @@ client.notes.get_note(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1248,7 +1248,7 @@ client.notes.list_note_addenda(
 </dl>
 </details>
 
-<details><summary><code>client.notes.<a href="src/rtaylor_205/notes/client.py">create_note_addendum</a>(...) -> NoteAddendumCreateV1Response</code></summary>
+<details><summary><code>client.notes.<a href="src/usebridge_api/notes/client.py">create_note_addendum</a>(...) -> NoteAddendumCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1261,9 +1261,9 @@ client.notes.list_note_addenda(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
-from rtaylor_205.notes import NoteAddendumCreateV1RequestData, NoteAddendumCreateV1RequestSignature
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+from usebridge_api.notes import NoteAddendumCreateV1RequestData, NoteAddendumCreateV1RequestSignature
 import datetime
 
 client = BridgeApiClient(
@@ -1323,7 +1323,7 @@ client.notes.create_note_addendum(
 </details>
 
 ## PatientToken
-<details><summary><code>client.patient_token.<a href="src/rtaylor_205/patient_token/client.py">create_patient_token</a>(...) -> PatientTokenCreateV1Response</code></summary>
+<details><summary><code>client.patient_token.<a href="src/usebridge_api/patient_token/client.py">create_patient_token</a>(...) -> PatientTokenCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1336,8 +1336,8 @@ client.notes.create_note_addendum(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1383,7 +1383,7 @@ client.patient_token.create_patient_token(
 </details>
 
 ## Patients
-<details><summary><code>client.patients.<a href="src/rtaylor_205/patients/client.py">stream_patient</a>(...) -> typing.Iterator[bytes]</code></summary>
+<details><summary><code>client.patients.<a href="src/usebridge_api/patients/client.py">stream_patient</a>(...) -> typing.Iterator[bytes]</code></summary>
 <dl>
 <dd>
 
@@ -1396,8 +1396,8 @@ client.patient_token.create_patient_token(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1442,7 +1442,7 @@ client.patients.stream_patient(
 </dl>
 </details>
 
-<details><summary><code>client.patients.<a href="src/rtaylor_205/patients/client.py">list_patients</a>(...) -> PatientsListV1Response</code></summary>
+<details><summary><code>client.patients.<a href="src/usebridge_api/patients/client.py">list_patients</a>(...) -> PatientsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1455,8 +1455,8 @@ client.patients.stream_patient(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1507,7 +1507,7 @@ client.patients.list_patients()
 </dl>
 </details>
 
-<details><summary><code>client.patients.<a href="src/rtaylor_205/patients/client.py">update_patient</a>(...) -> PatientUpdateV1Response</code></summary>
+<details><summary><code>client.patients.<a href="src/usebridge_api/patients/client.py">update_patient</a>(...) -> PatientUpdateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1520,8 +1520,8 @@ client.patients.list_patients()
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1574,7 +1574,7 @@ client.patients.update_patient(
 </dl>
 </details>
 
-<details><summary><code>client.patients.<a href="src/rtaylor_205/patients/client.py">revalidate_patient</a>(...)</code></summary>
+<details><summary><code>client.patients.<a href="src/usebridge_api/patients/client.py">revalidate_patient</a>(...)</code></summary>
 <dl>
 <dd>
 
@@ -1587,8 +1587,8 @@ client.patients.update_patient(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1634,7 +1634,7 @@ client.patients.revalidate_patient(
 </details>
 
 ## Patients V2
-<details><summary><code>client.patients.v_2.<a href="src/rtaylor_205/patients/v_2/client.py">create_patient</a>(...) -> PatientCreateV2Response</code></summary>
+<details><summary><code>client.patients.v_2.<a href="src/usebridge_api/patients/v_2/client.py">create_patient</a>(...) -> PatientCreateV2Response</code></summary>
 <dl>
 <dd>
 
@@ -1647,8 +1647,8 @@ client.patients.revalidate_patient(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 import datetime
 
 client = BridgeApiClient(
@@ -1697,7 +1697,7 @@ client.patients.v_2.create_patient(
 </dl>
 </details>
 
-<details><summary><code>client.patients.v_2.<a href="src/rtaylor_205/patients/v_2/client.py">get_patient</a>(...) -> PatientGetV2Response</code></summary>
+<details><summary><code>client.patients.v_2.<a href="src/usebridge_api/patients/v_2/client.py">get_patient</a>(...) -> PatientGetV2Response</code></summary>
 <dl>
 <dd>
 
@@ -1724,8 +1724,8 @@ Resolves a Patient by either `id` or `externalId`
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1771,7 +1771,7 @@ client.patients.v_2.get_patient(
 </details>
 
 ## PayerGroups
-<details><summary><code>client.payer_groups.<a href="src/rtaylor_205/payer_groups/client.py">list_payer_groups</a>(...) -> PayerGroupsListV1Response</code></summary>
+<details><summary><code>client.payer_groups.<a href="src/usebridge_api/payer_groups/client.py">list_payer_groups</a>(...) -> PayerGroupsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1784,8 +1784,8 @@ client.patients.v_2.get_patient(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1836,7 +1836,7 @@ client.payer_groups.list_payer_groups()
 </dl>
 </details>
 
-<details><summary><code>client.payer_groups.<a href="src/rtaylor_205/payer_groups/client.py">get_payer_group</a>(...) -> PayerGroupGetV1Response</code></summary>
+<details><summary><code>client.payer_groups.<a href="src/usebridge_api/payer_groups/client.py">get_payer_group</a>(...) -> PayerGroupGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1849,8 +1849,8 @@ client.payer_groups.list_payer_groups()
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1896,7 +1896,7 @@ client.payer_groups.get_payer_group(
 </details>
 
 ## PayerGroups Health
-<details><summary><code>client.payer_groups.health.<a href="src/rtaylor_205/payer_groups/health/client.py">list_health_events</a>(...) -> HealthEventsListV1Response</code></summary>
+<details><summary><code>client.payer_groups.health.<a href="src/usebridge_api/payer_groups/health/client.py">list_health_events</a>(...) -> HealthEventsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1909,8 +1909,8 @@ client.payer_groups.get_payer_group(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -1980,7 +1980,7 @@ client.payer_groups.health.list_health_events(
 </details>
 
 ## Payers
-<details><summary><code>client.payers.<a href="src/rtaylor_205/payers/client.py">get_payer</a>(...) -> PayerGetV1Response</code></summary>
+<details><summary><code>client.payers.<a href="src/usebridge_api/payers/client.py">get_payer</a>(...) -> PayerGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1993,8 +1993,8 @@ client.payer_groups.health.list_health_events(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2040,7 +2040,7 @@ client.payers.get_payer(
 </details>
 
 ## Payments
-<details><summary><code>client.payments.<a href="src/rtaylor_205/payments/client.py">list_payments</a>(...) -> PaymentsListV1Response</code></summary>
+<details><summary><code>client.payments.<a href="src/usebridge_api/payments/client.py">list_payments</a>(...) -> PaymentsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2053,8 +2053,8 @@ client.payers.get_payer(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2137,7 +2137,7 @@ client.payments.list_payments()
 </dl>
 </details>
 
-<details><summary><code>client.payments.<a href="src/rtaylor_205/payments/client.py">create_payment</a>(...) -> PaymentCreateV1Response</code></summary>
+<details><summary><code>client.payments.<a href="src/usebridge_api/payments/client.py">create_payment</a>(...) -> PaymentCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2150,8 +2150,8 @@ client.payments.list_payments()
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 import datetime
 
 client = BridgeApiClient(
@@ -2201,7 +2201,7 @@ client.payments.create_payment(
 </dl>
 </details>
 
-<details><summary><code>client.payments.<a href="src/rtaylor_205/payments/client.py">get_payment</a>(...) -> PaymentGetV1Response</code></summary>
+<details><summary><code>client.payments.<a href="src/usebridge_api/payments/client.py">get_payment</a>(...) -> PaymentGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2214,8 +2214,8 @@ client.payments.create_payment(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2261,7 +2261,7 @@ client.payments.get_payment(
 </details>
 
 ## Policies
-<details><summary><code>client.policies.<a href="src/rtaylor_205/policies/client.py">get_policy</a>(...) -> PolicyGetV1Response</code></summary>
+<details><summary><code>client.policies.<a href="src/usebridge_api/policies/client.py">get_policy</a>(...) -> PolicyGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2274,8 +2274,8 @@ client.payments.get_payment(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2320,7 +2320,7 @@ client.policies.get_policy(
 </dl>
 </details>
 
-<details><summary><code>client.policies.<a href="src/rtaylor_205/policies/client.py">revalidate_policy</a>(...)</code></summary>
+<details><summary><code>client.policies.<a href="src/usebridge_api/policies/client.py">revalidate_policy</a>(...)</code></summary>
 <dl>
 <dd>
 
@@ -2333,8 +2333,8 @@ client.policies.get_policy(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2379,7 +2379,7 @@ client.policies.revalidate_policy(
 </dl>
 </details>
 
-<details><summary><code>client.policies.<a href="src/rtaylor_205/policies/client.py">stream_policy</a>(...) -> typing.Iterator[bytes]</code></summary>
+<details><summary><code>client.policies.<a href="src/usebridge_api/policies/client.py">stream_policy</a>(...) -> typing.Iterator[bytes]</code></summary>
 <dl>
 <dd>
 
@@ -2392,8 +2392,8 @@ client.policies.revalidate_policy(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2439,7 +2439,7 @@ client.policies.stream_policy(
 </details>
 
 ## Policies V2
-<details><summary><code>client.policies.v_2.<a href="src/rtaylor_205/policies/v_2/client.py">create_policy</a>(...) -> PolicyCreateV2Response</code></summary>
+<details><summary><code>client.policies.v_2.<a href="src/usebridge_api/policies/v_2/client.py">create_policy</a>(...) -> PolicyCreateV2Response</code></summary>
 <dl>
 <dd>
 
@@ -2466,9 +2466,9 @@ Creates a Policy, returning immediately with status of `PENDING`. Use the Get Po
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
-from rtaylor_205.policies.v_2 import PolicyCreateV2RequestPerson
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+from usebridge_api.policies.v_2 import PolicyCreateV2RequestPerson
 import datetime
 
 client = BridgeApiClient(
@@ -2521,7 +2521,7 @@ client.policies.v_2.create_policy(
 </details>
 
 ## ProviderEligibility
-<details><summary><code>client.provider_eligibility.<a href="src/rtaylor_205/provider_eligibility/client.py">create_provider_eligibility</a>(...) -> ProviderEligibilityCreateV1Response</code></summary>
+<details><summary><code>client.provider_eligibility.<a href="src/usebridge_api/provider_eligibility/client.py">create_provider_eligibility</a>(...) -> ProviderEligibilityCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2534,10 +2534,10 @@ client.policies.v_2.create_policy(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 import datetime
-from rtaylor_205.provider_eligibility import ProviderEligibilityCreateV1RequestLocation
+from usebridge_api.provider_eligibility import ProviderEligibilityCreateV1RequestLocation
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2587,7 +2587,7 @@ client.provider_eligibility.create_provider_eligibility(
 </dl>
 </details>
 
-<details><summary><code>client.provider_eligibility.<a href="src/rtaylor_205/provider_eligibility/client.py">get_provider_eligibility</a>(...) -> ProviderEligibilityGetV1Response</code></summary>
+<details><summary><code>client.provider_eligibility.<a href="src/usebridge_api/provider_eligibility/client.py">get_provider_eligibility</a>(...) -> ProviderEligibilityGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2600,8 +2600,8 @@ client.provider_eligibility.create_provider_eligibility(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2647,7 +2647,7 @@ client.provider_eligibility.get_provider_eligibility(
 </details>
 
 ## Providers
-<details><summary><code>client.providers.<a href="src/rtaylor_205/providers/client.py">submit_providers</a>(...) -> ProviderPostV1Response</code></summary>
+<details><summary><code>client.providers.<a href="src/usebridge_api/providers/client.py">submit_providers</a>(...) -> ProviderPostV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2674,9 +2674,9 @@ client.provider_eligibility.get_provider_eligibility(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
-from rtaylor_205.providers import ProviderPostV1RequestProvider
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+from usebridge_api.providers import ProviderPostV1RequestProvider
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2736,7 +2736,7 @@ client.providers.submit_providers(
 </dl>
 </details>
 
-<details><summary><code>client.providers.<a href="src/rtaylor_205/providers/client.py">list_providers</a>(...) -> ProvidersListV1Response</code></summary>
+<details><summary><code>client.providers.<a href="src/usebridge_api/providers/client.py">list_providers</a>(...) -> ProvidersListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2749,8 +2749,8 @@ client.providers.submit_providers(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2809,7 +2809,7 @@ client.providers.list_providers()
 </dl>
 </details>
 
-<details><summary><code>client.providers.<a href="src/rtaylor_205/providers/client.py">get_provider</a>(...) -> ProviderGetV1Response</code></summary>
+<details><summary><code>client.providers.<a href="src/usebridge_api/providers/client.py">get_provider</a>(...) -> ProviderGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2822,8 +2822,8 @@ client.providers.list_providers()
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2868,7 +2868,7 @@ client.providers.get_provider(
 </dl>
 </details>
 
-<details><summary><code>client.providers.<a href="src/rtaylor_205/providers/client.py">update_provider</a>(...) -> ProviderUpdateV1Response</code></summary>
+<details><summary><code>client.providers.<a href="src/usebridge_api/providers/client.py">update_provider</a>(...) -> ProviderUpdateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2881,8 +2881,8 @@ client.providers.get_provider(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2936,7 +2936,7 @@ client.providers.update_provider(
 </details>
 
 ## Providers Enrollment
-<details><summary><code>client.providers.enrollment.<a href="src/rtaylor_205/providers/enrollment/client.py">get_provider_enrollment_status</a>(...) -> ProviderEnrollmentStatusGetV1Response</code></summary>
+<details><summary><code>client.providers.enrollment.<a href="src/usebridge_api/providers/enrollment/client.py">get_provider_enrollment_status</a>(...) -> ProviderEnrollmentStatusGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -2965,8 +2965,8 @@ Returns the high-level enrollment status of a provider
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3012,7 +3012,7 @@ client.providers.enrollment.get_provider_enrollment_status(
 </details>
 
 ## Search
-<details><summary><code>client.search.<a href="src/rtaylor_205/search/client.py">payer_search</a>(...) -> SearchPayerV1Response</code></summary>
+<details><summary><code>client.search.<a href="src/usebridge_api/search/client.py">payer_search</a>(...) -> SearchPayerV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3025,8 +3025,8 @@ client.providers.enrollment.get_provider_enrollment_status(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3073,7 +3073,7 @@ client.search.payer_search(
 </details>
 
 ## ServiceEligibility
-<details><summary><code>client.service_eligibility.<a href="src/rtaylor_205/service_eligibility/client.py">stream_service_eligibility</a>(...) -> typing.Iterator[bytes]</code></summary>
+<details><summary><code>client.service_eligibility.<a href="src/usebridge_api/service_eligibility/client.py">stream_service_eligibility</a>(...) -> typing.Iterator[bytes]</code></summary>
 <dl>
 <dd>
 
@@ -3086,8 +3086,8 @@ client.search.payer_search(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3132,7 +3132,7 @@ client.service_eligibility.stream_service_eligibility(
 </dl>
 </details>
 
-<details><summary><code>client.service_eligibility.<a href="src/rtaylor_205/service_eligibility/client.py">get_service_eligibility</a>(...) -> ServiceEligibilityGetV1Response</code></summary>
+<details><summary><code>client.service_eligibility.<a href="src/usebridge_api/service_eligibility/client.py">get_service_eligibility</a>(...) -> ServiceEligibilityGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3145,8 +3145,8 @@ client.service_eligibility.stream_service_eligibility(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3192,7 +3192,7 @@ client.service_eligibility.get_service_eligibility(
 </details>
 
 ## ServiceEligibility V2
-<details><summary><code>client.service_eligibility.v_2.<a href="src/rtaylor_205/service_eligibility/v_2/client.py">create_service_eligibility</a>(...) -> ServiceEligibilityCreateV2Response</code></summary>
+<details><summary><code>client.service_eligibility.v_2.<a href="src/usebridge_api/service_eligibility/v_2/client.py">create_service_eligibility</a>(...) -> ServiceEligibilityCreateV2Response</code></summary>
 <dl>
 <dd>
 
@@ -3219,8 +3219,8 @@ Creates a ServiceEligibility, returns immediately in the `PENDING` status.
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 import datetime
 
 client = BridgeApiClient(
@@ -3269,7 +3269,7 @@ client.service_eligibility.v_2.create_service_eligibility(
 </details>
 
 ## ServiceTypes
-<details><summary><code>client.service_types.<a href="src/rtaylor_205/service_types/client.py">list_service_types</a>(...) -> ServiceTypesListV1Response</code></summary>
+<details><summary><code>client.service_types.<a href="src/usebridge_api/service_types/client.py">list_service_types</a>(...) -> ServiceTypesListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3282,8 +3282,8 @@ client.service_eligibility.v_2.create_service_eligibility(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3334,7 +3334,7 @@ client.service_types.list_service_types()
 </dl>
 </details>
 
-<details><summary><code>client.service_types.<a href="src/rtaylor_205/service_types/client.py">get_service_type</a>(...) -> ServiceTypeGetV1Response</code></summary>
+<details><summary><code>client.service_types.<a href="src/usebridge_api/service_types/client.py">get_service_type</a>(...) -> ServiceTypeGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3347,8 +3347,8 @@ client.service_types.list_service_types()
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3394,7 +3394,7 @@ client.service_types.get_service_type(
 </details>
 
 ## Services
-<details><summary><code>client.services.<a href="src/rtaylor_205/services/client.py">stream_service</a>(...) -> typing.Iterator[bytes]</code></summary>
+<details><summary><code>client.services.<a href="src/usebridge_api/services/client.py">stream_service</a>(...) -> typing.Iterator[bytes]</code></summary>
 <dl>
 <dd>
 
@@ -3407,8 +3407,8 @@ client.service_types.get_service_type(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3453,7 +3453,7 @@ client.services.stream_service(
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="src/rtaylor_205/services/client.py">list_services</a>(...) -> ServicesListV1Response</code></summary>
+<details><summary><code>client.services.<a href="src/usebridge_api/services/client.py">list_services</a>(...) -> ServicesListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3466,8 +3466,8 @@ client.services.stream_service(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3558,7 +3558,7 @@ client.services.list_services()
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="src/rtaylor_205/services/client.py">create_service</a>(...) -> ServiceCreateV1Response</code></summary>
+<details><summary><code>client.services.<a href="src/usebridge_api/services/client.py">create_service</a>(...) -> ServiceCreateV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3571,10 +3571,10 @@ client.services.list_services()
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 import datetime
-from rtaylor_205.services import ServiceCreateV1RequestLocation
+from usebridge_api.services import ServiceCreateV1RequestLocation
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3625,7 +3625,7 @@ client.services.create_service(
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="src/rtaylor_205/services/client.py">get_service</a>(...) -> ServiceGetV1Response</code></summary>
+<details><summary><code>client.services.<a href="src/usebridge_api/services/client.py">get_service</a>(...) -> ServiceGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3652,8 +3652,8 @@ Fetch a Service by `id` or `externalId`
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3698,7 +3698,7 @@ client.services.get_service(
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="src/rtaylor_205/services/client.py">revalidate_service</a>(...)</code></summary>
+<details><summary><code>client.services.<a href="src/usebridge_api/services/client.py">revalidate_service</a>(...)</code></summary>
 <dl>
 <dd>
 
@@ -3711,8 +3711,8 @@ client.services.get_service(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3757,7 +3757,7 @@ client.services.revalidate_service(
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="src/rtaylor_205/services/client.py">bill_service</a>(...)</code></summary>
+<details><summary><code>client.services.<a href="src/usebridge_api/services/client.py">bill_service</a>(...)</code></summary>
 <dl>
 <dd>
 
@@ -3770,8 +3770,8 @@ client.services.revalidate_service(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3816,7 +3816,7 @@ client.services.bill_service(
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="src/rtaylor_205/services/client.py">get_service_note</a>(...) -> ServiceNoteGetV1Response</code></summary>
+<details><summary><code>client.services.<a href="src/usebridge_api/services/client.py">get_service_note</a>(...) -> ServiceNoteGetV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3829,8 +3829,8 @@ client.services.bill_service(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3875,7 +3875,7 @@ client.services.get_service_note(
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="src/rtaylor_205/services/client.py">delete_service_note</a>(...)</code></summary>
+<details><summary><code>client.services.<a href="src/usebridge_api/services/client.py">delete_service_note</a>(...)</code></summary>
 <dl>
 <dd>
 
@@ -3888,8 +3888,8 @@ client.services.get_service_note(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -3935,7 +3935,7 @@ client.services.delete_service_note(
 </details>
 
 ## Services Payments
-<details><summary><code>client.services.payments.<a href="src/rtaylor_205/services/payments/client.py">list_service_payments</a>(...) -> ServicePaymentsListV1Response</code></summary>
+<details><summary><code>client.services.payments.<a href="src/usebridge_api/services/payments/client.py">list_service_payments</a>(...) -> ServicePaymentsListV1Response</code></summary>
 <dl>
 <dd>
 
@@ -3948,8 +3948,8 @@ client.services.delete_service_note(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -4011,7 +4011,7 @@ client.services.payments.list_service_payments(
 </details>
 
 ## Services V2
-<details><summary><code>client.services.v_2.<a href="src/rtaylor_205/services/v_2/client.py">create_service</a>(...) -> ServiceCreateV2Response</code></summary>
+<details><summary><code>client.services.v_2.<a href="src/usebridge_api/services/v_2/client.py">create_service</a>(...) -> ServiceCreateV2Response</code></summary>
 <dl>
 <dd>
 
@@ -4038,10 +4038,10 @@ Creates a new `Service`, creates the `ServiceEligibility` in status `PENDING`
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 import datetime
-from rtaylor_205.services.v_2 import ServiceCreateV2RequestLocation
+from usebridge_api.services.v_2 import ServiceCreateV2RequestLocation
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -4092,7 +4092,7 @@ client.services.v_2.create_service(
 </dl>
 </details>
 
-<details><summary><code>client.services.v_2.<a href="src/rtaylor_205/services/v_2/client.py">cancel_service</a>(...) -> ServiceCancelV2Response</code></summary>
+<details><summary><code>client.services.v_2.<a href="src/usebridge_api/services/v_2/client.py">cancel_service</a>(...) -> ServiceCancelV2Response</code></summary>
 <dl>
 <dd>
 
@@ -4105,8 +4105,8 @@ client.services.v_2.create_service(
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -4159,7 +4159,7 @@ client.services.v_2.cancel_service(
 </dl>
 </details>
 
-<details><summary><code>client.services.v_2.<a href="src/rtaylor_205/services/v_2/client.py">update_service</a>(...) -> ServiceUpdateV2Response</code></summary>
+<details><summary><code>client.services.v_2.<a href="src/usebridge_api/services/v_2/client.py">update_service</a>(...) -> ServiceUpdateV2Response</code></summary>
 <dl>
 <dd>
 
@@ -4186,8 +4186,8 @@ Updates an existing `Service`
 <dd>
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     api_key="<value>",

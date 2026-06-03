@@ -8,7 +8,7 @@ import typing
 
 import typing_extensions
 
-from rtaylor_205.core.serialization import FieldMetadata
+from usebridge_api.core.serialization import FieldMetadata
 
 
 class Base(typing_extensions.TypedDict):

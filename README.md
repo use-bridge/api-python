@@ -1,12 +1,13 @@
-# Rtaylor205 Python Library
+# Bridge Python Library
 
 [![fern shield](https://img.shields.io/badge/%F0%9F%8C%BF-Built%20with%20Fern-brightgreen)](https://buildwithfern.com?utm_source=github&utm_medium=github&utm_campaign=readme&utm_source=https%3A%2F%2Fgithub.com%2Fuse-bridge%2Fapi-python)
 [![pypi](https://img.shields.io/pypi/v/usebridge-api)](https://pypi.python.org/pypi/usebridge-api)
 
-The Rtaylor205 Python library provides convenient access to the Rtaylor205 APIs from Python.
+The Bridge Python library provides convenient access to the Bridge APIs from Python.
 
 ## Table of Contents
 
+- [Documentation](#documentation)
 - [Installation](#installation)
 - [Reference](#reference)
 - [Usage](#usage)
@@ -20,6 +21,10 @@ The Rtaylor205 Python library provides convenient access to the Rtaylor205 APIs 
   - [Timeouts](#timeouts)
   - [Custom Client](#custom-client)
 - [Contributing](#contributing)
+
+## Documentation
+
+API reference documentation is available [here](https://docs.usebridge.com/api).
 
 ## Installation
 
@@ -36,7 +41,7 @@ A full reference for this library is available [here](https://github.com/use-bri
 Instantiate and use the client with the following:
 
 ```python
-from rtaylor_205 import BridgeApiClient
+from usebridge_api import BridgeApiClient
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -53,8 +58,8 @@ client.billing.estimate_charges.create_estimate_charge(
 This SDK allows you to configure different environments for API requests.
 
 ```python
-from rtaylor_205 import BridgeApiClient
-from rtaylor_205.environment import BridgeApiClientEnvironment
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
 
 client = BridgeApiClient(
     environment=BridgeApiClientEnvironment.PRODUCTION,
@@ -68,7 +73,7 @@ The SDK also exports an `async` client so that you can make non-blocking calls t
 ```python
 import asyncio
 
-from rtaylor_205 import AsyncBridgeApiClient
+from usebridge_api import AsyncBridgeApiClient
 
 client = AsyncBridgeApiClient(
     api_key="<value>",
@@ -91,7 +96,7 @@ When the API returns a non-success status code (4xx or 5xx response), a subclass
 will be thrown.
 
 ```python
-from rtaylor_205.core.api_error import ApiError
+from usebridge_api.core.api_error import ApiError
 
 try:
     client.billing.estimate_charges.create_estimate_charge(...)
@@ -105,7 +110,7 @@ except ApiError as e:
 The SDK supports streaming responses, as well, the response will be a generator that you can loop over.
 
 ```python
-from rtaylor_205 import BridgeApiClient
+from usebridge_api import BridgeApiClient
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -124,7 +129,7 @@ The SDK provides access to raw response data, including headers, through the `.w
 The `.with_raw_response` property returns a "raw" client that can be used to access the `.headers` and `.data` attributes.
 
 ```python
-from rtaylor_205 import BridgeApiClient
+from usebridge_api import BridgeApiClient
 
 client = BridgeApiClient(...)
 response = client.billing.estimate_charges.with_raw_response.create_estimate_charge(...)
@@ -168,7 +173,7 @@ client.billing.estimate_charges.create_estimate_charge(..., request_options={
 The SDK defaults to a 60 second timeout. You can configure this with a timeout option at the client or request level.
 
 ```python
-from rtaylor_205 import BridgeApiClient
+from usebridge_api import BridgeApiClient
 
 client = BridgeApiClient(..., timeout=20.0)
 
@@ -185,7 +190,7 @@ and transports.
 
 ```python
 import httpx
-from rtaylor_205 import BridgeApiClient
+from usebridge_api import BridgeApiClient
 
 client = BridgeApiClient(
     ...,
