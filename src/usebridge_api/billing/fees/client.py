@@ -9,6 +9,8 @@ from .types.fee_capture_stripe_v_1_response import FeeCaptureStripeV1Response
 from .types.fee_create_v_1_request_type import FeeCreateV1RequestType
 from .types.fee_create_v_1_response import FeeCreateV1Response
 from .types.fee_refund_stripe_v_1_response import FeeRefundStripeV1Response
+from .types.fees_list_v_1_filter_status import FeesListV1FilterStatus
+from .types.fees_list_v_1_response import FeesListV1Response
 
 # this is used as the default value for optional parameters
 OMIT = typing.cast(typing.Any, ...)
@@ -28,6 +30,63 @@ class FeesClient:
         RawFeesClient
         """
         return self._raw_client
+
+    def list_fees(
+        self,
+        *,
+        filter_patient_id: typing.Optional[str] = None,
+        filter_service_id: typing.Optional[str] = None,
+        filter_service_eligibility_id: typing.Optional[str] = None,
+        filter_status: typing.Optional[FeesListV1FilterStatus] = None,
+        page: typing.Optional[int] = None,
+        limit: typing.Optional[int] = None,
+        request_options: typing.Optional[RequestOptions] = None,
+    ) -> FeesListV1Response:
+        """
+        Parameters
+        ----------
+        filter_patient_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.patientId="pat_xxx"
+
+        filter_service_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceId="svc_xxx"
+
+        filter_service_eligibility_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceEligibilityId="sel_xxx"
+
+        filter_status : typing.Optional[FeesListV1FilterStatus]
+            should be JSON-encoded, for example filter.status="PENDING"
+
+        page : typing.Optional[int]
+
+        limit : typing.Optional[int]
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        FeesListV1Response
+
+        Examples
+        --------
+        from usebridge_api import BridgeApiClient
+
+        client = BridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+        client.billing.fees.list_fees()
+        """
+        _response = self._raw_client.list_fees(
+            filter_patient_id=filter_patient_id,
+            filter_service_id=filter_service_id,
+            filter_service_eligibility_id=filter_service_eligibility_id,
+            filter_status=filter_status,
+            page=page,
+            limit=limit,
+            request_options=request_options,
+        )
+        return _response.data
 
     def create_fee(
         self,
@@ -160,6 +219,71 @@ class AsyncFeesClient:
         AsyncRawFeesClient
         """
         return self._raw_client
+
+    async def list_fees(
+        self,
+        *,
+        filter_patient_id: typing.Optional[str] = None,
+        filter_service_id: typing.Optional[str] = None,
+        filter_service_eligibility_id: typing.Optional[str] = None,
+        filter_status: typing.Optional[FeesListV1FilterStatus] = None,
+        page: typing.Optional[int] = None,
+        limit: typing.Optional[int] = None,
+        request_options: typing.Optional[RequestOptions] = None,
+    ) -> FeesListV1Response:
+        """
+        Parameters
+        ----------
+        filter_patient_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.patientId="pat_xxx"
+
+        filter_service_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceId="svc_xxx"
+
+        filter_service_eligibility_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceEligibilityId="sel_xxx"
+
+        filter_status : typing.Optional[FeesListV1FilterStatus]
+            should be JSON-encoded, for example filter.status="PENDING"
+
+        page : typing.Optional[int]
+
+        limit : typing.Optional[int]
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        FeesListV1Response
+
+        Examples
+        --------
+        import asyncio
+
+        from usebridge_api import AsyncBridgeApiClient
+
+        client = AsyncBridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+
+
+        async def main() -> None:
+            await client.billing.fees.list_fees()
+
+
+        asyncio.run(main())
+        """
+        _response = await self._raw_client.list_fees(
+            filter_patient_id=filter_patient_id,
+            filter_service_id=filter_service_id,
+            filter_service_eligibility_id=filter_service_eligibility_id,
+            filter_status=filter_status,
+            page=page,
+            limit=limit,
+            request_options=request_options,
+        )
+        return _response.data
 
     async def create_fee(
         self,

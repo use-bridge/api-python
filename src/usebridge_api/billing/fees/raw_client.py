@@ -14,6 +14,8 @@ from .types.fee_capture_stripe_v_1_response import FeeCaptureStripeV1Response
 from .types.fee_create_v_1_request_type import FeeCreateV1RequestType
 from .types.fee_create_v_1_response import FeeCreateV1Response
 from .types.fee_refund_stripe_v_1_response import FeeRefundStripeV1Response
+from .types.fees_list_v_1_filter_status import FeesListV1FilterStatus
+from .types.fees_list_v_1_response import FeesListV1Response
 from pydantic import ValidationError
 
 # this is used as the default value for optional parameters
@@ -23,6 +25,75 @@ OMIT = typing.cast(typing.Any, ...)
 class RawFeesClient:
     def __init__(self, *, client_wrapper: SyncClientWrapper):
         self._client_wrapper = client_wrapper
+
+    def list_fees(
+        self,
+        *,
+        filter_patient_id: typing.Optional[str] = None,
+        filter_service_id: typing.Optional[str] = None,
+        filter_service_eligibility_id: typing.Optional[str] = None,
+        filter_status: typing.Optional[FeesListV1FilterStatus] = None,
+        page: typing.Optional[int] = None,
+        limit: typing.Optional[int] = None,
+        request_options: typing.Optional[RequestOptions] = None,
+    ) -> HttpResponse[FeesListV1Response]:
+        """
+        Parameters
+        ----------
+        filter_patient_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.patientId="pat_xxx"
+
+        filter_service_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceId="svc_xxx"
+
+        filter_service_eligibility_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceEligibilityId="sel_xxx"
+
+        filter_status : typing.Optional[FeesListV1FilterStatus]
+            should be JSON-encoded, for example filter.status="PENDING"
+
+        page : typing.Optional[int]
+
+        limit : typing.Optional[int]
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        HttpResponse[FeesListV1Response]
+        """
+        _response = self._client_wrapper.httpx_client.request(
+            "api/fees/v2",
+            method="GET",
+            params={
+                "filter.patientId": filter_patient_id,
+                "filter.serviceId": filter_service_id,
+                "filter.serviceEligibilityId": filter_service_eligibility_id,
+                "filter.status": filter_status,
+                "page": page,
+                "limit": limit,
+            },
+            request_options=request_options,
+        )
+        try:
+            if 200 <= _response.status_code < 300:
+                _data = typing.cast(
+                    FeesListV1Response,
+                    parse_obj_as(
+                        type_=FeesListV1Response,  # type: ignore
+                        object_=_response.json(),
+                    ),
+                )
+                return HttpResponse(response=_response, data=_data)
+            _response_json = _response.json()
+        except JSONDecodeError:
+            raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response.text)
+        except ValidationError as e:
+            raise ParsingError(
+                status_code=_response.status_code, headers=dict(_response.headers), body=_response.json(), cause=e
+            )
+        raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response_json)
 
     def create_fee(
         self,
@@ -174,6 +245,75 @@ class RawFeesClient:
 class AsyncRawFeesClient:
     def __init__(self, *, client_wrapper: AsyncClientWrapper):
         self._client_wrapper = client_wrapper
+
+    async def list_fees(
+        self,
+        *,
+        filter_patient_id: typing.Optional[str] = None,
+        filter_service_id: typing.Optional[str] = None,
+        filter_service_eligibility_id: typing.Optional[str] = None,
+        filter_status: typing.Optional[FeesListV1FilterStatus] = None,
+        page: typing.Optional[int] = None,
+        limit: typing.Optional[int] = None,
+        request_options: typing.Optional[RequestOptions] = None,
+    ) -> AsyncHttpResponse[FeesListV1Response]:
+        """
+        Parameters
+        ----------
+        filter_patient_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.patientId="pat_xxx"
+
+        filter_service_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceId="svc_xxx"
+
+        filter_service_eligibility_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceEligibilityId="sel_xxx"
+
+        filter_status : typing.Optional[FeesListV1FilterStatus]
+            should be JSON-encoded, for example filter.status="PENDING"
+
+        page : typing.Optional[int]
+
+        limit : typing.Optional[int]
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        AsyncHttpResponse[FeesListV1Response]
+        """
+        _response = await self._client_wrapper.httpx_client.request(
+            "api/fees/v2",
+            method="GET",
+            params={
+                "filter.patientId": filter_patient_id,
+                "filter.serviceId": filter_service_id,
+                "filter.serviceEligibilityId": filter_service_eligibility_id,
+                "filter.status": filter_status,
+                "page": page,
+                "limit": limit,
+            },
+            request_options=request_options,
+        )
+        try:
+            if 200 <= _response.status_code < 300:
+                _data = typing.cast(
+                    FeesListV1Response,
+                    parse_obj_as(
+                        type_=FeesListV1Response,  # type: ignore
+                        object_=_response.json(),
+                    ),
+                )
+                return AsyncHttpResponse(response=_response, data=_data)
+            _response_json = _response.json()
+        except JSONDecodeError:
+            raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response.text)
+        except ValidationError as e:
+            raise ParsingError(
+                status_code=_response.status_code, headers=dict(_response.headers), body=_response.json(), cause=e
+            )
+        raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response_json)
 
     async def create_fee(
         self,

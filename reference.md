@@ -1,5 +1,102 @@
 # Reference
 ## Billing EstimateCharges
+<details><summary><code>client.billing.estimate_charges.<a href="src/usebridge_api/billing/estimate_charges/client.py">list_estimate_charges</a>(...) -> EstimateChargesListV1Response</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```python
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+
+client = BridgeApiClient(
+    api_key="<value>",
+    environment=BridgeApiClientEnvironment.PRODUCTION,
+)
+
+client.billing.estimate_charges.list_estimate_charges()
+
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**filter_patient_id:** `typing.Optional[str]` — should be JSON-encoded, for example filter.patientId="pat_xxx"
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**filter_service_id:** `typing.Optional[str]` — should be JSON-encoded, for example filter.serviceId="svc_xxx"
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**filter_service_eligibility_id:** `typing.Optional[str]` — should be JSON-encoded, for example filter.serviceEligibilityId="sel_xxx"
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**filter_status:** `typing.Optional[EstimateChargesListV1FilterStatus]` — should be JSON-encoded, for example filter.status="AUTHORIZED"
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**page:** `typing.Optional[int]` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**limit:** `typing.Optional[int]` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
 <details><summary><code>client.billing.estimate_charges.<a href="src/usebridge_api/billing/estimate_charges/client.py">create_estimate_charge</a>(...) -> EstimateChargeCreateV1Response</code></summary>
 <dl>
 <dd>
@@ -367,6 +464,103 @@ client.billing.estimate_charges.cancel_stripe_estimate_charge(
 </details>
 
 ## Billing Fees
+<details><summary><code>client.billing.fees.<a href="src/usebridge_api/billing/fees/client.py">list_fees</a>(...) -> FeesListV1Response</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```python
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+
+client = BridgeApiClient(
+    api_key="<value>",
+    environment=BridgeApiClientEnvironment.PRODUCTION,
+)
+
+client.billing.fees.list_fees()
+
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**filter_patient_id:** `typing.Optional[str]` — should be JSON-encoded, for example filter.patientId="pat_xxx"
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**filter_service_id:** `typing.Optional[str]` — should be JSON-encoded, for example filter.serviceId="svc_xxx"
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**filter_service_eligibility_id:** `typing.Optional[str]` — should be JSON-encoded, for example filter.serviceEligibilityId="sel_xxx"
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**filter_status:** `typing.Optional[FeesListV1FilterStatus]` — should be JSON-encoded, for example filter.status="PENDING"
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**page:** `typing.Optional[int]` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**limit:** `typing.Optional[int]` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
 <details><summary><code>client.billing.fees.<a href="src/usebridge_api/billing/fees/client.py">create_fee</a>(...) -> FeeCreateV1Response</code></summary>
 <dl>
 <dd>

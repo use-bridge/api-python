@@ -10,6 +10,8 @@ from .types.estimate_charge_cancel_stripe_v_1_response import EstimateChargeCanc
 from .types.estimate_charge_capture_stripe_v_1_response import EstimateChargeCaptureStripeV1Response
 from .types.estimate_charge_create_v_1_response import EstimateChargeCreateV1Response
 from .types.estimate_charge_refund_stripe_v_1_response import EstimateChargeRefundStripeV1Response
+from .types.estimate_charges_list_v_1_filter_status import EstimateChargesListV1FilterStatus
+from .types.estimate_charges_list_v_1_response import EstimateChargesListV1Response
 
 # this is used as the default value for optional parameters
 OMIT = typing.cast(typing.Any, ...)
@@ -29,6 +31,63 @@ class EstimateChargesClient:
         RawEstimateChargesClient
         """
         return self._raw_client
+
+    def list_estimate_charges(
+        self,
+        *,
+        filter_patient_id: typing.Optional[str] = None,
+        filter_service_id: typing.Optional[str] = None,
+        filter_service_eligibility_id: typing.Optional[str] = None,
+        filter_status: typing.Optional[EstimateChargesListV1FilterStatus] = None,
+        page: typing.Optional[int] = None,
+        limit: typing.Optional[int] = None,
+        request_options: typing.Optional[RequestOptions] = None,
+    ) -> EstimateChargesListV1Response:
+        """
+        Parameters
+        ----------
+        filter_patient_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.patientId="pat_xxx"
+
+        filter_service_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceId="svc_xxx"
+
+        filter_service_eligibility_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceEligibilityId="sel_xxx"
+
+        filter_status : typing.Optional[EstimateChargesListV1FilterStatus]
+            should be JSON-encoded, for example filter.status="AUTHORIZED"
+
+        page : typing.Optional[int]
+
+        limit : typing.Optional[int]
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        EstimateChargesListV1Response
+
+        Examples
+        --------
+        from usebridge_api import BridgeApiClient
+
+        client = BridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+        client.billing.estimate_charges.list_estimate_charges()
+        """
+        _response = self._raw_client.list_estimate_charges(
+            filter_patient_id=filter_patient_id,
+            filter_service_id=filter_service_id,
+            filter_service_eligibility_id=filter_service_eligibility_id,
+            filter_status=filter_status,
+            page=page,
+            limit=limit,
+            request_options=request_options,
+        )
+        return _response.data
 
     def create_estimate_charge(
         self,
@@ -215,6 +274,71 @@ class AsyncEstimateChargesClient:
         AsyncRawEstimateChargesClient
         """
         return self._raw_client
+
+    async def list_estimate_charges(
+        self,
+        *,
+        filter_patient_id: typing.Optional[str] = None,
+        filter_service_id: typing.Optional[str] = None,
+        filter_service_eligibility_id: typing.Optional[str] = None,
+        filter_status: typing.Optional[EstimateChargesListV1FilterStatus] = None,
+        page: typing.Optional[int] = None,
+        limit: typing.Optional[int] = None,
+        request_options: typing.Optional[RequestOptions] = None,
+    ) -> EstimateChargesListV1Response:
+        """
+        Parameters
+        ----------
+        filter_patient_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.patientId="pat_xxx"
+
+        filter_service_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceId="svc_xxx"
+
+        filter_service_eligibility_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.serviceEligibilityId="sel_xxx"
+
+        filter_status : typing.Optional[EstimateChargesListV1FilterStatus]
+            should be JSON-encoded, for example filter.status="AUTHORIZED"
+
+        page : typing.Optional[int]
+
+        limit : typing.Optional[int]
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        EstimateChargesListV1Response
+
+        Examples
+        --------
+        import asyncio
+
+        from usebridge_api import AsyncBridgeApiClient
+
+        client = AsyncBridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+
+
+        async def main() -> None:
+            await client.billing.estimate_charges.list_estimate_charges()
+
+
+        asyncio.run(main())
+        """
+        _response = await self._raw_client.list_estimate_charges(
+            filter_patient_id=filter_patient_id,
+            filter_service_id=filter_service_id,
+            filter_service_eligibility_id=filter_service_eligibility_id,
+            filter_status=filter_status,
+            page=page,
+            limit=limit,
+            request_options=request_options,
+        )
+        return _response.data
 
     async def create_estimate_charge(
         self,
