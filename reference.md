@@ -110,6 +110,10 @@ client.billing.estimate_charges.list_estimate_charges()
 <dd>
 
 This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+This endpoint may return a `409` error response with one of these public `message` values:
+- `Conflicting EstimateCharge exists`
+- `Missing Service Eligibility Amount`
 </dd>
 </dl>
 </dd>
@@ -184,6 +188,13 @@ client.billing.estimate_charges.create_estimate_charge(
 <dd>
 
 This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+This endpoint may return a `409` error response with one of these public `message` values:
+- `Invalid Estimate Charge Status`
+- `Missing Customer`
+- `Missing Customer Payment Method`
+- `Payment Already Captured`
+- `Payment has been Voided`
 </dd>
 </dl>
 </dd>
@@ -257,6 +268,13 @@ client.billing.estimate_charges.authorize_stripe_estimate_charge(
 <dd>
 
 This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+This endpoint may return a `409` error response with one of these public `message` values:
+- `Invalid Estimate Charge Status`
+- `Missing Customer`
+- `Missing Customer Payment Method`
+- `Payment Already Captured`
+- `Payment has been Voided`
 </dd>
 </dl>
 </dd>
@@ -330,6 +348,12 @@ client.billing.estimate_charges.capture_stripe_estimate_charge(
 <dd>
 
 This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+This endpoint may return a `409` error response with one of these public `message` values:
+- `Invalid Estimate Charge Status`
+- `Missing Captured Transaction`
+- `Missing Customer`
+- `Missing Payment Intent`
 </dd>
 </dl>
 </dd>
@@ -403,6 +427,13 @@ client.billing.estimate_charges.refund_stripe_estimate_charge(
 <dd>
 
 This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+This endpoint may return a `409` error response with one of these public `message` values:
+- `Invalid Estimate Charge Status`
+- `Missing Authorized Transaction`
+- `Missing Customer`
+- `Missing Payment Intent`
+- `Payment Already Captured`
 </dd>
 </dl>
 </dd>
@@ -574,6 +605,9 @@ client.billing.fees.list_fees()
 <dd>
 
 This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+This endpoint may return a `409` error response with one of these public `message` values:
+- `Conflicting Fee exists`
 </dd>
 </dl>
 </dd>
@@ -648,6 +682,13 @@ client.billing.fees.create_fee(
 <dd>
 
 This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+This endpoint may return a `409` error response with one of these public `message` values:
+- `Invalid Fee Status`
+- `Missing Customer`
+- `Missing Customer Payment Method`
+- `Payment Already Captured`
+- `Payment has been Voided`
 </dd>
 </dl>
 </dd>
@@ -721,6 +762,12 @@ client.billing.fees.capture_stripe_fee(
 <dd>
 
 This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+This endpoint may return a `409` error response with one of these public `message` values:
+- `Invalid Fee Status`
+- `Missing Captured Transaction`
+- `Missing Customer`
+- `Missing Payment Intent`
 </dd>
 </dl>
 </dd>

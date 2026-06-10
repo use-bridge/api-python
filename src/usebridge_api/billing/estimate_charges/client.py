@@ -100,6 +100,10 @@ class EstimateChargesClient:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
 
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Conflicting EstimateCharge exists`
+        - `Missing Service Eligibility Amount`
+
         Parameters
         ----------
         patient_id : str
@@ -141,6 +145,13 @@ class EstimateChargesClient:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
 
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Estimate Charge Status`
+        - `Missing Customer`
+        - `Missing Customer Payment Method`
+        - `Payment Already Captured`
+        - `Payment has been Voided`
+
         Parameters
         ----------
         id : str
@@ -171,6 +182,13 @@ class EstimateChargesClient:
     ) -> EstimateChargeCaptureStripeV1Response:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Estimate Charge Status`
+        - `Missing Customer`
+        - `Missing Customer Payment Method`
+        - `Payment Already Captured`
+        - `Payment has been Voided`
 
         Parameters
         ----------
@@ -203,6 +221,12 @@ class EstimateChargesClient:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
 
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Estimate Charge Status`
+        - `Missing Captured Transaction`
+        - `Missing Customer`
+        - `Missing Payment Intent`
+
         Parameters
         ----------
         id : str
@@ -233,6 +257,13 @@ class EstimateChargesClient:
     ) -> EstimateChargeCancelStripeV1Response:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Estimate Charge Status`
+        - `Missing Authorized Transaction`
+        - `Missing Customer`
+        - `Missing Payment Intent`
+        - `Payment Already Captured`
 
         Parameters
         ----------
@@ -351,6 +382,10 @@ class AsyncEstimateChargesClient:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
 
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Conflicting EstimateCharge exists`
+        - `Missing Service Eligibility Amount`
+
         Parameters
         ----------
         patient_id : str
@@ -400,6 +435,13 @@ class AsyncEstimateChargesClient:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
 
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Estimate Charge Status`
+        - `Missing Customer`
+        - `Missing Customer Payment Method`
+        - `Payment Already Captured`
+        - `Payment has been Voided`
+
         Parameters
         ----------
         id : str
@@ -438,6 +480,13 @@ class AsyncEstimateChargesClient:
     ) -> EstimateChargeCaptureStripeV1Response:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Estimate Charge Status`
+        - `Missing Customer`
+        - `Missing Customer Payment Method`
+        - `Payment Already Captured`
+        - `Payment has been Voided`
 
         Parameters
         ----------
@@ -478,6 +527,12 @@ class AsyncEstimateChargesClient:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
 
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Estimate Charge Status`
+        - `Missing Captured Transaction`
+        - `Missing Customer`
+        - `Missing Payment Intent`
+
         Parameters
         ----------
         id : str
@@ -516,6 +571,13 @@ class AsyncEstimateChargesClient:
     ) -> EstimateChargeCancelStripeV1Response:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Estimate Charge Status`
+        - `Missing Authorized Transaction`
+        - `Missing Customer`
+        - `Missing Payment Intent`
+        - `Payment Already Captured`
 
         Parameters
         ----------

@@ -101,6 +101,9 @@ class FeesClient:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
 
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Conflicting Fee exists`
+
         Parameters
         ----------
         patient_id : str
@@ -148,6 +151,13 @@ class FeesClient:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
 
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Fee Status`
+        - `Missing Customer`
+        - `Missing Customer Payment Method`
+        - `Payment Already Captured`
+        - `Payment has been Voided`
+
         Parameters
         ----------
         id : str
@@ -178,6 +188,12 @@ class FeesClient:
     ) -> FeeRefundStripeV1Response:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Fee Status`
+        - `Missing Captured Transaction`
+        - `Missing Customer`
+        - `Missing Payment Intent`
 
         Parameters
         ----------
@@ -298,6 +314,9 @@ class AsyncFeesClient:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
 
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Conflicting Fee exists`
+
         Parameters
         ----------
         patient_id : str
@@ -353,6 +372,13 @@ class AsyncFeesClient:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
 
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Fee Status`
+        - `Missing Customer`
+        - `Missing Customer Payment Method`
+        - `Payment Already Captured`
+        - `Payment has been Voided`
+
         Parameters
         ----------
         id : str
@@ -391,6 +417,12 @@ class AsyncFeesClient:
     ) -> FeeRefundStripeV1Response:
         """
         This endpoint can only be used after setting up the billing integration. Refer to the [billing integration documentation](/documentation/integrations/billing/overview) for more details.
+
+        This endpoint may return a `409` error response with one of these public `message` values:
+        - `Invalid Fee Status`
+        - `Missing Captured Transaction`
+        - `Missing Customer`
+        - `Missing Payment Intent`
 
         Parameters
         ----------
