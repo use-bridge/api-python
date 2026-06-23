@@ -3771,6 +3771,14 @@ client.services.list_services()
 <dl>
 <dd>
 
+**order_date_of_service:** `typing.Optional[ServicesListV1OrderDateOfService]` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
 **page:** `typing.Optional[int]` 
     
 </dd>

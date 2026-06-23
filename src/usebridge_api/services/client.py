@@ -19,6 +19,7 @@ from .types.service_stream_v_1_response import ServiceStreamV1Response
 from .types.services_list_v_1_filter_provider_id import ServicesListV1FilterProviderId
 from .types.services_list_v_1_filter_status import ServicesListV1FilterStatus
 from .types.services_list_v_1_order_created_at import ServicesListV1OrderCreatedAt
+from .types.services_list_v_1_order_date_of_service import ServicesListV1OrderDateOfService
 from .types.services_list_v_1_response import ServicesListV1Response
 
 if typing.TYPE_CHECKING:
@@ -85,6 +86,7 @@ class ServicesClient:
         filter_status: typing.Optional[typing.Sequence[ServicesListV1FilterStatus]] = None,
         filter_provider_id: typing.Optional[typing.Sequence[ServicesListV1FilterProviderId]] = None,
         order_created_at: typing.Optional[ServicesListV1OrderCreatedAt] = None,
+        order_date_of_service: typing.Optional[ServicesListV1OrderDateOfService] = None,
         page: typing.Optional[int] = None,
         limit: typing.Optional[int] = None,
         request_options: typing.Optional[RequestOptions] = None,
@@ -105,6 +107,8 @@ class ServicesClient:
             should be JSON-encoded array, for example filter.providerId=["prv_xxx", "prv_yyy"]
 
         order_created_at : typing.Optional[ServicesListV1OrderCreatedAt]
+
+        order_date_of_service : typing.Optional[ServicesListV1OrderDateOfService]
 
         page : typing.Optional[int]
 
@@ -132,6 +136,7 @@ class ServicesClient:
             filter_status=filter_status,
             filter_provider_id=filter_provider_id,
             order_created_at=order_created_at,
+            order_date_of_service=order_date_of_service,
             page=page,
             limit=limit,
             request_options=request_options,
@@ -445,6 +450,7 @@ class AsyncServicesClient:
         filter_status: typing.Optional[typing.Sequence[ServicesListV1FilterStatus]] = None,
         filter_provider_id: typing.Optional[typing.Sequence[ServicesListV1FilterProviderId]] = None,
         order_created_at: typing.Optional[ServicesListV1OrderCreatedAt] = None,
+        order_date_of_service: typing.Optional[ServicesListV1OrderDateOfService] = None,
         page: typing.Optional[int] = None,
         limit: typing.Optional[int] = None,
         request_options: typing.Optional[RequestOptions] = None,
@@ -465,6 +471,8 @@ class AsyncServicesClient:
             should be JSON-encoded array, for example filter.providerId=["prv_xxx", "prv_yyy"]
 
         order_created_at : typing.Optional[ServicesListV1OrderCreatedAt]
+
+        order_date_of_service : typing.Optional[ServicesListV1OrderDateOfService]
 
         page : typing.Optional[int]
 
@@ -500,6 +508,7 @@ class AsyncServicesClient:
             filter_status=filter_status,
             filter_provider_id=filter_provider_id,
             order_created_at=order_created_at,
+            order_date_of_service=order_date_of_service,
             page=page,
             limit=limit,
             request_options=request_options,

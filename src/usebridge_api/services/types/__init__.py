@@ -373,6 +373,7 @@ if typing.TYPE_CHECKING:
     from .services_list_v_1_filter_status import ServicesListV1FilterStatus
     from .services_list_v_1_filter_status_element import ServicesListV1FilterStatusElement
     from .services_list_v_1_order_created_at import ServicesListV1OrderCreatedAt
+    from .services_list_v_1_order_date_of_service import ServicesListV1OrderDateOfService
     from .services_list_v_1_response import ServicesListV1Response
     from .services_list_v_1_response_item import ServicesListV1ResponseItem
     from .services_list_v_1_response_item_cancellation_reason import ServicesListV1ResponseItemCancellationReason
@@ -650,6 +651,7 @@ _dynamic_imports: typing.Dict[str, str] = {
     "ServicesListV1FilterStatus": ".services_list_v_1_filter_status",
     "ServicesListV1FilterStatusElement": ".services_list_v_1_filter_status_element",
     "ServicesListV1OrderCreatedAt": ".services_list_v_1_order_created_at",
+    "ServicesListV1OrderDateOfService": ".services_list_v_1_order_date_of_service",
     "ServicesListV1Response": ".services_list_v_1_response",
     "ServicesListV1ResponseItem": ".services_list_v_1_response_item",
     "ServicesListV1ResponseItemCancellationReason": ".services_list_v_1_response_item_cancellation_reason",
@@ -897,6 +899,7 @@ __all__ = [
     "ServicesListV1FilterStatus",
     "ServicesListV1FilterStatusElement",
     "ServicesListV1OrderCreatedAt",
+    "ServicesListV1OrderDateOfService",
     "ServicesListV1Response",
     "ServicesListV1ResponseItem",
     "ServicesListV1ResponseItemCancellationReason",

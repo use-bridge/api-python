@@ -26,6 +26,7 @@ from .types.service_stream_v_1_response import ServiceStreamV1Response
 from .types.services_list_v_1_filter_provider_id import ServicesListV1FilterProviderId
 from .types.services_list_v_1_filter_status import ServicesListV1FilterStatus
 from .types.services_list_v_1_order_created_at import ServicesListV1OrderCreatedAt
+from .types.services_list_v_1_order_date_of_service import ServicesListV1OrderDateOfService
 from .types.services_list_v_1_response import ServicesListV1Response
 from pydantic import ValidationError
 
@@ -114,6 +115,7 @@ class RawServicesClient:
         filter_status: typing.Optional[typing.Sequence[ServicesListV1FilterStatus]] = None,
         filter_provider_id: typing.Optional[typing.Sequence[ServicesListV1FilterProviderId]] = None,
         order_created_at: typing.Optional[ServicesListV1OrderCreatedAt] = None,
+        order_date_of_service: typing.Optional[ServicesListV1OrderDateOfService] = None,
         page: typing.Optional[int] = None,
         limit: typing.Optional[int] = None,
         request_options: typing.Optional[RequestOptions] = None,
@@ -135,6 +137,8 @@ class RawServicesClient:
 
         order_created_at : typing.Optional[ServicesListV1OrderCreatedAt]
 
+        order_date_of_service : typing.Optional[ServicesListV1OrderDateOfService]
+
         page : typing.Optional[int]
 
         limit : typing.Optional[int]
@@ -155,6 +159,7 @@ class RawServicesClient:
                 "filter.status": filter_status,
                 "filter.providerId": filter_provider_id,
                 "order.createdAt": order_created_at,
+                "order.dateOfService": order_date_of_service,
                 "page": page,
                 "limit": limit,
             },
@@ -526,6 +531,7 @@ class AsyncRawServicesClient:
         filter_status: typing.Optional[typing.Sequence[ServicesListV1FilterStatus]] = None,
         filter_provider_id: typing.Optional[typing.Sequence[ServicesListV1FilterProviderId]] = None,
         order_created_at: typing.Optional[ServicesListV1OrderCreatedAt] = None,
+        order_date_of_service: typing.Optional[ServicesListV1OrderDateOfService] = None,
         page: typing.Optional[int] = None,
         limit: typing.Optional[int] = None,
         request_options: typing.Optional[RequestOptions] = None,
@@ -547,6 +553,8 @@ class AsyncRawServicesClient:
 
         order_created_at : typing.Optional[ServicesListV1OrderCreatedAt]
 
+        order_date_of_service : typing.Optional[ServicesListV1OrderDateOfService]
+
         page : typing.Optional[int]
 
         limit : typing.Optional[int]
@@ -567,6 +575,7 @@ class AsyncRawServicesClient:
                 "filter.status": filter_status,
                 "filter.providerId": filter_provider_id,
                 "order.createdAt": order_created_at,
+                "order.dateOfService": order_date_of_service,
                 "page": page,
                 "limit": limit,
             },
