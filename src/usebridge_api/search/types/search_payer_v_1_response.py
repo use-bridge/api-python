@@ -12,7 +12,7 @@ from .search_payer_v_1_response_item import SearchPayerV1ResponseItem
 class SearchPayerV1Response(UniversalBaseModel):
     items: typing.List[SearchPayerV1ResponseItem]
     time: typing_extensions.Annotated[
-        typing.Optional[int], FieldMetadata(alias="_time"), pydantic.Field(alias="_time")
+        typing.Optional[float], FieldMetadata(alias="_time"), pydantic.Field(alias="_time")
     ] = None
 
     if IS_PYDANTIC_V2:
