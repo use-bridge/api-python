@@ -3,5 +3,23 @@
 import typing
 
 NoteCreateV1RequestDataFieldScoredAssessmentsElementType = typing.Union[
-    typing.Literal["PHQ-9", "GAD-7", "SDOH-PRAPARE", "SDOH-AHC-HRSN", "SDOH-VI-SPDAT", "SDOH-CORE-5-SDH"], typing.Any
+    typing.Literal[
+        "PHQ-9",
+        "GAD-7",
+        "SDOH-PRAPARE",
+        "SDOH-AHC-HRSN",
+        "SDOH-VI-SPDAT",
+        "SDOH-CORE-5-SDH",
+        "FAST",
+        "CDR",
+        "GDS",
+        "MoCA",
+        "SLUMS",
+        "Epworth",
+        "MMSE",
+        "NPI-Q",
+        "BHEV5+",
+        "PHQ-2",
+    ],
+    typing.Any,
 ]
