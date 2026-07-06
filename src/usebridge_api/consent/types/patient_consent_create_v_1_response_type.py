@@ -3,5 +3,8 @@
 import typing
 
 PatientConsentCreateV1ResponseType = typing.Union[
-    typing.Literal["ASSIGNMENT_OF_BENEFITS", "CONSENT_TO_TREAT", "PRIVACY_NOTICE"], typing.Any
+    typing.Literal[
+        "ASSIGNMENT_OF_BENEFITS", "CONSENT_TO_TREAT", "PRIVACY_NOTICE", "SMA_GROUP_CONFIDENTIALITY_AGREEMENT"
+    ],
+    typing.Any,
 ]
