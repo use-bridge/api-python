@@ -77,6 +77,11 @@ class NoteAddendumCreateV1ResponseData(UniversalBaseModel):
             description="Written description of time spent. Example: '10min spent preparing, 20min spent in visit, 5min spent documenting'",
         ),
     ] = None
+    individual_time_spent_minutes: typing_extensions.Annotated[
+        typing.Optional[int],
+        FieldMetadata(alias="INDIVIDUAL_TIME_SPENT_MINUTES"),
+        pydantic.Field(alias="INDIVIDUAL_TIME_SPENT_MINUTES"),
+    ] = None
     time_spent_minutes: typing_extensions.Annotated[
         typing.Optional[int], FieldMetadata(alias="TIME_SPENT_MINUTES"), pydantic.Field(alias="TIME_SPENT_MINUTES")
     ] = None
@@ -84,6 +89,9 @@ class NoteAddendumCreateV1ResponseData(UniversalBaseModel):
         typing.Optional[int],
         FieldMetadata(alias="THERAPY_TIME_SPENT_MINUTES"),
         pydantic.Field(alias="THERAPY_TIME_SPENT_MINUTES"),
+    ] = None
+    sma_group_size: typing_extensions.Annotated[
+        typing.Optional[int], FieldMetadata(alias="SMA_GROUP_SIZE"), pydantic.Field(alias="SMA_GROUP_SIZE")
     ] = None
     height: typing_extensions.Annotated[
         typing.Optional[int],
