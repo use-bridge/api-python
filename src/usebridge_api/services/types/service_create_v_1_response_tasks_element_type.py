@@ -18,6 +18,7 @@ ServiceCreateV1ResponseTasksElementType = typing.Union[
         "PRIOR_AUTHORIZATION",
         "BILLING_TIME_LIMIT",
         "PROVIDER_NOT_ENROLLED",
+        "NOTE_SIGNING_PROVIDER_MISMATCH",
         "THERAPY_DURATION",
         "MINIMUM_DURATION",
         "MISSING_INITIATING_VISIT",
