@@ -3,5 +3,8 @@
 import typing
 
 ServiceCreateV2ResponseProviderFieldType = typing.Union[
-    typing.Literal["MD", "NP", "DO", "ND", "AP", "OT", "LCSW", "RN", "CN", "CWC", "CM", "PA", "RDN", "PT"], typing.Any
+    typing.Literal[
+        "MD", "NP", "DO", "ND", "AP", "OT", "LCSW", "LMFT", "LPC", "PSYCH", "RN", "CN", "CWC", "CM", "PA", "RDN", "PT"
+    ],
+    typing.Any,
 ]
