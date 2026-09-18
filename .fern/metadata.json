@@ -7,10 +7,10 @@
     "client_class_name": "BridgeApiClient",
     "environment_class_name": "BridgeApiEnvironment"
   },
-  "originGitCommit": "35a28fd00efe6897b28e6576697695ca2054f58f",
+  "originGitCommit": "4159d5657339da64821af30a8af3e183ab737a51",
   "originGitCommitIsDirty": true,
   "invokedBy": "ci",
-  "requestedVersion": "0.1.11",
+  "requestedVersion": "0.1.12",
   "ciProvider": "github",
-  "sdkVersion": "0.1.11"
+  "sdkVersion": "0.1.12"
 }
