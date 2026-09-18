@@ -30,6 +30,7 @@ class RawEstimateChargesClient:
     def list_estimate_charges(
         self,
         *,
+        filter_external_id: typing.Optional[str] = None,
         filter_patient_id: typing.Optional[str] = None,
         filter_service_id: typing.Optional[str] = None,
         filter_service_eligibility_id: typing.Optional[str] = None,
@@ -41,6 +42,9 @@ class RawEstimateChargesClient:
         """
         Parameters
         ----------
+        filter_external_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.externalId="external_xxx"
+
         filter_patient_id : typing.Optional[str]
             should be JSON-encoded, for example filter.patientId="pat_xxx"
 
@@ -68,6 +72,7 @@ class RawEstimateChargesClient:
             "api/estimate-charges",
             method="GET",
             params={
+                "filter.externalId": filter_external_id,
                 "filter.patientId": filter_patient_id,
                 "filter.serviceId": filter_service_id,
                 "filter.serviceEligibilityId": filter_service_eligibility_id,
@@ -355,6 +360,7 @@ class AsyncRawEstimateChargesClient:
     async def list_estimate_charges(
         self,
         *,
+        filter_external_id: typing.Optional[str] = None,
         filter_patient_id: typing.Optional[str] = None,
         filter_service_id: typing.Optional[str] = None,
         filter_service_eligibility_id: typing.Optional[str] = None,
@@ -366,6 +372,9 @@ class AsyncRawEstimateChargesClient:
         """
         Parameters
         ----------
+        filter_external_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.externalId="external_xxx"
+
         filter_patient_id : typing.Optional[str]
             should be JSON-encoded, for example filter.patientId="pat_xxx"
 
@@ -393,6 +402,7 @@ class AsyncRawEstimateChargesClient:
             "api/estimate-charges",
             method="GET",
             params={
+                "filter.externalId": filter_external_id,
                 "filter.patientId": filter_patient_id,
                 "filter.serviceId": filter_service_id,
                 "filter.serviceEligibilityId": filter_service_eligibility_id,

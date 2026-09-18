@@ -35,6 +35,7 @@ class EstimateChargesClient:
     def list_estimate_charges(
         self,
         *,
+        filter_external_id: typing.Optional[str] = None,
         filter_patient_id: typing.Optional[str] = None,
         filter_service_id: typing.Optional[str] = None,
         filter_service_eligibility_id: typing.Optional[str] = None,
@@ -46,6 +47,9 @@ class EstimateChargesClient:
         """
         Parameters
         ----------
+        filter_external_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.externalId="external_xxx"
+
         filter_patient_id : typing.Optional[str]
             should be JSON-encoded, for example filter.patientId="pat_xxx"
 
@@ -79,6 +83,7 @@ class EstimateChargesClient:
         client.billing.estimate_charges.list_estimate_charges()
         """
         _response = self._raw_client.list_estimate_charges(
+            filter_external_id=filter_external_id,
             filter_patient_id=filter_patient_id,
             filter_service_id=filter_service_id,
             filter_service_eligibility_id=filter_service_eligibility_id,
@@ -309,6 +314,7 @@ class AsyncEstimateChargesClient:
     async def list_estimate_charges(
         self,
         *,
+        filter_external_id: typing.Optional[str] = None,
         filter_patient_id: typing.Optional[str] = None,
         filter_service_id: typing.Optional[str] = None,
         filter_service_eligibility_id: typing.Optional[str] = None,
@@ -320,6 +326,9 @@ class AsyncEstimateChargesClient:
         """
         Parameters
         ----------
+        filter_external_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.externalId="external_xxx"
+
         filter_patient_id : typing.Optional[str]
             should be JSON-encoded, for example filter.patientId="pat_xxx"
 
@@ -361,6 +370,7 @@ class AsyncEstimateChargesClient:
         asyncio.run(main())
         """
         _response = await self._raw_client.list_estimate_charges(
+            filter_external_id=filter_external_id,
             filter_patient_id=filter_patient_id,
             filter_service_id=filter_service_id,
             filter_service_eligibility_id=filter_service_eligibility_id,

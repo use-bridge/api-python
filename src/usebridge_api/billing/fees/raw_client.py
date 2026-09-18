@@ -29,6 +29,7 @@ class RawFeesClient:
     def list_fees(
         self,
         *,
+        filter_external_id: typing.Optional[str] = None,
         filter_patient_id: typing.Optional[str] = None,
         filter_service_id: typing.Optional[str] = None,
         filter_service_eligibility_id: typing.Optional[str] = None,
@@ -40,6 +41,9 @@ class RawFeesClient:
         """
         Parameters
         ----------
+        filter_external_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.externalId="external_xxx"
+
         filter_patient_id : typing.Optional[str]
             should be JSON-encoded, for example filter.patientId="pat_xxx"
 
@@ -67,6 +71,7 @@ class RawFeesClient:
             "api/fees/v2",
             method="GET",
             params={
+                "filter.externalId": filter_external_id,
                 "filter.patientId": filter_patient_id,
                 "filter.serviceId": filter_service_id,
                 "filter.serviceEligibilityId": filter_service_eligibility_id,
@@ -265,6 +270,7 @@ class AsyncRawFeesClient:
     async def list_fees(
         self,
         *,
+        filter_external_id: typing.Optional[str] = None,
         filter_patient_id: typing.Optional[str] = None,
         filter_service_id: typing.Optional[str] = None,
         filter_service_eligibility_id: typing.Optional[str] = None,
@@ -276,6 +282,9 @@ class AsyncRawFeesClient:
         """
         Parameters
         ----------
+        filter_external_id : typing.Optional[str]
+            should be JSON-encoded, for example filter.externalId="external_xxx"
+
         filter_patient_id : typing.Optional[str]
             should be JSON-encoded, for example filter.patientId="pat_xxx"
 
@@ -303,6 +312,7 @@ class AsyncRawFeesClient:
             "api/fees/v2",
             method="GET",
             params={
+                "filter.externalId": filter_external_id,
                 "filter.patientId": filter_patient_id,
                 "filter.serviceId": filter_service_id,
                 "filter.serviceEligibilityId": filter_service_eligibility_id,

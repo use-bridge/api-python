@@ -37,6 +37,14 @@ client.billing.estimate_charges.list_estimate_charges()
 <dl>
 <dd>
 
+**filter_external_id:** `typing.Optional[str]` — should be JSON-encoded, for example filter.externalId="external_xxx"
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
 **filter_patient_id:** `typing.Optional[str]` — should be JSON-encoded, for example filter.patientId="pat_xxx"
     
 </dd>
@@ -528,6 +536,14 @@ client.billing.fees.list_fees()
 
 <dl>
 <dd>
+
+<dl>
+<dd>
+
+**filter_external_id:** `typing.Optional[str]` — should be JSON-encoded, for example filter.externalId="external_xxx"
+    
+</dd>
+</dl>
 
 <dl>
 <dd>
