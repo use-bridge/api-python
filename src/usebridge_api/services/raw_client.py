@@ -22,6 +22,8 @@ from .types.service_create_v_1_request_service_eligibility import ServiceCreateV
 from .types.service_create_v_1_response import ServiceCreateV1Response
 from .types.service_get_v_1_response import ServiceGetV1Response
 from .types.service_note_get_v_1_response import ServiceNoteGetV1Response
+from .types.service_set_ready_v_1_parameters_type import ServiceSetReadyV1ParametersType
+from .types.service_set_ready_v_1_response import ServiceSetReadyV1Response
 from .types.service_stream_v_1_response import ServiceStreamV1Response
 from .types.services_list_v_1_filter_provider_id import ServicesListV1FilterProviderId
 from .types.services_list_v_1_filter_status import ServicesListV1FilterStatus
@@ -369,6 +371,58 @@ class RawServicesClient:
         try:
             if 200 <= _response.status_code < 300:
                 return HttpResponse(response=_response, data=None)
+            _response_json = _response.json()
+        except JSONDecodeError:
+            raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response.text)
+        except ValidationError as e:
+            raise ParsingError(
+                status_code=_response.status_code, headers=dict(_response.headers), body=_response.json(), cause=e
+            )
+        raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response_json)
+
+    def set_ready_service(
+        self,
+        id: str,
+        type: ServiceSetReadyV1ParametersType,
+        *,
+        ready: bool,
+        request_options: typing.Optional[RequestOptions] = None,
+    ) -> HttpResponse[ServiceSetReadyV1Response]:
+        """
+        Parameters
+        ----------
+        id : str
+
+        type : ServiceSetReadyV1ParametersType
+
+        ready : bool
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        HttpResponse[ServiceSetReadyV1Response]
+        """
+        _response = self._client_wrapper.httpx_client.request(
+            f"api/services/{encode_path_param(id)}/tasks/{encode_path_param(type)}",
+            method="POST",
+            json={
+                "ready": ready,
+            },
+            request_options=request_options,
+            omit=OMIT,
+        )
+        try:
+            if 200 <= _response.status_code < 300:
+                _data = typing.cast(
+                    ServiceSetReadyV1Response,
+                    parse_obj_as(
+                        type_=ServiceSetReadyV1Response,  # type: ignore
+                        object_=_response.json(),
+                    ),
+                )
+                return HttpResponse(response=_response, data=_data)
             _response_json = _response.json()
         except JSONDecodeError:
             raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response.text)
@@ -787,6 +841,58 @@ class AsyncRawServicesClient:
         try:
             if 200 <= _response.status_code < 300:
                 return AsyncHttpResponse(response=_response, data=None)
+            _response_json = _response.json()
+        except JSONDecodeError:
+            raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response.text)
+        except ValidationError as e:
+            raise ParsingError(
+                status_code=_response.status_code, headers=dict(_response.headers), body=_response.json(), cause=e
+            )
+        raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response_json)
+
+    async def set_ready_service(
+        self,
+        id: str,
+        type: ServiceSetReadyV1ParametersType,
+        *,
+        ready: bool,
+        request_options: typing.Optional[RequestOptions] = None,
+    ) -> AsyncHttpResponse[ServiceSetReadyV1Response]:
+        """
+        Parameters
+        ----------
+        id : str
+
+        type : ServiceSetReadyV1ParametersType
+
+        ready : bool
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        AsyncHttpResponse[ServiceSetReadyV1Response]
+        """
+        _response = await self._client_wrapper.httpx_client.request(
+            f"api/services/{encode_path_param(id)}/tasks/{encode_path_param(type)}",
+            method="POST",
+            json={
+                "ready": ready,
+            },
+            request_options=request_options,
+            omit=OMIT,
+        )
+        try:
+            if 200 <= _response.status_code < 300:
+                _data = typing.cast(
+                    ServiceSetReadyV1Response,
+                    parse_obj_as(
+                        type_=ServiceSetReadyV1Response,  # type: ignore
+                        object_=_response.json(),
+                    ),
+                )
+                return AsyncHttpResponse(response=_response, data=_data)
             _response_json = _response.json()
         except JSONDecodeError:
             raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response.text)

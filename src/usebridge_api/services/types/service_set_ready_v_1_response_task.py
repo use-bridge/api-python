@@ -7,15 +7,15 @@ import pydantic
 import typing_extensions
 from ...core.pydantic_utilities import IS_PYDANTIC_V2, UniversalBaseModel
 from ...core.serialization import FieldMetadata
-from .service_get_v_1_response_tasks_element_type import ServiceGetV1ResponseTasksElementType
+from .service_set_ready_v_1_response_tasks_element_type import ServiceSetReadyV1ResponseTasksElementType
 
 
-class ServiceGetV1ResponseTask(UniversalBaseModel):
+class ServiceSetReadyV1ResponseTask(UniversalBaseModel):
     in_review_at: typing_extensions.Annotated[
         typing.Optional[dt.datetime], FieldMetadata(alias="inReviewAt"), pydantic.Field(alias="inReviewAt")
     ] = None
     ready: typing.Optional[bool] = None
-    type: ServiceGetV1ResponseTasksElementType
+    type: ServiceSetReadyV1ResponseTasksElementType
     memo: typing.Optional[str] = None
 
     if IS_PYDANTIC_V2:

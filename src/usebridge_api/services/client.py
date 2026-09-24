@@ -15,6 +15,8 @@ from .types.service_create_v_1_request_service_eligibility import ServiceCreateV
 from .types.service_create_v_1_response import ServiceCreateV1Response
 from .types.service_get_v_1_response import ServiceGetV1Response
 from .types.service_note_get_v_1_response import ServiceNoteGetV1Response
+from .types.service_set_ready_v_1_parameters_type import ServiceSetReadyV1ParametersType
+from .types.service_set_ready_v_1_response import ServiceSetReadyV1Response
 from .types.service_stream_v_1_response import ServiceStreamV1Response
 from .types.services_list_v_1_filter_provider_id import ServicesListV1FilterProviderId
 from .types.services_list_v_1_filter_status import ServicesListV1FilterStatus
@@ -309,6 +311,46 @@ class ServicesClient:
         )
         """
         _response = self._raw_client.bill_service(id, request_options=request_options)
+        return _response.data
+
+    def set_ready_service(
+        self,
+        id: str,
+        type: ServiceSetReadyV1ParametersType,
+        *,
+        ready: bool,
+        request_options: typing.Optional[RequestOptions] = None,
+    ) -> ServiceSetReadyV1Response:
+        """
+        Parameters
+        ----------
+        id : str
+
+        type : ServiceSetReadyV1ParametersType
+
+        ready : bool
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        ServiceSetReadyV1Response
+
+        Examples
+        --------
+        from usebridge_api import BridgeApiClient
+
+        client = BridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+        client.services.set_ready_service(
+            id="id",
+            type="PATIENT_CONSENT",
+            ready=True,
+        )
+        """
+        _response = self._raw_client.set_ready_service(id, type, ready=ready, request_options=request_options)
         return _response.data
 
     def get_service_note(
@@ -714,6 +756,54 @@ class AsyncServicesClient:
         asyncio.run(main())
         """
         _response = await self._raw_client.bill_service(id, request_options=request_options)
+        return _response.data
+
+    async def set_ready_service(
+        self,
+        id: str,
+        type: ServiceSetReadyV1ParametersType,
+        *,
+        ready: bool,
+        request_options: typing.Optional[RequestOptions] = None,
+    ) -> ServiceSetReadyV1Response:
+        """
+        Parameters
+        ----------
+        id : str
+
+        type : ServiceSetReadyV1ParametersType
+
+        ready : bool
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        ServiceSetReadyV1Response
+
+        Examples
+        --------
+        import asyncio
+
+        from usebridge_api import AsyncBridgeApiClient
+
+        client = AsyncBridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+
+
+        async def main() -> None:
+            await client.services.set_ready_service(
+                id="id",
+                type="PATIENT_CONSENT",
+                ready=True,
+            )
+
+
+        asyncio.run(main())
+        """
+        _response = await self._raw_client.set_ready_service(id, type, ready=ready, request_options=request_options)
         return _response.data
 
     async def get_service_note(

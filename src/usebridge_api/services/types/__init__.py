@@ -269,6 +269,108 @@ if typing.TYPE_CHECKING:
     from .service_note_get_v_1_response_signature_field_provider_field_type import (
         ServiceNoteGetV1ResponseSignatureFieldProviderFieldType,
     )
+    from .service_set_ready_v_1_parameters_type import ServiceSetReadyV1ParametersType
+    from .service_set_ready_v_1_request import ServiceSetReadyV1Request
+    from .service_set_ready_v_1_response import ServiceSetReadyV1Response
+    from .service_set_ready_v_1_response_cancellation_reason import ServiceSetReadyV1ResponseCancellationReason
+    from .service_set_ready_v_1_response_claim_status import ServiceSetReadyV1ResponseClaimStatus
+    from .service_set_ready_v_1_response_coverage_status import ServiceSetReadyV1ResponseCoverageStatus
+    from .service_set_ready_v_1_response_location import ServiceSetReadyV1ResponseLocation
+    from .service_set_ready_v_1_response_location_field_country import ServiceSetReadyV1ResponseLocationFieldCountry
+    from .service_set_ready_v_1_response_location_field_state import ServiceSetReadyV1ResponseLocationFieldState
+    from .service_set_ready_v_1_response_metadata import ServiceSetReadyV1ResponseMetadata
+    from .service_set_ready_v_1_response_patient_responsibility import ServiceSetReadyV1ResponsePatientResponsibility
+    from .service_set_ready_v_1_response_patient_responsibility_field_amount import (
+        ServiceSetReadyV1ResponsePatientResponsibilityFieldAmount,
+    )
+    from .service_set_ready_v_1_response_patient_responsibility_field_amount_field_deductible_type import (
+        ServiceSetReadyV1ResponsePatientResponsibilityFieldAmountFieldDeductibleType,
+    )
+    from .service_set_ready_v_1_response_patient_responsibility_field_status import (
+        ServiceSetReadyV1ResponsePatientResponsibilityFieldStatus,
+    )
+    from .service_set_ready_v_1_response_payment import ServiceSetReadyV1ResponsePayment
+    from .service_set_ready_v_1_response_payments_element_type import ServiceSetReadyV1ResponsePaymentsElementType
+    from .service_set_ready_v_1_response_provider import ServiceSetReadyV1ResponseProvider
+    from .service_set_ready_v_1_response_provider_field_type import ServiceSetReadyV1ResponseProviderFieldType
+    from .service_set_ready_v_1_response_responsible_party import ServiceSetReadyV1ResponseResponsibleParty
+    from .service_set_ready_v_1_response_service_eligibility import ServiceSetReadyV1ResponseServiceEligibility
+    from .service_set_ready_v_1_response_service_eligibility_field_clinical_info import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldClinicalInfo,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_clinical_info_field_diagnosis import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldClinicalInfoFieldDiagnosis,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_condition import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementCondition,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_conditions_element_diagnosis import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementConditionsElementDiagnosis,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimit,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_metric import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldMetric,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_period import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldPeriod,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_type import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldType,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_units import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldUnits,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibility,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility_field_deductible_type import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibilityFieldDeductibleType,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibility import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibility,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_message import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldMessage,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_patient_responsibility import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldPatientResponsibility,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_patient_responsibility_field_deductible_type import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldPatientResponsibilityFieldDeductibleType,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_policy_id import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldPolicyId,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_provider import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldProvider,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_providers_element_type import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldProvidersElementType,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_state import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldState,
+    )
+    from .service_set_ready_v_1_response_service_eligibility_field_status import (
+        ServiceSetReadyV1ResponseServiceEligibilityFieldStatus,
+    )
+    from .service_set_ready_v_1_response_service_type import ServiceSetReadyV1ResponseServiceType
+    from .service_set_ready_v_1_response_service_type_field_note_field import (
+        ServiceSetReadyV1ResponseServiceTypeFieldNoteField,
+    )
+    from .service_set_ready_v_1_response_service_type_field_place_of_service import (
+        ServiceSetReadyV1ResponseServiceTypeFieldPlaceOfService,
+    )
+    from .service_set_ready_v_1_response_service_type_field_provider_type import (
+        ServiceSetReadyV1ResponseServiceTypeFieldProviderType,
+    )
+    from .service_set_ready_v_1_response_service_type_field_provider_types_element import (
+        ServiceSetReadyV1ResponseServiceTypeFieldProviderTypesElement,
+    )
+    from .service_set_ready_v_1_response_status import ServiceSetReadyV1ResponseStatus
+    from .service_set_ready_v_1_response_task import ServiceSetReadyV1ResponseTask
+    from .service_set_ready_v_1_response_tasks_element_type import ServiceSetReadyV1ResponseTasksElementType
     from .service_stream_v_1_response import ServiceStreamV1Response
     from .service_stream_v_1_response_cancellation_reason import ServiceStreamV1ResponseCancellationReason
     from .service_stream_v_1_response_claim_status import ServiceStreamV1ResponseClaimStatus
@@ -601,6 +703,54 @@ _dynamic_imports: typing.Dict[str, str] = {
     "ServiceNoteGetV1ResponseSignature": ".service_note_get_v_1_response_signature",
     "ServiceNoteGetV1ResponseSignatureFieldProvider": ".service_note_get_v_1_response_signature_field_provider",
     "ServiceNoteGetV1ResponseSignatureFieldProviderFieldType": ".service_note_get_v_1_response_signature_field_provider_field_type",
+    "ServiceSetReadyV1ParametersType": ".service_set_ready_v_1_parameters_type",
+    "ServiceSetReadyV1Request": ".service_set_ready_v_1_request",
+    "ServiceSetReadyV1Response": ".service_set_ready_v_1_response",
+    "ServiceSetReadyV1ResponseCancellationReason": ".service_set_ready_v_1_response_cancellation_reason",
+    "ServiceSetReadyV1ResponseClaimStatus": ".service_set_ready_v_1_response_claim_status",
+    "ServiceSetReadyV1ResponseCoverageStatus": ".service_set_ready_v_1_response_coverage_status",
+    "ServiceSetReadyV1ResponseLocation": ".service_set_ready_v_1_response_location",
+    "ServiceSetReadyV1ResponseLocationFieldCountry": ".service_set_ready_v_1_response_location_field_country",
+    "ServiceSetReadyV1ResponseLocationFieldState": ".service_set_ready_v_1_response_location_field_state",
+    "ServiceSetReadyV1ResponseMetadata": ".service_set_ready_v_1_response_metadata",
+    "ServiceSetReadyV1ResponsePatientResponsibility": ".service_set_ready_v_1_response_patient_responsibility",
+    "ServiceSetReadyV1ResponsePatientResponsibilityFieldAmount": ".service_set_ready_v_1_response_patient_responsibility_field_amount",
+    "ServiceSetReadyV1ResponsePatientResponsibilityFieldAmountFieldDeductibleType": ".service_set_ready_v_1_response_patient_responsibility_field_amount_field_deductible_type",
+    "ServiceSetReadyV1ResponsePatientResponsibilityFieldStatus": ".service_set_ready_v_1_response_patient_responsibility_field_status",
+    "ServiceSetReadyV1ResponsePayment": ".service_set_ready_v_1_response_payment",
+    "ServiceSetReadyV1ResponsePaymentsElementType": ".service_set_ready_v_1_response_payments_element_type",
+    "ServiceSetReadyV1ResponseProvider": ".service_set_ready_v_1_response_provider",
+    "ServiceSetReadyV1ResponseProviderFieldType": ".service_set_ready_v_1_response_provider_field_type",
+    "ServiceSetReadyV1ResponseResponsibleParty": ".service_set_ready_v_1_response_responsible_party",
+    "ServiceSetReadyV1ResponseServiceEligibility": ".service_set_ready_v_1_response_service_eligibility",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldClinicalInfo": ".service_set_ready_v_1_response_service_eligibility_field_clinical_info",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldClinicalInfoFieldDiagnosis": ".service_set_ready_v_1_response_service_eligibility_field_clinical_info_field_diagnosis",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementCondition": ".service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_condition",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementConditionsElementDiagnosis": ".service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_conditions_element_diagnosis",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimit": ".service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldMetric": ".service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_metric",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldPeriod": ".service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_period",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldType": ".service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_type",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldUnits": ".service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_units",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibility": ".service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibilityFieldDeductibleType": ".service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility_field_deductible_type",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibility": ".service_set_ready_v_1_response_service_eligibility_field_conditional_patient_responsibility",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldMessage": ".service_set_ready_v_1_response_service_eligibility_field_message",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldPatientResponsibility": ".service_set_ready_v_1_response_service_eligibility_field_patient_responsibility",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldPatientResponsibilityFieldDeductibleType": ".service_set_ready_v_1_response_service_eligibility_field_patient_responsibility_field_deductible_type",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldPolicyId": ".service_set_ready_v_1_response_service_eligibility_field_policy_id",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldProvider": ".service_set_ready_v_1_response_service_eligibility_field_provider",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldProvidersElementType": ".service_set_ready_v_1_response_service_eligibility_field_providers_element_type",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldState": ".service_set_ready_v_1_response_service_eligibility_field_state",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldStatus": ".service_set_ready_v_1_response_service_eligibility_field_status",
+    "ServiceSetReadyV1ResponseServiceType": ".service_set_ready_v_1_response_service_type",
+    "ServiceSetReadyV1ResponseServiceTypeFieldNoteField": ".service_set_ready_v_1_response_service_type_field_note_field",
+    "ServiceSetReadyV1ResponseServiceTypeFieldPlaceOfService": ".service_set_ready_v_1_response_service_type_field_place_of_service",
+    "ServiceSetReadyV1ResponseServiceTypeFieldProviderType": ".service_set_ready_v_1_response_service_type_field_provider_type",
+    "ServiceSetReadyV1ResponseServiceTypeFieldProviderTypesElement": ".service_set_ready_v_1_response_service_type_field_provider_types_element",
+    "ServiceSetReadyV1ResponseStatus": ".service_set_ready_v_1_response_status",
+    "ServiceSetReadyV1ResponseTask": ".service_set_ready_v_1_response_task",
+    "ServiceSetReadyV1ResponseTasksElementType": ".service_set_ready_v_1_response_tasks_element_type",
     "ServiceStreamV1Response": ".service_stream_v_1_response",
     "ServiceStreamV1ResponseCancellationReason": ".service_stream_v_1_response_cancellation_reason",
     "ServiceStreamV1ResponseClaimStatus": ".service_stream_v_1_response_claim_status",
@@ -849,6 +999,54 @@ __all__ = [
     "ServiceNoteGetV1ResponseSignature",
     "ServiceNoteGetV1ResponseSignatureFieldProvider",
     "ServiceNoteGetV1ResponseSignatureFieldProviderFieldType",
+    "ServiceSetReadyV1ParametersType",
+    "ServiceSetReadyV1Request",
+    "ServiceSetReadyV1Response",
+    "ServiceSetReadyV1ResponseCancellationReason",
+    "ServiceSetReadyV1ResponseClaimStatus",
+    "ServiceSetReadyV1ResponseCoverageStatus",
+    "ServiceSetReadyV1ResponseLocation",
+    "ServiceSetReadyV1ResponseLocationFieldCountry",
+    "ServiceSetReadyV1ResponseLocationFieldState",
+    "ServiceSetReadyV1ResponseMetadata",
+    "ServiceSetReadyV1ResponsePatientResponsibility",
+    "ServiceSetReadyV1ResponsePatientResponsibilityFieldAmount",
+    "ServiceSetReadyV1ResponsePatientResponsibilityFieldAmountFieldDeductibleType",
+    "ServiceSetReadyV1ResponsePatientResponsibilityFieldStatus",
+    "ServiceSetReadyV1ResponsePayment",
+    "ServiceSetReadyV1ResponsePaymentsElementType",
+    "ServiceSetReadyV1ResponseProvider",
+    "ServiceSetReadyV1ResponseProviderFieldType",
+    "ServiceSetReadyV1ResponseResponsibleParty",
+    "ServiceSetReadyV1ResponseServiceEligibility",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldClinicalInfo",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldClinicalInfoFieldDiagnosis",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementCondition",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementConditionsElementDiagnosis",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimit",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldMetric",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldPeriod",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldType",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldUnits",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibility",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibilityFieldDeductibleType",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldConditionalPatientResponsibility",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldMessage",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldPatientResponsibility",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldPatientResponsibilityFieldDeductibleType",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldPolicyId",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldProvider",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldProvidersElementType",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldState",
+    "ServiceSetReadyV1ResponseServiceEligibilityFieldStatus",
+    "ServiceSetReadyV1ResponseServiceType",
+    "ServiceSetReadyV1ResponseServiceTypeFieldNoteField",
+    "ServiceSetReadyV1ResponseServiceTypeFieldPlaceOfService",
+    "ServiceSetReadyV1ResponseServiceTypeFieldProviderType",
+    "ServiceSetReadyV1ResponseServiceTypeFieldProviderTypesElement",
+    "ServiceSetReadyV1ResponseStatus",
+    "ServiceSetReadyV1ResponseTask",
+    "ServiceSetReadyV1ResponseTasksElementType",
     "ServiceStreamV1Response",
     "ServiceStreamV1ResponseCancellationReason",
     "ServiceStreamV1ResponseClaimStatus",

@@ -4081,6 +4081,83 @@ client.services.bill_service(
 </dl>
 </details>
 
+<details><summary><code>client.services.<a href="src/usebridge_api/services/client.py">set_ready_service</a>(...) -> ServiceSetReadyV1Response</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```python
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+
+client = BridgeApiClient(
+    api_key="<value>",
+    environment=BridgeApiClientEnvironment.PRODUCTION,
+)
+
+client.services.set_ready_service(
+    id="id",
+    type="PATIENT_CONSENT",
+    ready=True,
+)
+
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**id:** `str` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**type:** `ServiceSetReadyV1ParametersType` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request:** `ServiceSetReadyV1Request` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
 <details><summary><code>client.services.<a href="src/usebridge_api/services/client.py">get_service_note</a>(...) -> ServiceNoteGetV1Response</code></summary>
 <dl>
 <dd>
