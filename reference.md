@@ -1288,6 +1288,154 @@ client.events.get_event(
 </dl>
 </details>
 
+## Integrations HealthiePatient
+<details><summary><code>client.integrations.healthie_patient.<a href="src/usebridge_api/integrations/healthie_patient/client.py">get_healthie_client_healthie_patient</a>(...) -> HealthiePatientGetHealthieClientV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Returns the linked Bridge Patient for a Healthie client id.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```python
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+
+client = BridgeApiClient(
+    api_key="<value>",
+    environment=BridgeApiClientEnvironment.PRODUCTION,
+)
+
+client.integrations.healthie_patient.get_healthie_client_healthie_patient(
+    id="id",
+)
+
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**id:** `str` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+## Integrations HealthiePatients
+<details><summary><code>client.integrations.healthie_patients.<a href="src/usebridge_api/integrations/healthie_patients/client.py">ensure_healthie_client_healthie_patient</a>(...) -> HealthiePatientEnsureHealthieClientV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Resolves or syncs a Bridge Patient for a Healthie client id. Returns the same shape as Patient create (including a fresh patient token).
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```python
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+
+client = BridgeApiClient(
+    api_key="<value>",
+    environment=BridgeApiClientEnvironment.PRODUCTION,
+)
+
+client.integrations.healthie_patients.ensure_healthie_client_healthie_patient(
+    healthie_client_id="healthieClientId",
+)
+
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `HealthiePatientEnsureHealthieClientV1Request` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
 ## Notes
 <details><summary><code>client.notes.<a href="src/usebridge_api/notes/client.py">create_note</a>(...) -> NoteCreateV1Response</code></summary>
 <dl>

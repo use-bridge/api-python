@@ -16,6 +16,7 @@ if typing.TYPE_CHECKING:
     from .consent.client import AsyncConsentClient, ConsentClient
     from .consent_versions.client import AsyncConsentVersionsClient, ConsentVersionsClient
     from .events.client import AsyncEventsClient, EventsClient
+    from .integrations.client import AsyncIntegrationsClient, IntegrationsClient
     from .notes.client import AsyncNotesClient, NotesClient
     from .patient_token.client import AsyncPatientTokenClient, PatientTokenClient
     from .patients.client import AsyncPatientsClient, PatientsClient
@@ -115,6 +116,7 @@ class BridgeApiClient:
         self._consent_versions: typing.Optional[ConsentVersionsClient] = None
         self._consent: typing.Optional[ConsentClient] = None
         self._events: typing.Optional[EventsClient] = None
+        self._integrations: typing.Optional[IntegrationsClient] = None
         self._notes: typing.Optional[NotesClient] = None
         self._patient_token: typing.Optional[PatientTokenClient] = None
         self._patients: typing.Optional[PatientsClient] = None
@@ -160,6 +162,14 @@ class BridgeApiClient:
 
             self._events = EventsClient(client_wrapper=self._client_wrapper)
         return self._events
+
+    @property
+    def integrations(self):
+        if self._integrations is None:
+            from .integrations.client import IntegrationsClient  # noqa: E402
+
+            self._integrations = IntegrationsClient(client_wrapper=self._client_wrapper)
+        return self._integrations
 
     @property
     def notes(self):
@@ -366,6 +376,7 @@ class AsyncBridgeApiClient:
         self._consent_versions: typing.Optional[AsyncConsentVersionsClient] = None
         self._consent: typing.Optional[AsyncConsentClient] = None
         self._events: typing.Optional[AsyncEventsClient] = None
+        self._integrations: typing.Optional[AsyncIntegrationsClient] = None
         self._notes: typing.Optional[AsyncNotesClient] = None
         self._patient_token: typing.Optional[AsyncPatientTokenClient] = None
         self._patients: typing.Optional[AsyncPatientsClient] = None
@@ -411,6 +422,14 @@ class AsyncBridgeApiClient:
 
             self._events = AsyncEventsClient(client_wrapper=self._client_wrapper)
         return self._events
+
+    @property
+    def integrations(self):
+        if self._integrations is None:
+            from .integrations.client import AsyncIntegrationsClient  # noqa: E402
+
+            self._integrations = AsyncIntegrationsClient(client_wrapper=self._client_wrapper)
+        return self._integrations
 
     @property
     def notes(self):
