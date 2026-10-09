@@ -32,6 +32,7 @@ ServiceCreateV2ResponseTasksElementType = typing.Union[
         "BILLING_FREQUENCY_LIMIT",
         "PATIENT_RECONSENT",
         "PROVIDER_CHANGED",
+        "PATIENT_DOB",
     ],
     typing.Any,
 ]

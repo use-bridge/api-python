@@ -32,6 +32,7 @@ ServiceSetReadyV1ParametersType = typing.Union[
         "BILLING_FREQUENCY_LIMIT",
         "PATIENT_RECONSENT",
         "PROVIDER_CHANGED",
+        "PATIENT_DOB",
     ],
     typing.Any,
 ]
