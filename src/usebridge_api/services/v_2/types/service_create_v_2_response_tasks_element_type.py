@@ -27,6 +27,7 @@ ServiceCreateV2ResponseTasksElementType = typing.Union[
         "PATIENT_CONSENT_EXPIRED",
         "INVALID_DATE_RANGE",
         "INSUFFICIENT_MONITORING_DATA",
+        "INVALID_MONITORING_DATA",
         "MISMATCHED_ICD10",
         "BILLING_FREQUENCY_LIMIT",
         "PATIENT_RECONSENT",
