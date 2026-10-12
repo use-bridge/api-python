@@ -10,6 +10,8 @@ from .raw_client import AsyncRawIntegrationsClient, RawIntegrationsClient
 if typing.TYPE_CHECKING:
     from .healthie_patient.client import AsyncHealthiePatientClient, HealthiePatientClient
     from .healthie_patients.client import AsyncHealthiePatientsClient, HealthiePatientsClient
+    from .healthie_service.client import AsyncHealthieServiceClient, HealthieServiceClient
+    from .healthie_services.client import AsyncHealthieServicesClient, HealthieServicesClient
 
 
 class IntegrationsClient:
@@ -18,6 +20,8 @@ class IntegrationsClient:
         self._client_wrapper = client_wrapper
         self._healthie_patient: typing.Optional[HealthiePatientClient] = None
         self._healthie_patients: typing.Optional[HealthiePatientsClient] = None
+        self._healthie_service: typing.Optional[HealthieServiceClient] = None
+        self._healthie_services: typing.Optional[HealthieServicesClient] = None
 
     @property
     def with_raw_response(self) -> RawIntegrationsClient:
@@ -46,6 +50,22 @@ class IntegrationsClient:
             self._healthie_patients = HealthiePatientsClient(client_wrapper=self._client_wrapper)
         return self._healthie_patients
 
+    @property
+    def healthie_service(self):
+        if self._healthie_service is None:
+            from .healthie_service.client import HealthieServiceClient  # noqa: E402
+
+            self._healthie_service = HealthieServiceClient(client_wrapper=self._client_wrapper)
+        return self._healthie_service
+
+    @property
+    def healthie_services(self):
+        if self._healthie_services is None:
+            from .healthie_services.client import HealthieServicesClient  # noqa: E402
+
+            self._healthie_services = HealthieServicesClient(client_wrapper=self._client_wrapper)
+        return self._healthie_services
+
 
 class AsyncIntegrationsClient:
     def __init__(self, *, client_wrapper: AsyncClientWrapper):
@@ -53,6 +73,8 @@ class AsyncIntegrationsClient:
         self._client_wrapper = client_wrapper
         self._healthie_patient: typing.Optional[AsyncHealthiePatientClient] = None
         self._healthie_patients: typing.Optional[AsyncHealthiePatientsClient] = None
+        self._healthie_service: typing.Optional[AsyncHealthieServiceClient] = None
+        self._healthie_services: typing.Optional[AsyncHealthieServicesClient] = None
 
     @property
     def with_raw_response(self) -> AsyncRawIntegrationsClient:
@@ -80,3 +102,19 @@ class AsyncIntegrationsClient:
 
             self._healthie_patients = AsyncHealthiePatientsClient(client_wrapper=self._client_wrapper)
         return self._healthie_patients
+
+    @property
+    def healthie_service(self):
+        if self._healthie_service is None:
+            from .healthie_service.client import AsyncHealthieServiceClient  # noqa: E402
+
+            self._healthie_service = AsyncHealthieServiceClient(client_wrapper=self._client_wrapper)
+        return self._healthie_service
+
+    @property
+    def healthie_services(self):
+        if self._healthie_services is None:
+            from .healthie_services.client import AsyncHealthieServicesClient  # noqa: E402
+
+            self._healthie_services = AsyncHealthieServicesClient(client_wrapper=self._client_wrapper)
+        return self._healthie_services
