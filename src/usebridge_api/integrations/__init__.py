@@ -6,7 +6,35 @@ import typing
 from importlib import import_module
 
 if typing.TYPE_CHECKING:
-    from . import healthie_patient, healthie_patients, healthie_service, healthie_services
+    from . import (
+        canvas_patient,
+        canvas_patients,
+        healthie_patient,
+        healthie_patients,
+        healthie_service,
+        healthie_services,
+    )
+    from .canvas_patient import (
+        CanvasPatientGetCanvasPatientV1Response,
+        CanvasPatientGetCanvasPatientV1ResponseAccount,
+        CanvasPatientGetCanvasPatientV1ResponseAccountFieldStatus,
+        CanvasPatientGetCanvasPatientV1ResponseAddress,
+        CanvasPatientGetCanvasPatientV1ResponseAddressFieldCountry,
+        CanvasPatientGetCanvasPatientV1ResponseAddressFieldState,
+        CanvasPatientGetCanvasPatientV1ResponseCoverage,
+        CanvasPatientGetCanvasPatientV1ResponseMetadata,
+    )
+    from .canvas_patients import (
+        CanvasPatientEnsureCanvasPatientV1Request,
+        CanvasPatientEnsureCanvasPatientV1Response,
+        CanvasPatientEnsureCanvasPatientV1ResponseAccount,
+        CanvasPatientEnsureCanvasPatientV1ResponseAccountFieldStatus,
+        CanvasPatientEnsureCanvasPatientV1ResponseAddress,
+        CanvasPatientEnsureCanvasPatientV1ResponseAddressFieldCountry,
+        CanvasPatientEnsureCanvasPatientV1ResponseAddressFieldState,
+        CanvasPatientEnsureCanvasPatientV1ResponseCoverage,
+        CanvasPatientEnsureCanvasPatientV1ResponseMetadata,
+    )
     from .healthie_patient import (
         HealthiePatientGetHealthieClientV1Response,
         HealthiePatientGetHealthieClientV1ResponseAccount,
@@ -126,6 +154,23 @@ if typing.TYPE_CHECKING:
         HealthieServiceEnsureHealthieAppointmentV1ResponseTasksElementType,
     )
 _dynamic_imports: typing.Dict[str, str] = {
+    "CanvasPatientEnsureCanvasPatientV1Request": ".canvas_patients",
+    "CanvasPatientEnsureCanvasPatientV1Response": ".canvas_patients",
+    "CanvasPatientEnsureCanvasPatientV1ResponseAccount": ".canvas_patients",
+    "CanvasPatientEnsureCanvasPatientV1ResponseAccountFieldStatus": ".canvas_patients",
+    "CanvasPatientEnsureCanvasPatientV1ResponseAddress": ".canvas_patients",
+    "CanvasPatientEnsureCanvasPatientV1ResponseAddressFieldCountry": ".canvas_patients",
+    "CanvasPatientEnsureCanvasPatientV1ResponseAddressFieldState": ".canvas_patients",
+    "CanvasPatientEnsureCanvasPatientV1ResponseCoverage": ".canvas_patients",
+    "CanvasPatientEnsureCanvasPatientV1ResponseMetadata": ".canvas_patients",
+    "CanvasPatientGetCanvasPatientV1Response": ".canvas_patient",
+    "CanvasPatientGetCanvasPatientV1ResponseAccount": ".canvas_patient",
+    "CanvasPatientGetCanvasPatientV1ResponseAccountFieldStatus": ".canvas_patient",
+    "CanvasPatientGetCanvasPatientV1ResponseAddress": ".canvas_patient",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldCountry": ".canvas_patient",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldState": ".canvas_patient",
+    "CanvasPatientGetCanvasPatientV1ResponseCoverage": ".canvas_patient",
+    "CanvasPatientGetCanvasPatientV1ResponseMetadata": ".canvas_patient",
     "HealthiePatientEnsureHealthieClientV1Request": ".healthie_patients",
     "HealthiePatientEnsureHealthieClientV1Response": ".healthie_patients",
     "HealthiePatientEnsureHealthieClientV1ResponseAccount": ".healthie_patients",
@@ -236,6 +281,8 @@ _dynamic_imports: typing.Dict[str, str] = {
     "HealthieServiceGetHealthieAppointmentV1ResponseStatus": ".healthie_service",
     "HealthieServiceGetHealthieAppointmentV1ResponseTask": ".healthie_service",
     "HealthieServiceGetHealthieAppointmentV1ResponseTasksElementType": ".healthie_service",
+    "canvas_patient": ".canvas_patient",
+    "canvas_patients": ".canvas_patients",
     "healthie_patient": ".healthie_patient",
     "healthie_patients": ".healthie_patients",
     "healthie_service": ".healthie_service",
@@ -265,6 +312,23 @@ def __dir__():
 
 
 __all__ = [
+    "CanvasPatientEnsureCanvasPatientV1Request",
+    "CanvasPatientEnsureCanvasPatientV1Response",
+    "CanvasPatientEnsureCanvasPatientV1ResponseAccount",
+    "CanvasPatientEnsureCanvasPatientV1ResponseAccountFieldStatus",
+    "CanvasPatientEnsureCanvasPatientV1ResponseAddress",
+    "CanvasPatientEnsureCanvasPatientV1ResponseAddressFieldCountry",
+    "CanvasPatientEnsureCanvasPatientV1ResponseAddressFieldState",
+    "CanvasPatientEnsureCanvasPatientV1ResponseCoverage",
+    "CanvasPatientEnsureCanvasPatientV1ResponseMetadata",
+    "CanvasPatientGetCanvasPatientV1Response",
+    "CanvasPatientGetCanvasPatientV1ResponseAccount",
+    "CanvasPatientGetCanvasPatientV1ResponseAccountFieldStatus",
+    "CanvasPatientGetCanvasPatientV1ResponseAddress",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldCountry",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldState",
+    "CanvasPatientGetCanvasPatientV1ResponseCoverage",
+    "CanvasPatientGetCanvasPatientV1ResponseMetadata",
     "HealthiePatientEnsureHealthieClientV1Request",
     "HealthiePatientEnsureHealthieClientV1Response",
     "HealthiePatientEnsureHealthieClientV1ResponseAccount",
@@ -375,6 +439,8 @@ __all__ = [
     "HealthieServiceGetHealthieAppointmentV1ResponseStatus",
     "HealthieServiceGetHealthieAppointmentV1ResponseTask",
     "HealthieServiceGetHealthieAppointmentV1ResponseTasksElementType",
+    "canvas_patient",
+    "canvas_patients",
     "healthie_patient",
     "healthie_patients",
     "healthie_service",

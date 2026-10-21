@@ -1288,6 +1288,154 @@ client.events.get_event(
 </dl>
 </details>
 
+## Integrations CanvasPatient
+<details><summary><code>client.integrations.canvas_patient.<a href="src/usebridge_api/integrations/canvas_patient/client.py">get_canvas_patient_canvas_patient</a>(...) -> CanvasPatientGetCanvasPatientV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Returns the linked Bridge Patient for a Canvas Patient ID.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```python
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+
+client = BridgeApiClient(
+    api_key="<value>",
+    environment=BridgeApiClientEnvironment.PRODUCTION,
+)
+
+client.integrations.canvas_patient.get_canvas_patient_canvas_patient(
+    id="id",
+)
+
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**id:** `str` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+## Integrations CanvasPatients
+<details><summary><code>client.integrations.canvas_patients.<a href="src/usebridge_api/integrations/canvas_patients/client.py">ensure_canvas_patient_canvas_patient</a>(...) -> CanvasPatientEnsureCanvasPatientV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Resolves or syncs a Bridge Patient for a Canvas Patient ID. Returns the same shape as Patient create, including a fresh patient token.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```python
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+
+client = BridgeApiClient(
+    api_key="<value>",
+    environment=BridgeApiClientEnvironment.PRODUCTION,
+)
+
+client.integrations.canvas_patients.ensure_canvas_patient_canvas_patient(
+    canvas_patient_id="canvasPatientId",
+)
+
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CanvasPatientEnsureCanvasPatientV1Request` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
 ## Integrations HealthiePatient
 <details><summary><code>client.integrations.healthie_patient.<a href="src/usebridge_api/integrations/healthie_patient/client.py">get_healthie_client_healthie_patient</a>(...) -> HealthiePatientGetHealthieClientV1Response</code></summary>
 <dl>
