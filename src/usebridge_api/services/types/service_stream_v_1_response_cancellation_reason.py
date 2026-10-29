@@ -2,4 +2,4 @@
 
 import typing
 
-ServiceStreamV1ResponseCancellationReason = typing.Union[typing.Literal["NO_SHOW"], typing.Any]
+ServiceStreamV1ResponseCancellationReason = typing.Union[typing.Literal["NO_SHOW", "VOID"], typing.Any]

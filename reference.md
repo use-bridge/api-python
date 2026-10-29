@@ -1288,6 +1288,154 @@ client.events.get_event(
 </dl>
 </details>
 
+## Integrations CanvasEncounter
+<details><summary><code>client.integrations.canvas_encounter.<a href="src/usebridge_api/integrations/canvas_encounter/client.py">get_canvas_encounter_canvas_encounter</a>(...) -> CanvasEncounterGetCanvasEncounterV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Returns the linked Bridge Service for a Canvas Encounter ID. This lookup never calls Canvas.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```python
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+
+client = BridgeApiClient(
+    api_key="<value>",
+    environment=BridgeApiClientEnvironment.PRODUCTION,
+)
+
+client.integrations.canvas_encounter.get_canvas_encounter_canvas_encounter(
+    id="id",
+)
+
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**id:** `str` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+## Integrations CanvasEncounters
+<details><summary><code>client.integrations.canvas_encounters.<a href="src/usebridge_api/integrations/canvas_encounters/client.py">ensure_canvas_encounter_canvas_encounter</a>(...) -> CanvasEncounterEnsureCanvasEncounterV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Resolves or syncs a Bridge Service for a Canvas Encounter ID. One Encounter is one Service.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```python
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+
+client = BridgeApiClient(
+    api_key="<value>",
+    environment=BridgeApiClientEnvironment.PRODUCTION,
+)
+
+client.integrations.canvas_encounters.ensure_canvas_encounter_canvas_encounter(
+    canvas_encounter_id="canvasEncounterId",
+)
+
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CanvasEncounterEnsureCanvasEncounterV1Request` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
 ## Integrations CanvasPatient
 <details><summary><code>client.integrations.canvas_patient.<a href="src/usebridge_api/integrations/canvas_patient/client.py">get_canvas_patient_canvas_patient</a>(...) -> CanvasPatientGetCanvasPatientV1Response</code></summary>
 <dl>

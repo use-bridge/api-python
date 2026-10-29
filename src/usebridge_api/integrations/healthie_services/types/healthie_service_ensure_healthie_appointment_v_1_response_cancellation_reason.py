@@ -3,5 +3,5 @@
 import typing
 
 HealthieServiceEnsureHealthieAppointmentV1ResponseCancellationReason = typing.Union[
-    typing.Literal["NO_SHOW"], typing.Any
+    typing.Literal["NO_SHOW", "VOID"], typing.Any
 ]

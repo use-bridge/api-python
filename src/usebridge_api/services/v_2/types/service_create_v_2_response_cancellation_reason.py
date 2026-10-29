@@ -2,4 +2,4 @@
 
 import typing
 
-ServiceCreateV2ResponseCancellationReason = typing.Union[typing.Literal["NO_SHOW"], typing.Any]
+ServiceCreateV2ResponseCancellationReason = typing.Union[typing.Literal["NO_SHOW", "VOID"], typing.Any]

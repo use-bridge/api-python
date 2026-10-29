@@ -8,6 +8,8 @@ from ..core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
 from .raw_client import AsyncRawIntegrationsClient, RawIntegrationsClient
 
 if typing.TYPE_CHECKING:
+    from .canvas_encounter.client import AsyncCanvasEncounterClient, CanvasEncounterClient
+    from .canvas_encounters.client import AsyncCanvasEncountersClient, CanvasEncountersClient
     from .canvas_patient.client import AsyncCanvasPatientClient, CanvasPatientClient
     from .canvas_patients.client import AsyncCanvasPatientsClient, CanvasPatientsClient
     from .healthie_patient.client import AsyncHealthiePatientClient, HealthiePatientClient
@@ -20,6 +22,8 @@ class IntegrationsClient:
     def __init__(self, *, client_wrapper: SyncClientWrapper):
         self._raw_client = RawIntegrationsClient(client_wrapper=client_wrapper)
         self._client_wrapper = client_wrapper
+        self._canvas_encounter: typing.Optional[CanvasEncounterClient] = None
+        self._canvas_encounters: typing.Optional[CanvasEncountersClient] = None
         self._canvas_patient: typing.Optional[CanvasPatientClient] = None
         self._canvas_patients: typing.Optional[CanvasPatientsClient] = None
         self._healthie_patient: typing.Optional[HealthiePatientClient] = None
@@ -37,6 +41,22 @@ class IntegrationsClient:
         RawIntegrationsClient
         """
         return self._raw_client
+
+    @property
+    def canvas_encounter(self):
+        if self._canvas_encounter is None:
+            from .canvas_encounter.client import CanvasEncounterClient  # noqa: E402
+
+            self._canvas_encounter = CanvasEncounterClient(client_wrapper=self._client_wrapper)
+        return self._canvas_encounter
+
+    @property
+    def canvas_encounters(self):
+        if self._canvas_encounters is None:
+            from .canvas_encounters.client import CanvasEncountersClient  # noqa: E402
+
+            self._canvas_encounters = CanvasEncountersClient(client_wrapper=self._client_wrapper)
+        return self._canvas_encounters
 
     @property
     def canvas_patient(self):
@@ -91,6 +111,8 @@ class AsyncIntegrationsClient:
     def __init__(self, *, client_wrapper: AsyncClientWrapper):
         self._raw_client = AsyncRawIntegrationsClient(client_wrapper=client_wrapper)
         self._client_wrapper = client_wrapper
+        self._canvas_encounter: typing.Optional[AsyncCanvasEncounterClient] = None
+        self._canvas_encounters: typing.Optional[AsyncCanvasEncountersClient] = None
         self._canvas_patient: typing.Optional[AsyncCanvasPatientClient] = None
         self._canvas_patients: typing.Optional[AsyncCanvasPatientsClient] = None
         self._healthie_patient: typing.Optional[AsyncHealthiePatientClient] = None
@@ -108,6 +130,22 @@ class AsyncIntegrationsClient:
         AsyncRawIntegrationsClient
         """
         return self._raw_client
+
+    @property
+    def canvas_encounter(self):
+        if self._canvas_encounter is None:
+            from .canvas_encounter.client import AsyncCanvasEncounterClient  # noqa: E402
+
+            self._canvas_encounter = AsyncCanvasEncounterClient(client_wrapper=self._client_wrapper)
+        return self._canvas_encounter
+
+    @property
+    def canvas_encounters(self):
+        if self._canvas_encounters is None:
+            from .canvas_encounters.client import AsyncCanvasEncountersClient  # noqa: E402
+
+            self._canvas_encounters = AsyncCanvasEncountersClient(client_wrapper=self._client_wrapper)
+        return self._canvas_encounters
 
     @property
     def canvas_patient(self):
