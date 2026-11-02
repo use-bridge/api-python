@@ -32,9 +32,9 @@ class RawV2Client:
         *,
         first_name: str,
         last_name: str,
-        email: str,
-        date_of_birth: dt.datetime,
         external_id: typing.Optional[str] = OMIT,
+        email: typing.Optional[str] = OMIT,
+        date_of_birth: typing.Optional[dt.datetime] = OMIT,
         phone: typing.Optional[str] = OMIT,
         address: typing.Optional[PatientCreateV2RequestAddress] = OMIT,
         coverage: typing.Optional[typing.Sequence[PatientCreateV2RequestCoverage]] = OMIT,
@@ -48,11 +48,11 @@ class RawV2Client:
 
         last_name : str
 
-        email : str
-
-        date_of_birth : dt.datetime
-
         external_id : typing.Optional[str]
+
+        email : typing.Optional[str]
+
+        date_of_birth : typing.Optional[dt.datetime]
 
         phone : typing.Optional[str]
 
@@ -164,9 +164,9 @@ class AsyncRawV2Client:
         *,
         first_name: str,
         last_name: str,
-        email: str,
-        date_of_birth: dt.datetime,
         external_id: typing.Optional[str] = OMIT,
+        email: typing.Optional[str] = OMIT,
+        date_of_birth: typing.Optional[dt.datetime] = OMIT,
         phone: typing.Optional[str] = OMIT,
         address: typing.Optional[PatientCreateV2RequestAddress] = OMIT,
         coverage: typing.Optional[typing.Sequence[PatientCreateV2RequestCoverage]] = OMIT,
@@ -180,11 +180,11 @@ class AsyncRawV2Client:
 
         last_name : str
 
-        email : str
-
-        date_of_birth : dt.datetime
-
         external_id : typing.Optional[str]
+
+        email : typing.Optional[str]
+
+        date_of_birth : typing.Optional[dt.datetime]
 
         phone : typing.Optional[str]
 

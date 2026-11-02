@@ -2498,7 +2498,6 @@ client.patients.revalidate_patient(
 ```python
 from usebridge_api import BridgeApiClient
 from usebridge_api.environment import BridgeApiClientEnvironment
-import datetime
 
 client = BridgeApiClient(
     api_key="<value>",
@@ -2508,8 +2507,6 @@ client = BridgeApiClient(
 client.patients.v_2.create_patient(
     first_name="firstName",
     last_name="lastName",
-    email="email",
-    date_of_birth=datetime.datetime.fromisoformat("2024-01-15T09:30:00+00:00"),
 )
 
 ```

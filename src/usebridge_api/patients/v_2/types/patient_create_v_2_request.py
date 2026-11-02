@@ -18,10 +18,10 @@ class PatientCreateV2Request(UniversalBaseModel):
     ] = None
     first_name: typing_extensions.Annotated[str, FieldMetadata(alias="firstName"), pydantic.Field(alias="firstName")]
     last_name: typing_extensions.Annotated[str, FieldMetadata(alias="lastName"), pydantic.Field(alias="lastName")]
-    email: str
+    email: typing.Optional[str] = None
     date_of_birth: typing_extensions.Annotated[
-        dt.datetime, FieldMetadata(alias="dateOfBirth"), pydantic.Field(alias="dateOfBirth")
-    ]
+        typing.Optional[dt.datetime], FieldMetadata(alias="dateOfBirth"), pydantic.Field(alias="dateOfBirth")
+    ] = None
     phone: typing.Optional[str] = None
     address: typing.Optional[PatientCreateV2RequestAddress] = None
     coverage: typing.Optional[typing.List[PatientCreateV2RequestCoverage]] = pydantic.Field(default=None)

@@ -36,9 +36,9 @@ class V2Client:
         *,
         first_name: str,
         last_name: str,
-        email: str,
-        date_of_birth: dt.datetime,
         external_id: typing.Optional[str] = OMIT,
+        email: typing.Optional[str] = OMIT,
+        date_of_birth: typing.Optional[dt.datetime] = OMIT,
         phone: typing.Optional[str] = OMIT,
         address: typing.Optional[PatientCreateV2RequestAddress] = OMIT,
         coverage: typing.Optional[typing.Sequence[PatientCreateV2RequestCoverage]] = OMIT,
@@ -52,11 +52,11 @@ class V2Client:
 
         last_name : str
 
-        email : str
-
-        date_of_birth : dt.datetime
-
         external_id : typing.Optional[str]
+
+        email : typing.Optional[str]
+
+        date_of_birth : typing.Optional[dt.datetime]
 
         phone : typing.Optional[str]
 
@@ -77,8 +77,6 @@ class V2Client:
 
         Examples
         --------
-        import datetime
-
         from usebridge_api import BridgeApiClient
 
         client = BridgeApiClient(
@@ -87,18 +85,14 @@ class V2Client:
         client.patients.v_2.create_patient(
             first_name="firstName",
             last_name="lastName",
-            email="email",
-            date_of_birth=datetime.datetime.fromisoformat(
-                "2024-01-15 09:30:00+00:00",
-            ),
         )
         """
         _response = self._raw_client.create_patient(
             first_name=first_name,
             last_name=last_name,
+            external_id=external_id,
             email=email,
             date_of_birth=date_of_birth,
-            external_id=external_id,
             phone=phone,
             address=address,
             coverage=coverage,
@@ -157,9 +151,9 @@ class AsyncV2Client:
         *,
         first_name: str,
         last_name: str,
-        email: str,
-        date_of_birth: dt.datetime,
         external_id: typing.Optional[str] = OMIT,
+        email: typing.Optional[str] = OMIT,
+        date_of_birth: typing.Optional[dt.datetime] = OMIT,
         phone: typing.Optional[str] = OMIT,
         address: typing.Optional[PatientCreateV2RequestAddress] = OMIT,
         coverage: typing.Optional[typing.Sequence[PatientCreateV2RequestCoverage]] = OMIT,
@@ -173,11 +167,11 @@ class AsyncV2Client:
 
         last_name : str
 
-        email : str
-
-        date_of_birth : dt.datetime
-
         external_id : typing.Optional[str]
+
+        email : typing.Optional[str]
+
+        date_of_birth : typing.Optional[dt.datetime]
 
         phone : typing.Optional[str]
 
@@ -199,7 +193,6 @@ class AsyncV2Client:
         Examples
         --------
         import asyncio
-        import datetime
 
         from usebridge_api import AsyncBridgeApiClient
 
@@ -212,10 +205,6 @@ class AsyncV2Client:
             await client.patients.v_2.create_patient(
                 first_name="firstName",
                 last_name="lastName",
-                email="email",
-                date_of_birth=datetime.datetime.fromisoformat(
-                    "2024-01-15 09:30:00+00:00",
-                ),
             )
 
 
@@ -224,9 +213,9 @@ class AsyncV2Client:
         _response = await self._raw_client.create_patient(
             first_name=first_name,
             last_name=last_name,
+            external_id=external_id,
             email=email,
             date_of_birth=date_of_birth,
-            external_id=external_id,
             phone=phone,
             address=address,
             coverage=coverage,

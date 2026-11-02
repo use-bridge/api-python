@@ -32,9 +32,9 @@ class HealthiePatientGetHealthieClientV1Response(UniversalBaseModel):
     first_name: typing_extensions.Annotated[str, FieldMetadata(alias="firstName"), pydantic.Field(alias="firstName")]
     last_name: typing_extensions.Annotated[str, FieldMetadata(alias="lastName"), pydantic.Field(alias="lastName")]
     date_of_birth: typing_extensions.Annotated[
-        dt.datetime, FieldMetadata(alias="dateOfBirth"), pydantic.Field(alias="dateOfBirth")
-    ]
-    email: str
+        typing.Optional[dt.datetime], FieldMetadata(alias="dateOfBirth"), pydantic.Field(alias="dateOfBirth")
+    ] = None
+    email: typing.Optional[str] = None
     phone: typing.Optional[str] = None
     address: typing.Optional[HealthiePatientGetHealthieClientV1ResponseAddress] = None
     metadata: typing.Optional[HealthiePatientGetHealthieClientV1ResponseMetadata] = pydantic.Field(default=None)

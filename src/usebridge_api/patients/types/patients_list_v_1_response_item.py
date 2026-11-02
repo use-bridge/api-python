@@ -28,9 +28,9 @@ class PatientsListV1ResponseItem(UniversalBaseModel):
     first_name: typing_extensions.Annotated[str, FieldMetadata(alias="firstName"), pydantic.Field(alias="firstName")]
     last_name: typing_extensions.Annotated[str, FieldMetadata(alias="lastName"), pydantic.Field(alias="lastName")]
     date_of_birth: typing_extensions.Annotated[
-        dt.datetime, FieldMetadata(alias="dateOfBirth"), pydantic.Field(alias="dateOfBirth")
-    ]
-    email: str
+        typing.Optional[dt.datetime], FieldMetadata(alias="dateOfBirth"), pydantic.Field(alias="dateOfBirth")
+    ] = None
+    email: typing.Optional[str] = None
     phone: typing.Optional[str] = None
     address: typing.Optional[PatientsListV1ResponseItemAddress] = None
     metadata: typing.Optional[PatientsListV1ResponseItemMetadata] = pydantic.Field(default=None)
