@@ -21,6 +21,10 @@ class PaymentCreateV1Request(UniversalBaseModel):
             description="Unique transaction ID associated with this payment, this must be unique. Use for deduplication, a 409 will be returned if trying to create another Payment with same `transactionId`.",
         ),
     ]
+    """
+    Unique transaction ID associated with this payment, this must be unique. Use for deduplication, a 409 will be returned if trying to create another Payment with same `transactionId`.
+    """
+
     type: PaymentCreateV1RequestType = pydantic.Field()
     """
     Denotes the type of Payment being registered, use `PATIENT` for any actual transaction being collected or refunded. Reserve `ADJUSTMENT` for manual/operational adjustments to balances, error corrections etc..
@@ -36,6 +40,10 @@ class PaymentCreateV1Request(UniversalBaseModel):
         FieldMetadata(alias="externalId"),
         pydantic.Field(alias="externalId", description="Associate with any External ID value, should also be unique"),
     ] = None
+    """
+    Associate with any External ID value, should also be unique
+    """
+
     memo: typing.Optional[str] = None
 
     if IS_PYDANTIC_V2:

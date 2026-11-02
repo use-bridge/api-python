@@ -20,6 +20,9 @@ class PolicyCreateV2RequestPerson(UniversalBaseModel):
         FieldMetadata(alias="dateOfBirth"),
         pydantic.Field(alias="dateOfBirth", description="Date, in the Patient's timezone, expressed as YYYY-MM-DD"),
     ]
+    """
+    Date, in the Patient's timezone, expressed as YYYY-MM-DD
+    """
 
     if IS_PYDANTIC_V2:
         model_config: typing.ClassVar[pydantic.ConfigDict] = pydantic.ConfigDict(extra="allow", frozen=True)  # type: ignore # Pydantic v2

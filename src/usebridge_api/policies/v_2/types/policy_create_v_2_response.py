@@ -52,6 +52,9 @@ class PolicyCreateV2Response(UniversalBaseModel):
         FieldMetadata(alias="_token"),
         pydantic.Field(alias="_token", description="Temporary access token to retrieve this Policy"),
     ]
+    """
+    Temporary access token to retrieve this Policy
+    """
 
     if IS_PYDANTIC_V2:
         model_config: typing.ClassVar[pydantic.ConfigDict] = pydantic.ConfigDict(extra="allow", frozen=True)  # type: ignore # Pydantic v2

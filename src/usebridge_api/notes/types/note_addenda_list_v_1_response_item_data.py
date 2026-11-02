@@ -33,11 +33,19 @@ class NoteAddendaListV1ResponseItemData(UniversalBaseModel):
             alias="MEDICATIONS", description="Array of medication names (e.g., ['Metformin 500mg', 'Lisinopril 10mg'])"
         ),
     ] = None
+    """
+    Array of medication names (e.g., ['Metformin 500mg', 'Lisinopril 10mg'])
+    """
+
     allergies: typing_extensions.Annotated[
         typing.Optional[typing.List[NoteAddendaListV1ResponseItemDataFieldAllergy]],
         FieldMetadata(alias="ALLERGIES"),
         pydantic.Field(alias="ALLERGIES", description="Array of allergies (e.g., ['Penicillin', 'Peanuts'])"),
     ] = None
+    """
+    Array of allergies (e.g., ['Penicillin', 'Peanuts'])
+    """
+
     subjective: typing_extensions.Annotated[
         typing.Optional[str], FieldMetadata(alias="SUBJECTIVE"), pydantic.Field(alias="SUBJECTIVE")
     ] = None
@@ -77,6 +85,10 @@ class NoteAddendaListV1ResponseItemData(UniversalBaseModel):
             description="Written description of time spent. Example: '10min spent preparing, 20min spent in visit, 5min spent documenting'",
         ),
     ] = None
+    """
+    Written description of time spent. Example: '10min spent preparing, 20min spent in visit, 5min spent documenting'
+    """
+
     individual_time_spent_minutes: typing_extensions.Annotated[
         typing.Optional[int],
         FieldMetadata(alias="INDIVIDUAL_TIME_SPENT_MINUTES"),
@@ -98,11 +110,19 @@ class NoteAddendaListV1ResponseItemData(UniversalBaseModel):
         FieldMetadata(alias="HEIGHT"),
         pydantic.Field(alias="HEIGHT", description="Patient height in inches (in)"),
     ] = None
+    """
+    Patient height in inches (in)
+    """
+
     weight: typing_extensions.Annotated[
         typing.Optional[int],
         FieldMetadata(alias="WEIGHT"),
         pydantic.Field(alias="WEIGHT", description="Patient weight in pounds (lb)"),
     ] = None
+    """
+    Patient weight in pounds (lb)
+    """
+
     prescription_written: typing_extensions.Annotated[
         typing.Optional[bool], FieldMetadata(alias="PRESCRIPTION_WRITTEN"), pydantic.Field(alias="PRESCRIPTION_WRITTEN")
     ] = None

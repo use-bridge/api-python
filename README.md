@@ -179,7 +179,7 @@ client = BridgeApiClient(..., timeout=20.0)
 
 # Override timeout for a specific method
 client.billing.estimate_charges.create_estimate_charge(..., request_options={
-    "timeout_in_seconds": 1
+    "timeout": 1
 })
 ```
 

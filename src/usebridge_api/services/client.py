@@ -471,7 +471,7 @@ class AsyncServicesClient:
 
 
         async def main() -> None:
-            response = await client.services.stream_service(
+            response = client.services.stream_service(
                 id="id",
             )
             async for chunk in response:

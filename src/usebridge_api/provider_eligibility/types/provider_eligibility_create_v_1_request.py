@@ -16,6 +16,10 @@ class ProviderEligibilityCreateV1Request(UniversalBaseModel):
         FieldMetadata(alias="dateOfService"),
         pydantic.Field(alias="dateOfService", description="Full ISO8601 timestamp, including timezone"),
     ]
+    """
+    Full ISO8601 timestamp, including timezone
+    """
+
     service_type_id: typing_extensions.Annotated[
         str, FieldMetadata(alias="serviceTypeId"), pydantic.Field(alias="serviceTypeId")
     ]

@@ -19,6 +19,10 @@ class ProviderEligibilityCreateV1Response(UniversalBaseModel):
         FieldMetadata(alias="validatedAt"),
         pydantic.Field(alias="validatedAt", description="Timestamp this was executed"),
     ]
+    """
+    Timestamp this was executed
+    """
+
     date_of_service: typing_extensions.Annotated[
         dt.datetime, FieldMetadata(alias="dateOfService"), pydantic.Field(alias="dateOfService")
     ]

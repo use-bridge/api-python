@@ -22,21 +22,36 @@ class ProviderEnrollmentStatusGetV1ResponsePayerGroupsValueStatesValueLinesOfBus
         FieldMetadata(alias="submittedAt"),
         pydantic.Field(alias="submittedAt", description="Date, string, formatted as YYYY-MM-DD"),
     ] = None
+    """
+    Date, string, formatted as YYYY-MM-DD
+    """
+
     approved_at: typing_extensions.Annotated[
         typing.Optional[str],
         FieldMetadata(alias="approvedAt"),
         pydantic.Field(alias="approvedAt", description="Date, string, formatted as YYYY-MM-DD"),
     ] = None
+    """
+    Date, string, formatted as YYYY-MM-DD
+    """
+
     effective_at: typing_extensions.Annotated[
         typing.Optional[str],
         FieldMetadata(alias="effectiveAt"),
         pydantic.Field(alias="effectiveAt", description="Date, string, formatted as YYYY-MM-DD"),
     ] = None
+    """
+    Date, string, formatted as YYYY-MM-DD
+    """
+
     active_at: typing_extensions.Annotated[
         typing.Optional[str],
         FieldMetadata(alias="activeAt"),
         pydantic.Field(alias="activeAt", description="Date, string, formatted as YYYY-MM-DD"),
     ] = None
+    """
+    Date, string, formatted as YYYY-MM-DD
+    """
 
     if IS_PYDANTIC_V2:
         model_config: typing.ClassVar[pydantic.ConfigDict] = pydantic.ConfigDict(extra="allow", frozen=True)  # type: ignore # Pydantic v2

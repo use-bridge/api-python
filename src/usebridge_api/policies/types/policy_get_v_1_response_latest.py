@@ -17,6 +17,10 @@ class PolicyGetV1ResponseLatest(UniversalBaseModel):
         FieldMetadata(alias="validatedAt"),
         pydantic.Field(alias="validatedAt", description="Timestamp this was executed"),
     ]
+    """
+    Timestamp this was executed
+    """
+
     effective_from: typing_extensions.Annotated[
         typing.Optional[dt.datetime], FieldMetadata(alias="effectiveFrom"), pydantic.Field(alias="effectiveFrom")
     ] = None

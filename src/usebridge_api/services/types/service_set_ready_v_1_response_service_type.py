@@ -33,11 +33,19 @@ class ServiceSetReadyV1ResponseServiceType(UniversalBaseModel):
             description="[DEPRECATED] The first supported ProviderType, see new 'providerType' array",
         ),
     ]
+    """
+    [DEPRECATED] The first supported ProviderType, see new 'providerType' array
+    """
+
     provider_types: typing_extensions.Annotated[
         typing.List[ServiceSetReadyV1ResponseServiceTypeFieldProviderType],
         FieldMetadata(alias="providerTypes"),
         pydantic.Field(alias="providerTypes", description="All supported ProviderTypes"),
     ]
+    """
+    All supported ProviderTypes
+    """
+
     cost: int
     note_fields: typing_extensions.Annotated[
         typing.List[ServiceSetReadyV1ResponseServiceTypeFieldNoteField],

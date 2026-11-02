@@ -144,7 +144,7 @@ class AsyncServiceEligibilityClient:
 
 
         async def main() -> None:
-            response = await client.service_eligibility.stream_service_eligibility(
+            response = client.service_eligibility.stream_service_eligibility(
                 id="id",
             )
             async for chunk in response:

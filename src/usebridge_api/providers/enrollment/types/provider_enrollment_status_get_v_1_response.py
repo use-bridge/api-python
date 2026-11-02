@@ -17,11 +17,18 @@ class ProviderEnrollmentStatusGetV1Response(UniversalBaseModel):
             alias="credentialingApproved", description="Whether initial credentialing has been completed and approved"
         ),
     ]
+    """
+    Whether initial credentialing has been completed and approved
+    """
+
     payer_groups: typing_extensions.Annotated[
         typing.Dict[str, ProviderEnrollmentStatusGetV1ResponsePayerGroups],
         FieldMetadata(alias="payerGroups"),
         pydantic.Field(alias="payerGroups", description="Map of Payer Group slugs to enrollment status"),
     ]
+    """
+    Map of Payer Group slugs to enrollment status
+    """
 
     if IS_PYDANTIC_V2:
         model_config: typing.ClassVar[pydantic.ConfigDict] = pydantic.ConfigDict(extra="allow", frozen=True)  # type: ignore # Pydantic v2

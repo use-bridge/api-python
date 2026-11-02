@@ -31,6 +31,10 @@ class ServiceEligibilityCreateV2Response(UniversalBaseModel):
         FieldMetadata(alias="validatedAt"),
         pydantic.Field(alias="validatedAt", description="Timestamp this was executed"),
     ] = None
+    """
+    Timestamp this was executed
+    """
+
     service_type_id: typing_extensions.Annotated[
         str, FieldMetadata(alias="serviceTypeId"), pydantic.Field(alias="serviceTypeId")
     ]
@@ -46,6 +50,10 @@ class ServiceEligibilityCreateV2Response(UniversalBaseModel):
             description="Describes the Patient Responsibility. All dollar values are in USD cents ($15 = 1500). The 'total' is the amount that the patient owes. The breakdown are in non-oop fields. The oop fields apply when the patient has hit (or will hit) their OOP limits.",
         ),
     ] = None
+    """
+    Describes the Patient Responsibility. All dollar values are in USD cents ($15 = 1500). The 'total' is the amount that the patient owes. The breakdown are in non-oop fields. The oop fields apply when the patient has hit (or will hit) their OOP limits.
+    """
+
     providers: typing.List[ServiceEligibilityCreateV2ResponseProvider]
     policy_ids: typing_extensions.Annotated[
         typing.List[ServiceEligibilityCreateV2ResponsePolicyId],
@@ -73,6 +81,9 @@ class ServiceEligibilityCreateV2Response(UniversalBaseModel):
         FieldMetadata(alias="_token"),
         pydantic.Field(alias="_token", description="Temporary access token to retrieve this ServiceEligibility"),
     ]
+    """
+    Temporary access token to retrieve this ServiceEligibility
+    """
 
     if IS_PYDANTIC_V2:
         model_config: typing.ClassVar[pydantic.ConfigDict] = pydantic.ConfigDict(extra="allow", frozen=True)  # type: ignore # Pydantic v2

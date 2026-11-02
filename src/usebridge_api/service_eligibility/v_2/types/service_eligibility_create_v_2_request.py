@@ -21,6 +21,10 @@ class ServiceEligibilityCreateV2Request(UniversalBaseModel):
         FieldMetadata(alias="dateOfService"),
         pydantic.Field(alias="dateOfService", description="Full ISO8601 timestamp, including timezone"),
     ]
+    """
+    Full ISO8601 timestamp, including timezone
+    """
+
     policy_ids: typing_extensions.Annotated[
         typing.Optional[typing.List[ServiceEligibilityCreateV2RequestPolicyId]],
         FieldMetadata(alias="policyIds"),
@@ -29,6 +33,10 @@ class ServiceEligibilityCreateV2Request(UniversalBaseModel):
             description="Optional for cash-pay ServiceTypes; omit or pass [] when no policy is available",
         ),
     ] = None
+    """
+    Optional for cash-pay ServiceTypes; omit or pass [] when no policy is available
+    """
+
     state: ServiceEligibilityCreateV2RequestState = pydantic.Field()
     """
     2 letter US state code

@@ -17,6 +17,10 @@ class PolicyCreateV2Request(UniversalBaseModel):
         FieldMetadata(alias="externalId"),
         pydantic.Field(alias="externalId", description="Optional unique identifier"),
     ] = None
+    """
+    Optional unique identifier
+    """
+
     person: PolicyCreateV2RequestPerson
     state: PolicyCreateV2RequestState = pydantic.Field()
     """
@@ -32,6 +36,9 @@ class PolicyCreateV2Request(UniversalBaseModel):
         FieldMetadata(alias="dateOfService"),
         pydantic.Field(alias="dateOfService", description="Full ISO8601 timestamp, including timezone"),
     ] = None
+    """
+    Full ISO8601 timestamp, including timezone
+    """
 
     if IS_PYDANTIC_V2:
         model_config: typing.ClassVar[pydantic.ConfigDict] = pydantic.ConfigDict(extra="allow", frozen=True)  # type: ignore # Pydantic v2

@@ -241,7 +241,7 @@ class AsyncPoliciesClient:
 
 
         async def main() -> None:
-            response = await client.policies.stream_policy(
+            response = client.policies.stream_policy(
                 id="id",
             )
             async for chunk in response:

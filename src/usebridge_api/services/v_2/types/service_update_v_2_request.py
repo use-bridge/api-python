@@ -21,6 +21,10 @@ class ServiceUpdateV2Request(UniversalBaseModel):
         FieldMetadata(alias="dateOfService"),
         pydantic.Field(alias="dateOfService", description="Full ISO8601 timestamp, including timezone"),
     ] = None
+    """
+    Full ISO8601 timestamp, including timezone
+    """
+
     service_type_id: typing_extensions.Annotated[
         typing.Optional[str], FieldMetadata(alias="serviceTypeId"), pydantic.Field(alias="serviceTypeId")
     ] = None

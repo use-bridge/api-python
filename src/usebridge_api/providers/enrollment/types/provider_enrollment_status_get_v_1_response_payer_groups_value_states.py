@@ -28,6 +28,9 @@ class ProviderEnrollmentStatusGetV1ResponsePayerGroupsValueStates(UniversalBaseM
             description="Enrollment status within the payer group and state, by applicable line of business",
         ),
     ]
+    """
+    Enrollment status within the payer group and state, by applicable line of business
+    """
 
     if IS_PYDANTIC_V2:
         model_config: typing.ClassVar[pydantic.ConfigDict] = pydantic.ConfigDict(extra="allow", frozen=True)  # type: ignore # Pydantic v2

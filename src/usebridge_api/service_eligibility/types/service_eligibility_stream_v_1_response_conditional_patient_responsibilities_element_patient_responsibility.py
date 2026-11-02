@@ -48,6 +48,10 @@ class ServiceEligibilityStreamV1ResponseConditionalPatientResponsibilitiesElemen
             alias="coinsurancePercent", description="The coinsurance contribution as a percentage (15% = 0.15)"
         ),
     ]
+    """
+    The coinsurance contribution as a percentage (15% = 0.15)
+    """
+
     copayment: int = pydantic.Field()
     """
     The copayment contribution
@@ -58,21 +62,36 @@ class ServiceEligibilityStreamV1ResponseConditionalPatientResponsibilitiesElemen
         FieldMetadata(alias="oopFallback"),
         pydantic.Field(alias="oopFallback", description="Amount of fallback waived due to OOP limits"),
     ]
+    """
+    Amount of fallback waived due to OOP limits
+    """
+
     oop_copayment: typing_extensions.Annotated[
         int,
         FieldMetadata(alias="oopCopayment"),
         pydantic.Field(alias="oopCopayment", description="Amount of copayment waived due to OOP limits"),
     ]
+    """
+    Amount of copayment waived due to OOP limits
+    """
+
     oop_coinsurance: typing_extensions.Annotated[
         int,
         FieldMetadata(alias="oopCoinsurance"),
         pydantic.Field(alias="oopCoinsurance", description="Amount of coinsurance waived due to OOP limits"),
     ]
+    """
+    Amount of coinsurance waived due to OOP limits
+    """
+
     oop_deductible: typing_extensions.Annotated[
         int,
         FieldMetadata(alias="oopDeductible"),
         pydantic.Field(alias="oopDeductible", description="Amount of deductible waived due to OOP limits"),
     ]
+    """
+    Amount of deductible waived due to OOP limits
+    """
 
     if IS_PYDANTIC_V2:
         model_config: typing.ClassVar[pydantic.ConfigDict] = pydantic.ConfigDict(extra="allow", frozen=True)  # type: ignore # Pydantic v2

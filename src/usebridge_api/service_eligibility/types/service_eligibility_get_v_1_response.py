@@ -31,6 +31,10 @@ class ServiceEligibilityGetV1Response(UniversalBaseModel):
         FieldMetadata(alias="validatedAt"),
         pydantic.Field(alias="validatedAt", description="Timestamp this was executed"),
     ] = None
+    """
+    Timestamp this was executed
+    """
+
     service_type_id: typing_extensions.Annotated[
         str, FieldMetadata(alias="serviceTypeId"), pydantic.Field(alias="serviceTypeId")
     ]
@@ -46,6 +50,10 @@ class ServiceEligibilityGetV1Response(UniversalBaseModel):
             description="Describes the Patient Responsibility. All dollar values are in USD cents ($15 = 1500). The 'total' is the amount that the patient owes. The breakdown are in non-oop fields. The oop fields apply when the patient has hit (or will hit) their OOP limits.",
         ),
     ] = None
+    """
+    Describes the Patient Responsibility. All dollar values are in USD cents ($15 = 1500). The 'total' is the amount that the patient owes. The breakdown are in non-oop fields. The oop fields apply when the patient has hit (or will hit) their OOP limits.
+    """
+
     providers: typing.List[ServiceEligibilityGetV1ResponseProvider]
     policy_ids: typing_extensions.Annotated[
         typing.List[ServiceEligibilityGetV1ResponsePolicyId],

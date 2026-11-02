@@ -259,7 +259,7 @@ class AsyncPatientsClient:
 
 
         async def main() -> None:
-            response = await client.patients.stream_patient(
+            response = client.patients.stream_patient(
                 id="id",
             )
             async for chunk in response:

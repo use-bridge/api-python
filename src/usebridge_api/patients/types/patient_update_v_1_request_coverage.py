@@ -19,6 +19,9 @@ class PatientUpdateV1RequestCoverage(UniversalBaseModel):
         FieldMetadata(alias="policyId"),
         pydantic.Field(alias="policyId", description="Reference to an active Policy to use for this Patient"),
     ]
+    """
+    Reference to an active Policy to use for this Patient
+    """
 
     if IS_PYDANTIC_V2:
         model_config: typing.ClassVar[pydantic.ConfigDict] = pydantic.ConfigDict(extra="allow", frozen=True)  # type: ignore # Pydantic v2
