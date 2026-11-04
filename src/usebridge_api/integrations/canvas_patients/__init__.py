@@ -16,6 +16,14 @@ if typing.TYPE_CHECKING:
         CanvasPatientEnsureCanvasPatientV1ResponseAddressFieldState,
         CanvasPatientEnsureCanvasPatientV1ResponseCoverage,
         CanvasPatientEnsureCanvasPatientV1ResponseMetadata,
+        CanvasPatientGetCanvasPatientV1Response,
+        CanvasPatientGetCanvasPatientV1ResponseAccount,
+        CanvasPatientGetCanvasPatientV1ResponseAccountFieldStatus,
+        CanvasPatientGetCanvasPatientV1ResponseAddress,
+        CanvasPatientGetCanvasPatientV1ResponseAddressFieldCountry,
+        CanvasPatientGetCanvasPatientV1ResponseAddressFieldState,
+        CanvasPatientGetCanvasPatientV1ResponseCoverage,
+        CanvasPatientGetCanvasPatientV1ResponseMetadata,
     )
 _dynamic_imports: typing.Dict[str, str] = {
     "CanvasPatientEnsureCanvasPatientV1Request": ".types",
@@ -27,6 +35,14 @@ _dynamic_imports: typing.Dict[str, str] = {
     "CanvasPatientEnsureCanvasPatientV1ResponseAddressFieldState": ".types",
     "CanvasPatientEnsureCanvasPatientV1ResponseCoverage": ".types",
     "CanvasPatientEnsureCanvasPatientV1ResponseMetadata": ".types",
+    "CanvasPatientGetCanvasPatientV1Response": ".types",
+    "CanvasPatientGetCanvasPatientV1ResponseAccount": ".types",
+    "CanvasPatientGetCanvasPatientV1ResponseAccountFieldStatus": ".types",
+    "CanvasPatientGetCanvasPatientV1ResponseAddress": ".types",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldCountry": ".types",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldState": ".types",
+    "CanvasPatientGetCanvasPatientV1ResponseCoverage": ".types",
+    "CanvasPatientGetCanvasPatientV1ResponseMetadata": ".types",
 }
 
 
@@ -61,4 +77,12 @@ __all__ = [
     "CanvasPatientEnsureCanvasPatientV1ResponseAddressFieldState",
     "CanvasPatientEnsureCanvasPatientV1ResponseCoverage",
     "CanvasPatientEnsureCanvasPatientV1ResponseMetadata",
+    "CanvasPatientGetCanvasPatientV1Response",
+    "CanvasPatientGetCanvasPatientV1ResponseAccount",
+    "CanvasPatientGetCanvasPatientV1ResponseAccountFieldStatus",
+    "CanvasPatientGetCanvasPatientV1ResponseAddress",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldCountry",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldState",
+    "CanvasPatientGetCanvasPatientV1ResponseCoverage",
+    "CanvasPatientGetCanvasPatientV1ResponseMetadata",
 ]

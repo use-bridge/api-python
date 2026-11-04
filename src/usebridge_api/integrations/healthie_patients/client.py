@@ -6,6 +6,7 @@ from ...core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
 from ...core.request_options import RequestOptions
 from .raw_client import AsyncRawHealthiePatientsClient, RawHealthiePatientsClient
 from .types.healthie_patient_ensure_healthie_client_v_1_response import HealthiePatientEnsureHealthieClientV1Response
+from .types.healthie_patient_get_healthie_client_v_1_response import HealthiePatientGetHealthieClientV1Response
 
 # this is used as the default value for optional parameters
 OMIT = typing.cast(typing.Any, ...)
@@ -57,6 +58,37 @@ class HealthiePatientsClient:
         _response = self._raw_client.ensure_healthie_client_healthie_patient(
             healthie_client_id=healthie_client_id, request_options=request_options
         )
+        return _response.data
+
+    def get_healthie_client_healthie_patient(
+        self, id: str, *, request_options: typing.Optional[RequestOptions] = None
+    ) -> HealthiePatientGetHealthieClientV1Response:
+        """
+        Returns the linked Bridge Patient for a Healthie client id.
+
+        Parameters
+        ----------
+        id : str
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        HealthiePatientGetHealthieClientV1Response
+
+        Examples
+        --------
+        from usebridge_api import BridgeApiClient
+
+        client = BridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+        client.integrations.healthie_patients.get_healthie_client_healthie_patient(
+            id="id",
+        )
+        """
+        _response = self._raw_client.get_healthie_client_healthie_patient(id, request_options=request_options)
         return _response.data
 
 
@@ -114,4 +146,43 @@ class AsyncHealthiePatientsClient:
         _response = await self._raw_client.ensure_healthie_client_healthie_patient(
             healthie_client_id=healthie_client_id, request_options=request_options
         )
+        return _response.data
+
+    async def get_healthie_client_healthie_patient(
+        self, id: str, *, request_options: typing.Optional[RequestOptions] = None
+    ) -> HealthiePatientGetHealthieClientV1Response:
+        """
+        Returns the linked Bridge Patient for a Healthie client id.
+
+        Parameters
+        ----------
+        id : str
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        HealthiePatientGetHealthieClientV1Response
+
+        Examples
+        --------
+        import asyncio
+
+        from usebridge_api import AsyncBridgeApiClient
+
+        client = AsyncBridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+
+
+        async def main() -> None:
+            await client.integrations.healthie_patients.get_healthie_client_healthie_patient(
+                id="id",
+            )
+
+
+        asyncio.run(main())
+        """
+        _response = await self._raw_client.get_healthie_client_healthie_patient(id, request_options=request_options)
         return _response.data

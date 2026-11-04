@@ -6,6 +6,7 @@ from ...core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
 from ...core.request_options import RequestOptions
 from .raw_client import AsyncRawCanvasPatientsClient, RawCanvasPatientsClient
 from .types.canvas_patient_ensure_canvas_patient_v_1_response import CanvasPatientEnsureCanvasPatientV1Response
+from .types.canvas_patient_get_canvas_patient_v_1_response import CanvasPatientGetCanvasPatientV1Response
 
 # this is used as the default value for optional parameters
 OMIT = typing.cast(typing.Any, ...)
@@ -57,6 +58,37 @@ class CanvasPatientsClient:
         _response = self._raw_client.ensure_canvas_patient_canvas_patient(
             canvas_patient_id=canvas_patient_id, request_options=request_options
         )
+        return _response.data
+
+    def get_canvas_patient_canvas_patient(
+        self, id: str, *, request_options: typing.Optional[RequestOptions] = None
+    ) -> CanvasPatientGetCanvasPatientV1Response:
+        """
+        Returns the linked Bridge Patient for a Canvas Patient ID.
+
+        Parameters
+        ----------
+        id : str
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        CanvasPatientGetCanvasPatientV1Response
+
+        Examples
+        --------
+        from usebridge_api import BridgeApiClient
+
+        client = BridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+        client.integrations.canvas_patients.get_canvas_patient_canvas_patient(
+            id="id",
+        )
+        """
+        _response = self._raw_client.get_canvas_patient_canvas_patient(id, request_options=request_options)
         return _response.data
 
 
@@ -114,4 +146,43 @@ class AsyncCanvasPatientsClient:
         _response = await self._raw_client.ensure_canvas_patient_canvas_patient(
             canvas_patient_id=canvas_patient_id, request_options=request_options
         )
+        return _response.data
+
+    async def get_canvas_patient_canvas_patient(
+        self, id: str, *, request_options: typing.Optional[RequestOptions] = None
+    ) -> CanvasPatientGetCanvasPatientV1Response:
+        """
+        Returns the linked Bridge Patient for a Canvas Patient ID.
+
+        Parameters
+        ----------
+        id : str
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        CanvasPatientGetCanvasPatientV1Response
+
+        Examples
+        --------
+        import asyncio
+
+        from usebridge_api import AsyncBridgeApiClient
+
+        client = AsyncBridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+
+
+        async def main() -> None:
+            await client.integrations.canvas_patients.get_canvas_patient_canvas_patient(
+                id="id",
+            )
+
+
+        asyncio.run(main())
+        """
+        _response = await self._raw_client.get_canvas_patient_canvas_patient(id, request_options=request_options)
         return _response.data

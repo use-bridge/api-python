@@ -1288,80 +1288,6 @@ client.events.get_event(
 </dl>
 </details>
 
-## Integrations CanvasEncounter
-<details><summary><code>client.integrations.canvas_encounter.<a href="src/usebridge_api/integrations/canvas_encounter/client.py">get_canvas_encounter_canvas_encounter</a>(...) -> CanvasEncounterGetCanvasEncounterV1Response</code></summary>
-<dl>
-<dd>
-
-#### 📝 Description
-
-<dl>
-<dd>
-
-<dl>
-<dd>
-
-Returns the linked Bridge Service for a Canvas Encounter ID. This lookup never calls Canvas.
-</dd>
-</dl>
-</dd>
-</dl>
-
-#### 🔌 Usage
-
-<dl>
-<dd>
-
-<dl>
-<dd>
-
-```python
-from usebridge_api import BridgeApiClient
-from usebridge_api.environment import BridgeApiClientEnvironment
-
-client = BridgeApiClient(
-    api_key="<value>",
-    environment=BridgeApiClientEnvironment.PRODUCTION,
-)
-
-client.integrations.canvas_encounter.get_canvas_encounter_canvas_encounter(
-    id="id",
-)
-
-```
-</dd>
-</dl>
-</dd>
-</dl>
-
-#### ⚙️ Parameters
-
-<dl>
-<dd>
-
-<dl>
-<dd>
-
-**id:** `str` 
-    
-</dd>
-</dl>
-
-<dl>
-<dd>
-
-**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
-    
-</dd>
-</dl>
-</dd>
-</dl>
-
-
-</dd>
-</dl>
-</details>
-
 ## Integrations CanvasEncounters
 <details><summary><code>client.integrations.canvas_encounters.<a href="src/usebridge_api/integrations/canvas_encounters/client.py">ensure_canvas_encounter_canvas_encounter</a>(...) -> CanvasEncounterEnsureCanvasEncounterV1Response</code></summary>
 <dl>
@@ -1436,8 +1362,7 @@ client.integrations.canvas_encounters.ensure_canvas_encounter_canvas_encounter(
 </dl>
 </details>
 
-## Integrations CanvasPatient
-<details><summary><code>client.integrations.canvas_patient.<a href="src/usebridge_api/integrations/canvas_patient/client.py">get_canvas_patient_canvas_patient</a>(...) -> CanvasPatientGetCanvasPatientV1Response</code></summary>
+<details><summary><code>client.integrations.canvas_encounters.<a href="src/usebridge_api/integrations/canvas_encounters/client.py">get_canvas_encounter_canvas_encounter</a>(...) -> CanvasEncounterGetCanvasEncounterV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1449,7 +1374,7 @@ client.integrations.canvas_encounters.ensure_canvas_encounter_canvas_encounter(
 <dl>
 <dd>
 
-Returns the linked Bridge Patient for a Canvas Patient ID.
+Returns the linked Bridge Service for a Canvas Encounter ID. This lookup never calls Canvas.
 </dd>
 </dl>
 </dd>
@@ -1472,7 +1397,7 @@ client = BridgeApiClient(
     environment=BridgeApiClientEnvironment.PRODUCTION,
 )
 
-client.integrations.canvas_patient.get_canvas_patient_canvas_patient(
+client.integrations.canvas_encounters.get_canvas_encounter_canvas_encounter(
     id="id",
 )
 
@@ -1584,8 +1509,7 @@ client.integrations.canvas_patients.ensure_canvas_patient_canvas_patient(
 </dl>
 </details>
 
-## Integrations HealthiePatient
-<details><summary><code>client.integrations.healthie_patient.<a href="src/usebridge_api/integrations/healthie_patient/client.py">get_healthie_client_healthie_patient</a>(...) -> HealthiePatientGetHealthieClientV1Response</code></summary>
+<details><summary><code>client.integrations.canvas_patients.<a href="src/usebridge_api/integrations/canvas_patients/client.py">get_canvas_patient_canvas_patient</a>(...) -> CanvasPatientGetCanvasPatientV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1597,7 +1521,7 @@ client.integrations.canvas_patients.ensure_canvas_patient_canvas_patient(
 <dl>
 <dd>
 
-Returns the linked Bridge Patient for a Healthie client id.
+Returns the linked Bridge Patient for a Canvas Patient ID.
 </dd>
 </dl>
 </dd>
@@ -1620,7 +1544,7 @@ client = BridgeApiClient(
     environment=BridgeApiClientEnvironment.PRODUCTION,
 )
 
-client.integrations.healthie_patient.get_healthie_client_healthie_patient(
+client.integrations.canvas_patients.get_canvas_patient_canvas_patient(
     id="id",
 )
 
@@ -1732,8 +1656,7 @@ client.integrations.healthie_patients.ensure_healthie_client_healthie_patient(
 </dl>
 </details>
 
-## Integrations HealthieService
-<details><summary><code>client.integrations.healthie_service.<a href="src/usebridge_api/integrations/healthie_service/client.py">get_healthie_appointment_healthie_service</a>(...) -> HealthieServiceGetHealthieAppointmentV1Response</code></summary>
+<details><summary><code>client.integrations.healthie_patients.<a href="src/usebridge_api/integrations/healthie_patients/client.py">get_healthie_client_healthie_patient</a>(...) -> HealthiePatientGetHealthieClientV1Response</code></summary>
 <dl>
 <dd>
 
@@ -1745,7 +1668,7 @@ client.integrations.healthie_patients.ensure_healthie_client_healthie_patient(
 <dl>
 <dd>
 
-Returns the linked Bridge Service for a Healthie appointment id.
+Returns the linked Bridge Patient for a Healthie client id.
 </dd>
 </dl>
 </dd>
@@ -1768,7 +1691,7 @@ client = BridgeApiClient(
     environment=BridgeApiClientEnvironment.PRODUCTION,
 )
 
-client.integrations.healthie_service.get_healthie_appointment_healthie_service(
+client.integrations.healthie_patients.get_healthie_client_healthie_patient(
     id="id",
 )
 
@@ -1861,6 +1784,79 @@ client.integrations.healthie_services.ensure_healthie_appointment_healthie_servi
 <dd>
 
 **request:** `HealthieServiceEnsureHealthieAppointmentV1Request` 
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
+**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.integrations.healthie_services.<a href="src/usebridge_api/integrations/healthie_services/client.py">get_healthie_appointment_healthie_service</a>(...) -> HealthieServiceGetHealthieAppointmentV1Response</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Returns the linked Bridge Service for a Healthie appointment id.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```python
+from usebridge_api import BridgeApiClient
+from usebridge_api.environment import BridgeApiClientEnvironment
+
+client = BridgeApiClient(
+    api_key="<value>",
+    environment=BridgeApiClientEnvironment.PRODUCTION,
+)
+
+client.integrations.healthie_services.get_healthie_appointment_healthie_service(
+    id="id",
+)
+
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**id:** `str` 
     
 </dd>
 </dl>

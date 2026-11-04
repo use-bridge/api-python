@@ -29,6 +29,20 @@ if typing.TYPE_CHECKING:
     from .canvas_patient_ensure_canvas_patient_v_1_response_metadata import (
         CanvasPatientEnsureCanvasPatientV1ResponseMetadata,
     )
+    from .canvas_patient_get_canvas_patient_v_1_response import CanvasPatientGetCanvasPatientV1Response
+    from .canvas_patient_get_canvas_patient_v_1_response_account import CanvasPatientGetCanvasPatientV1ResponseAccount
+    from .canvas_patient_get_canvas_patient_v_1_response_account_field_status import (
+        CanvasPatientGetCanvasPatientV1ResponseAccountFieldStatus,
+    )
+    from .canvas_patient_get_canvas_patient_v_1_response_address import CanvasPatientGetCanvasPatientV1ResponseAddress
+    from .canvas_patient_get_canvas_patient_v_1_response_address_field_country import (
+        CanvasPatientGetCanvasPatientV1ResponseAddressFieldCountry,
+    )
+    from .canvas_patient_get_canvas_patient_v_1_response_address_field_state import (
+        CanvasPatientGetCanvasPatientV1ResponseAddressFieldState,
+    )
+    from .canvas_patient_get_canvas_patient_v_1_response_coverage import CanvasPatientGetCanvasPatientV1ResponseCoverage
+    from .canvas_patient_get_canvas_patient_v_1_response_metadata import CanvasPatientGetCanvasPatientV1ResponseMetadata
 _dynamic_imports: typing.Dict[str, str] = {
     "CanvasPatientEnsureCanvasPatientV1Request": ".canvas_patient_ensure_canvas_patient_v_1_request",
     "CanvasPatientEnsureCanvasPatientV1Response": ".canvas_patient_ensure_canvas_patient_v_1_response",
@@ -39,6 +53,14 @@ _dynamic_imports: typing.Dict[str, str] = {
     "CanvasPatientEnsureCanvasPatientV1ResponseAddressFieldState": ".canvas_patient_ensure_canvas_patient_v_1_response_address_field_state",
     "CanvasPatientEnsureCanvasPatientV1ResponseCoverage": ".canvas_patient_ensure_canvas_patient_v_1_response_coverage",
     "CanvasPatientEnsureCanvasPatientV1ResponseMetadata": ".canvas_patient_ensure_canvas_patient_v_1_response_metadata",
+    "CanvasPatientGetCanvasPatientV1Response": ".canvas_patient_get_canvas_patient_v_1_response",
+    "CanvasPatientGetCanvasPatientV1ResponseAccount": ".canvas_patient_get_canvas_patient_v_1_response_account",
+    "CanvasPatientGetCanvasPatientV1ResponseAccountFieldStatus": ".canvas_patient_get_canvas_patient_v_1_response_account_field_status",
+    "CanvasPatientGetCanvasPatientV1ResponseAddress": ".canvas_patient_get_canvas_patient_v_1_response_address",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldCountry": ".canvas_patient_get_canvas_patient_v_1_response_address_field_country",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldState": ".canvas_patient_get_canvas_patient_v_1_response_address_field_state",
+    "CanvasPatientGetCanvasPatientV1ResponseCoverage": ".canvas_patient_get_canvas_patient_v_1_response_coverage",
+    "CanvasPatientGetCanvasPatientV1ResponseMetadata": ".canvas_patient_get_canvas_patient_v_1_response_metadata",
 }
 
 
@@ -73,4 +95,12 @@ __all__ = [
     "CanvasPatientEnsureCanvasPatientV1ResponseAddressFieldState",
     "CanvasPatientEnsureCanvasPatientV1ResponseCoverage",
     "CanvasPatientEnsureCanvasPatientV1ResponseMetadata",
+    "CanvasPatientGetCanvasPatientV1Response",
+    "CanvasPatientGetCanvasPatientV1ResponseAccount",
+    "CanvasPatientGetCanvasPatientV1ResponseAccountFieldStatus",
+    "CanvasPatientGetCanvasPatientV1ResponseAddress",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldCountry",
+    "CanvasPatientGetCanvasPatientV1ResponseAddressFieldState",
+    "CanvasPatientGetCanvasPatientV1ResponseCoverage",
+    "CanvasPatientGetCanvasPatientV1ResponseMetadata",
 ]

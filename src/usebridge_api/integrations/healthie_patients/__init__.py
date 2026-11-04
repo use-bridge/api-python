@@ -16,6 +16,14 @@ if typing.TYPE_CHECKING:
         HealthiePatientEnsureHealthieClientV1ResponseAddressFieldState,
         HealthiePatientEnsureHealthieClientV1ResponseCoverage,
         HealthiePatientEnsureHealthieClientV1ResponseMetadata,
+        HealthiePatientGetHealthieClientV1Response,
+        HealthiePatientGetHealthieClientV1ResponseAccount,
+        HealthiePatientGetHealthieClientV1ResponseAccountFieldStatus,
+        HealthiePatientGetHealthieClientV1ResponseAddress,
+        HealthiePatientGetHealthieClientV1ResponseAddressFieldCountry,
+        HealthiePatientGetHealthieClientV1ResponseAddressFieldState,
+        HealthiePatientGetHealthieClientV1ResponseCoverage,
+        HealthiePatientGetHealthieClientV1ResponseMetadata,
     )
 _dynamic_imports: typing.Dict[str, str] = {
     "HealthiePatientEnsureHealthieClientV1Request": ".types",
@@ -27,6 +35,14 @@ _dynamic_imports: typing.Dict[str, str] = {
     "HealthiePatientEnsureHealthieClientV1ResponseAddressFieldState": ".types",
     "HealthiePatientEnsureHealthieClientV1ResponseCoverage": ".types",
     "HealthiePatientEnsureHealthieClientV1ResponseMetadata": ".types",
+    "HealthiePatientGetHealthieClientV1Response": ".types",
+    "HealthiePatientGetHealthieClientV1ResponseAccount": ".types",
+    "HealthiePatientGetHealthieClientV1ResponseAccountFieldStatus": ".types",
+    "HealthiePatientGetHealthieClientV1ResponseAddress": ".types",
+    "HealthiePatientGetHealthieClientV1ResponseAddressFieldCountry": ".types",
+    "HealthiePatientGetHealthieClientV1ResponseAddressFieldState": ".types",
+    "HealthiePatientGetHealthieClientV1ResponseCoverage": ".types",
+    "HealthiePatientGetHealthieClientV1ResponseMetadata": ".types",
 }
 
 
@@ -61,4 +77,12 @@ __all__ = [
     "HealthiePatientEnsureHealthieClientV1ResponseAddressFieldState",
     "HealthiePatientEnsureHealthieClientV1ResponseCoverage",
     "HealthiePatientEnsureHealthieClientV1ResponseMetadata",
+    "HealthiePatientGetHealthieClientV1Response",
+    "HealthiePatientGetHealthieClientV1ResponseAccount",
+    "HealthiePatientGetHealthieClientV1ResponseAccountFieldStatus",
+    "HealthiePatientGetHealthieClientV1ResponseAddress",
+    "HealthiePatientGetHealthieClientV1ResponseAddressFieldCountry",
+    "HealthiePatientGetHealthieClientV1ResponseAddressFieldState",
+    "HealthiePatientGetHealthieClientV1ResponseCoverage",
+    "HealthiePatientGetHealthieClientV1ResponseMetadata",
 ]

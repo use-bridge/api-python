@@ -147,6 +147,142 @@ if typing.TYPE_CHECKING:
     from .healthie_service_ensure_healthie_appointment_v_1_response_tasks_element_type import (
         HealthieServiceEnsureHealthieAppointmentV1ResponseTasksElementType,
     )
+    from .healthie_service_get_healthie_appointment_v_1_response import HealthieServiceGetHealthieAppointmentV1Response
+    from .healthie_service_get_healthie_appointment_v_1_response_cancellation_reason import (
+        HealthieServiceGetHealthieAppointmentV1ResponseCancellationReason,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_claim_status import (
+        HealthieServiceGetHealthieAppointmentV1ResponseClaimStatus,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_coverage_status import (
+        HealthieServiceGetHealthieAppointmentV1ResponseCoverageStatus,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_location import (
+        HealthieServiceGetHealthieAppointmentV1ResponseLocation,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_location_field_country import (
+        HealthieServiceGetHealthieAppointmentV1ResponseLocationFieldCountry,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_location_field_state import (
+        HealthieServiceGetHealthieAppointmentV1ResponseLocationFieldState,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_metadata import (
+        HealthieServiceGetHealthieAppointmentV1ResponseMetadata,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_patient_responsibility import (
+        HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibility,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_patient_responsibility_field_amount import (
+        HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibilityFieldAmount,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_patient_responsibility_field_amount_field_deductible_type import (
+        HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibilityFieldAmountFieldDeductibleType,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_patient_responsibility_field_status import (
+        HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibilityFieldStatus,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_payment import (
+        HealthieServiceGetHealthieAppointmentV1ResponsePayment,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_payments_element_type import (
+        HealthieServiceGetHealthieAppointmentV1ResponsePaymentsElementType,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_provider import (
+        HealthieServiceGetHealthieAppointmentV1ResponseProvider,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_provider_field_type import (
+        HealthieServiceGetHealthieAppointmentV1ResponseProviderFieldType,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_responsible_party import (
+        HealthieServiceGetHealthieAppointmentV1ResponseResponsibleParty,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibility,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_clinical_info import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldClinicalInfo,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_clinical_info_field_diagnosis import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldClinicalInfoFieldDiagnosis,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_condition import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementCondition,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_conditions_element_diagnosis import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementConditionsElementDiagnosis,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimit,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_metric import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldMetric,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_period import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldPeriod,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_type import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldType,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_units import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldUnits,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibility,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility_field_deductible_type import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibilityFieldDeductibleType,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibility import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibility,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_message import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldMessage,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_patient_responsibility import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldPatientResponsibility,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_patient_responsibility_field_deductible_type import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldPatientResponsibilityFieldDeductibleType,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_policy_id import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldPolicyId,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_provider import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldProvider,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_providers_element_type import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldProvidersElementType,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_state import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldState,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_status import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldStatus,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_type import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceType,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_type_field_note_field import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldNoteField,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_type_field_place_of_service import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldPlaceOfService,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_type_field_provider_type import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldProviderType,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_service_type_field_provider_types_element import (
+        HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldProviderTypesElement,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_status import (
+        HealthieServiceGetHealthieAppointmentV1ResponseStatus,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_task import (
+        HealthieServiceGetHealthieAppointmentV1ResponseTask,
+    )
+    from .healthie_service_get_healthie_appointment_v_1_response_tasks_element_type import (
+        HealthieServiceGetHealthieAppointmentV1ResponseTasksElementType,
+    )
 _dynamic_imports: typing.Dict[str, str] = {
     "HealthieServiceEnsureHealthieAppointmentV1Request": ".healthie_service_ensure_healthie_appointment_v_1_request",
     "HealthieServiceEnsureHealthieAppointmentV1Response": ".healthie_service_ensure_healthie_appointment_v_1_response",
@@ -195,6 +331,52 @@ _dynamic_imports: typing.Dict[str, str] = {
     "HealthieServiceEnsureHealthieAppointmentV1ResponseStatus": ".healthie_service_ensure_healthie_appointment_v_1_response_status",
     "HealthieServiceEnsureHealthieAppointmentV1ResponseTask": ".healthie_service_ensure_healthie_appointment_v_1_response_task",
     "HealthieServiceEnsureHealthieAppointmentV1ResponseTasksElementType": ".healthie_service_ensure_healthie_appointment_v_1_response_tasks_element_type",
+    "HealthieServiceGetHealthieAppointmentV1Response": ".healthie_service_get_healthie_appointment_v_1_response",
+    "HealthieServiceGetHealthieAppointmentV1ResponseCancellationReason": ".healthie_service_get_healthie_appointment_v_1_response_cancellation_reason",
+    "HealthieServiceGetHealthieAppointmentV1ResponseClaimStatus": ".healthie_service_get_healthie_appointment_v_1_response_claim_status",
+    "HealthieServiceGetHealthieAppointmentV1ResponseCoverageStatus": ".healthie_service_get_healthie_appointment_v_1_response_coverage_status",
+    "HealthieServiceGetHealthieAppointmentV1ResponseLocation": ".healthie_service_get_healthie_appointment_v_1_response_location",
+    "HealthieServiceGetHealthieAppointmentV1ResponseLocationFieldCountry": ".healthie_service_get_healthie_appointment_v_1_response_location_field_country",
+    "HealthieServiceGetHealthieAppointmentV1ResponseLocationFieldState": ".healthie_service_get_healthie_appointment_v_1_response_location_field_state",
+    "HealthieServiceGetHealthieAppointmentV1ResponseMetadata": ".healthie_service_get_healthie_appointment_v_1_response_metadata",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibility": ".healthie_service_get_healthie_appointment_v_1_response_patient_responsibility",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibilityFieldAmount": ".healthie_service_get_healthie_appointment_v_1_response_patient_responsibility_field_amount",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibilityFieldAmountFieldDeductibleType": ".healthie_service_get_healthie_appointment_v_1_response_patient_responsibility_field_amount_field_deductible_type",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibilityFieldStatus": ".healthie_service_get_healthie_appointment_v_1_response_patient_responsibility_field_status",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePayment": ".healthie_service_get_healthie_appointment_v_1_response_payment",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePaymentsElementType": ".healthie_service_get_healthie_appointment_v_1_response_payments_element_type",
+    "HealthieServiceGetHealthieAppointmentV1ResponseProvider": ".healthie_service_get_healthie_appointment_v_1_response_provider",
+    "HealthieServiceGetHealthieAppointmentV1ResponseProviderFieldType": ".healthie_service_get_healthie_appointment_v_1_response_provider_field_type",
+    "HealthieServiceGetHealthieAppointmentV1ResponseResponsibleParty": ".healthie_service_get_healthie_appointment_v_1_response_responsible_party",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibility": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldClinicalInfo": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_clinical_info",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldClinicalInfoFieldDiagnosis": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_clinical_info_field_diagnosis",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementCondition": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_condition",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementConditionsElementDiagnosis": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_conditions_element_diagnosis",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimit": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldMetric": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_metric",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldPeriod": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_period",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldType": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_type",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldUnits": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_units",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibility": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibilityFieldDeductibleType": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility_field_deductible_type",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibility": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_conditional_patient_responsibility",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldMessage": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_message",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldPatientResponsibility": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_patient_responsibility",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldPatientResponsibilityFieldDeductibleType": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_patient_responsibility_field_deductible_type",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldPolicyId": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_policy_id",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldProvider": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_provider",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldProvidersElementType": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_providers_element_type",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldState": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_state",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldStatus": ".healthie_service_get_healthie_appointment_v_1_response_service_eligibility_field_status",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceType": ".healthie_service_get_healthie_appointment_v_1_response_service_type",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldNoteField": ".healthie_service_get_healthie_appointment_v_1_response_service_type_field_note_field",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldPlaceOfService": ".healthie_service_get_healthie_appointment_v_1_response_service_type_field_place_of_service",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldProviderType": ".healthie_service_get_healthie_appointment_v_1_response_service_type_field_provider_type",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldProviderTypesElement": ".healthie_service_get_healthie_appointment_v_1_response_service_type_field_provider_types_element",
+    "HealthieServiceGetHealthieAppointmentV1ResponseStatus": ".healthie_service_get_healthie_appointment_v_1_response_status",
+    "HealthieServiceGetHealthieAppointmentV1ResponseTask": ".healthie_service_get_healthie_appointment_v_1_response_task",
+    "HealthieServiceGetHealthieAppointmentV1ResponseTasksElementType": ".healthie_service_get_healthie_appointment_v_1_response_tasks_element_type",
 }
 
 
@@ -267,4 +449,50 @@ __all__ = [
     "HealthieServiceEnsureHealthieAppointmentV1ResponseStatus",
     "HealthieServiceEnsureHealthieAppointmentV1ResponseTask",
     "HealthieServiceEnsureHealthieAppointmentV1ResponseTasksElementType",
+    "HealthieServiceGetHealthieAppointmentV1Response",
+    "HealthieServiceGetHealthieAppointmentV1ResponseCancellationReason",
+    "HealthieServiceGetHealthieAppointmentV1ResponseClaimStatus",
+    "HealthieServiceGetHealthieAppointmentV1ResponseCoverageStatus",
+    "HealthieServiceGetHealthieAppointmentV1ResponseLocation",
+    "HealthieServiceGetHealthieAppointmentV1ResponseLocationFieldCountry",
+    "HealthieServiceGetHealthieAppointmentV1ResponseLocationFieldState",
+    "HealthieServiceGetHealthieAppointmentV1ResponseMetadata",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibility",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibilityFieldAmount",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibilityFieldAmountFieldDeductibleType",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePatientResponsibilityFieldStatus",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePayment",
+    "HealthieServiceGetHealthieAppointmentV1ResponsePaymentsElementType",
+    "HealthieServiceGetHealthieAppointmentV1ResponseProvider",
+    "HealthieServiceGetHealthieAppointmentV1ResponseProviderFieldType",
+    "HealthieServiceGetHealthieAppointmentV1ResponseResponsibleParty",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibility",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldClinicalInfo",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldClinicalInfoFieldDiagnosis",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementCondition",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementConditionsElementDiagnosis",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimit",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldMetric",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldPeriod",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldType",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldUnits",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibility",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibilityFieldDeductibleType",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldConditionalPatientResponsibility",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldMessage",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldPatientResponsibility",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldPatientResponsibilityFieldDeductibleType",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldPolicyId",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldProvider",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldProvidersElementType",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldState",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceEligibilityFieldStatus",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceType",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldNoteField",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldPlaceOfService",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldProviderType",
+    "HealthieServiceGetHealthieAppointmentV1ResponseServiceTypeFieldProviderTypesElement",
+    "HealthieServiceGetHealthieAppointmentV1ResponseStatus",
+    "HealthieServiceGetHealthieAppointmentV1ResponseTask",
+    "HealthieServiceGetHealthieAppointmentV1ResponseTasksElementType",
 ]

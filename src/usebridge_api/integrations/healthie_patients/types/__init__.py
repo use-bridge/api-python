@@ -29,6 +29,28 @@ if typing.TYPE_CHECKING:
     from .healthie_patient_ensure_healthie_client_v_1_response_metadata import (
         HealthiePatientEnsureHealthieClientV1ResponseMetadata,
     )
+    from .healthie_patient_get_healthie_client_v_1_response import HealthiePatientGetHealthieClientV1Response
+    from .healthie_patient_get_healthie_client_v_1_response_account import (
+        HealthiePatientGetHealthieClientV1ResponseAccount,
+    )
+    from .healthie_patient_get_healthie_client_v_1_response_account_field_status import (
+        HealthiePatientGetHealthieClientV1ResponseAccountFieldStatus,
+    )
+    from .healthie_patient_get_healthie_client_v_1_response_address import (
+        HealthiePatientGetHealthieClientV1ResponseAddress,
+    )
+    from .healthie_patient_get_healthie_client_v_1_response_address_field_country import (
+        HealthiePatientGetHealthieClientV1ResponseAddressFieldCountry,
+    )
+    from .healthie_patient_get_healthie_client_v_1_response_address_field_state import (
+        HealthiePatientGetHealthieClientV1ResponseAddressFieldState,
+    )
+    from .healthie_patient_get_healthie_client_v_1_response_coverage import (
+        HealthiePatientGetHealthieClientV1ResponseCoverage,
+    )
+    from .healthie_patient_get_healthie_client_v_1_response_metadata import (
+        HealthiePatientGetHealthieClientV1ResponseMetadata,
+    )
 _dynamic_imports: typing.Dict[str, str] = {
     "HealthiePatientEnsureHealthieClientV1Request": ".healthie_patient_ensure_healthie_client_v_1_request",
     "HealthiePatientEnsureHealthieClientV1Response": ".healthie_patient_ensure_healthie_client_v_1_response",
@@ -39,6 +61,14 @@ _dynamic_imports: typing.Dict[str, str] = {
     "HealthiePatientEnsureHealthieClientV1ResponseAddressFieldState": ".healthie_patient_ensure_healthie_client_v_1_response_address_field_state",
     "HealthiePatientEnsureHealthieClientV1ResponseCoverage": ".healthie_patient_ensure_healthie_client_v_1_response_coverage",
     "HealthiePatientEnsureHealthieClientV1ResponseMetadata": ".healthie_patient_ensure_healthie_client_v_1_response_metadata",
+    "HealthiePatientGetHealthieClientV1Response": ".healthie_patient_get_healthie_client_v_1_response",
+    "HealthiePatientGetHealthieClientV1ResponseAccount": ".healthie_patient_get_healthie_client_v_1_response_account",
+    "HealthiePatientGetHealthieClientV1ResponseAccountFieldStatus": ".healthie_patient_get_healthie_client_v_1_response_account_field_status",
+    "HealthiePatientGetHealthieClientV1ResponseAddress": ".healthie_patient_get_healthie_client_v_1_response_address",
+    "HealthiePatientGetHealthieClientV1ResponseAddressFieldCountry": ".healthie_patient_get_healthie_client_v_1_response_address_field_country",
+    "HealthiePatientGetHealthieClientV1ResponseAddressFieldState": ".healthie_patient_get_healthie_client_v_1_response_address_field_state",
+    "HealthiePatientGetHealthieClientV1ResponseCoverage": ".healthie_patient_get_healthie_client_v_1_response_coverage",
+    "HealthiePatientGetHealthieClientV1ResponseMetadata": ".healthie_patient_get_healthie_client_v_1_response_metadata",
 }
 
 
@@ -73,4 +103,12 @@ __all__ = [
     "HealthiePatientEnsureHealthieClientV1ResponseAddressFieldState",
     "HealthiePatientEnsureHealthieClientV1ResponseCoverage",
     "HealthiePatientEnsureHealthieClientV1ResponseMetadata",
+    "HealthiePatientGetHealthieClientV1Response",
+    "HealthiePatientGetHealthieClientV1ResponseAccount",
+    "HealthiePatientGetHealthieClientV1ResponseAccountFieldStatus",
+    "HealthiePatientGetHealthieClientV1ResponseAddress",
+    "HealthiePatientGetHealthieClientV1ResponseAddressFieldCountry",
+    "HealthiePatientGetHealthieClientV1ResponseAddressFieldState",
+    "HealthiePatientGetHealthieClientV1ResponseCoverage",
+    "HealthiePatientGetHealthieClientV1ResponseMetadata",
 ]

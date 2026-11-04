@@ -6,6 +6,7 @@ from ...core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
 from ...core.request_options import RequestOptions
 from .raw_client import AsyncRawCanvasEncountersClient, RawCanvasEncountersClient
 from .types.canvas_encounter_ensure_canvas_encounter_v_1_response import CanvasEncounterEnsureCanvasEncounterV1Response
+from .types.canvas_encounter_get_canvas_encounter_v_1_response import CanvasEncounterGetCanvasEncounterV1Response
 
 # this is used as the default value for optional parameters
 OMIT = typing.cast(typing.Any, ...)
@@ -57,6 +58,37 @@ class CanvasEncountersClient:
         _response = self._raw_client.ensure_canvas_encounter_canvas_encounter(
             canvas_encounter_id=canvas_encounter_id, request_options=request_options
         )
+        return _response.data
+
+    def get_canvas_encounter_canvas_encounter(
+        self, id: str, *, request_options: typing.Optional[RequestOptions] = None
+    ) -> CanvasEncounterGetCanvasEncounterV1Response:
+        """
+        Returns the linked Bridge Service for a Canvas Encounter ID. This lookup never calls Canvas.
+
+        Parameters
+        ----------
+        id : str
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        CanvasEncounterGetCanvasEncounterV1Response
+
+        Examples
+        --------
+        from usebridge_api import BridgeApiClient
+
+        client = BridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+        client.integrations.canvas_encounters.get_canvas_encounter_canvas_encounter(
+            id="id",
+        )
+        """
+        _response = self._raw_client.get_canvas_encounter_canvas_encounter(id, request_options=request_options)
         return _response.data
 
 
@@ -114,4 +146,43 @@ class AsyncCanvasEncountersClient:
         _response = await self._raw_client.ensure_canvas_encounter_canvas_encounter(
             canvas_encounter_id=canvas_encounter_id, request_options=request_options
         )
+        return _response.data
+
+    async def get_canvas_encounter_canvas_encounter(
+        self, id: str, *, request_options: typing.Optional[RequestOptions] = None
+    ) -> CanvasEncounterGetCanvasEncounterV1Response:
+        """
+        Returns the linked Bridge Service for a Canvas Encounter ID. This lookup never calls Canvas.
+
+        Parameters
+        ----------
+        id : str
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        CanvasEncounterGetCanvasEncounterV1Response
+
+        Examples
+        --------
+        import asyncio
+
+        from usebridge_api import AsyncBridgeApiClient
+
+        client = AsyncBridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+
+
+        async def main() -> None:
+            await client.integrations.canvas_encounters.get_canvas_encounter_canvas_encounter(
+                id="id",
+            )
+
+
+        asyncio.run(main())
+        """
+        _response = await self._raw_client.get_canvas_encounter_canvas_encounter(id, request_options=request_options)
         return _response.data

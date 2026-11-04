@@ -143,6 +143,140 @@ if typing.TYPE_CHECKING:
     from .canvas_encounter_ensure_canvas_encounter_v_1_response_tasks_element_type import (
         CanvasEncounterEnsureCanvasEncounterV1ResponseTasksElementType,
     )
+    from .canvas_encounter_get_canvas_encounter_v_1_response import CanvasEncounterGetCanvasEncounterV1Response
+    from .canvas_encounter_get_canvas_encounter_v_1_response_cancellation_reason import (
+        CanvasEncounterGetCanvasEncounterV1ResponseCancellationReason,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_claim_status import (
+        CanvasEncounterGetCanvasEncounterV1ResponseClaimStatus,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_coverage_status import (
+        CanvasEncounterGetCanvasEncounterV1ResponseCoverageStatus,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_location import (
+        CanvasEncounterGetCanvasEncounterV1ResponseLocation,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_location_field_country import (
+        CanvasEncounterGetCanvasEncounterV1ResponseLocationFieldCountry,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_location_field_state import (
+        CanvasEncounterGetCanvasEncounterV1ResponseLocationFieldState,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_metadata import (
+        CanvasEncounterGetCanvasEncounterV1ResponseMetadata,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_patient_responsibility import (
+        CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibility,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_patient_responsibility_field_amount import (
+        CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibilityFieldAmount,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_patient_responsibility_field_amount_field_deductible_type import (
+        CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibilityFieldAmountFieldDeductibleType,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_patient_responsibility_field_status import (
+        CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibilityFieldStatus,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_payment import (
+        CanvasEncounterGetCanvasEncounterV1ResponsePayment,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_payments_element_type import (
+        CanvasEncounterGetCanvasEncounterV1ResponsePaymentsElementType,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_provider import (
+        CanvasEncounterGetCanvasEncounterV1ResponseProvider,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_provider_field_type import (
+        CanvasEncounterGetCanvasEncounterV1ResponseProviderFieldType,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_responsible_party import (
+        CanvasEncounterGetCanvasEncounterV1ResponseResponsibleParty,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibility,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_clinical_info import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldClinicalInfo,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_clinical_info_field_diagnosis import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldClinicalInfoFieldDiagnosis,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_condition import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementCondition,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_conditions_element_diagnosis import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementConditionsElementDiagnosis,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimit,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_metric import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldMetric,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_period import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldPeriod,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_type import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldType,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_units import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldUnits,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibility,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility_field_deductible_type import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibilityFieldDeductibleType,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibility import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibility,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_message import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldMessage,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_patient_responsibility import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldPatientResponsibility,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_patient_responsibility_field_deductible_type import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldPatientResponsibilityFieldDeductibleType,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_policy_id import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldPolicyId,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_provider import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldProvider,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_providers_element_type import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldProvidersElementType,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_state import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldState,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_status import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldStatus,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_type import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceType,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_type_field_note_field import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldNoteField,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_type_field_place_of_service import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldPlaceOfService,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_type_field_provider_type import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldProviderType,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_service_type_field_provider_types_element import (
+        CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldProviderTypesElement,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_status import (
+        CanvasEncounterGetCanvasEncounterV1ResponseStatus,
+    )
+    from .canvas_encounter_get_canvas_encounter_v_1_response_task import CanvasEncounterGetCanvasEncounterV1ResponseTask
+    from .canvas_encounter_get_canvas_encounter_v_1_response_tasks_element_type import (
+        CanvasEncounterGetCanvasEncounterV1ResponseTasksElementType,
+    )
 _dynamic_imports: typing.Dict[str, str] = {
     "CanvasEncounterEnsureCanvasEncounterV1Request": ".canvas_encounter_ensure_canvas_encounter_v_1_request",
     "CanvasEncounterEnsureCanvasEncounterV1Response": ".canvas_encounter_ensure_canvas_encounter_v_1_response",
@@ -191,6 +325,52 @@ _dynamic_imports: typing.Dict[str, str] = {
     "CanvasEncounterEnsureCanvasEncounterV1ResponseStatus": ".canvas_encounter_ensure_canvas_encounter_v_1_response_status",
     "CanvasEncounterEnsureCanvasEncounterV1ResponseTask": ".canvas_encounter_ensure_canvas_encounter_v_1_response_task",
     "CanvasEncounterEnsureCanvasEncounterV1ResponseTasksElementType": ".canvas_encounter_ensure_canvas_encounter_v_1_response_tasks_element_type",
+    "CanvasEncounterGetCanvasEncounterV1Response": ".canvas_encounter_get_canvas_encounter_v_1_response",
+    "CanvasEncounterGetCanvasEncounterV1ResponseCancellationReason": ".canvas_encounter_get_canvas_encounter_v_1_response_cancellation_reason",
+    "CanvasEncounterGetCanvasEncounterV1ResponseClaimStatus": ".canvas_encounter_get_canvas_encounter_v_1_response_claim_status",
+    "CanvasEncounterGetCanvasEncounterV1ResponseCoverageStatus": ".canvas_encounter_get_canvas_encounter_v_1_response_coverage_status",
+    "CanvasEncounterGetCanvasEncounterV1ResponseLocation": ".canvas_encounter_get_canvas_encounter_v_1_response_location",
+    "CanvasEncounterGetCanvasEncounterV1ResponseLocationFieldCountry": ".canvas_encounter_get_canvas_encounter_v_1_response_location_field_country",
+    "CanvasEncounterGetCanvasEncounterV1ResponseLocationFieldState": ".canvas_encounter_get_canvas_encounter_v_1_response_location_field_state",
+    "CanvasEncounterGetCanvasEncounterV1ResponseMetadata": ".canvas_encounter_get_canvas_encounter_v_1_response_metadata",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibility": ".canvas_encounter_get_canvas_encounter_v_1_response_patient_responsibility",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibilityFieldAmount": ".canvas_encounter_get_canvas_encounter_v_1_response_patient_responsibility_field_amount",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibilityFieldAmountFieldDeductibleType": ".canvas_encounter_get_canvas_encounter_v_1_response_patient_responsibility_field_amount_field_deductible_type",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibilityFieldStatus": ".canvas_encounter_get_canvas_encounter_v_1_response_patient_responsibility_field_status",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePayment": ".canvas_encounter_get_canvas_encounter_v_1_response_payment",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePaymentsElementType": ".canvas_encounter_get_canvas_encounter_v_1_response_payments_element_type",
+    "CanvasEncounterGetCanvasEncounterV1ResponseProvider": ".canvas_encounter_get_canvas_encounter_v_1_response_provider",
+    "CanvasEncounterGetCanvasEncounterV1ResponseProviderFieldType": ".canvas_encounter_get_canvas_encounter_v_1_response_provider_field_type",
+    "CanvasEncounterGetCanvasEncounterV1ResponseResponsibleParty": ".canvas_encounter_get_canvas_encounter_v_1_response_responsible_party",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibility": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldClinicalInfo": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_clinical_info",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldClinicalInfoFieldDiagnosis": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_clinical_info_field_diagnosis",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementCondition": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_condition",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementConditionsElementDiagnosis": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_conditions_element_diagnosis",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimit": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldMetric": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_metric",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldPeriod": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_period",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldType": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_type",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldUnits": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_limit_field_units",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibility": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibilityFieldDeductibleType": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibilities_element_patient_responsibility_field_deductible_type",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibility": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_conditional_patient_responsibility",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldMessage": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_message",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldPatientResponsibility": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_patient_responsibility",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldPatientResponsibilityFieldDeductibleType": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_patient_responsibility_field_deductible_type",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldPolicyId": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_policy_id",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldProvider": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_provider",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldProvidersElementType": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_providers_element_type",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldState": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_state",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldStatus": ".canvas_encounter_get_canvas_encounter_v_1_response_service_eligibility_field_status",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceType": ".canvas_encounter_get_canvas_encounter_v_1_response_service_type",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldNoteField": ".canvas_encounter_get_canvas_encounter_v_1_response_service_type_field_note_field",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldPlaceOfService": ".canvas_encounter_get_canvas_encounter_v_1_response_service_type_field_place_of_service",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldProviderType": ".canvas_encounter_get_canvas_encounter_v_1_response_service_type_field_provider_type",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldProviderTypesElement": ".canvas_encounter_get_canvas_encounter_v_1_response_service_type_field_provider_types_element",
+    "CanvasEncounterGetCanvasEncounterV1ResponseStatus": ".canvas_encounter_get_canvas_encounter_v_1_response_status",
+    "CanvasEncounterGetCanvasEncounterV1ResponseTask": ".canvas_encounter_get_canvas_encounter_v_1_response_task",
+    "CanvasEncounterGetCanvasEncounterV1ResponseTasksElementType": ".canvas_encounter_get_canvas_encounter_v_1_response_tasks_element_type",
 }
 
 
@@ -263,4 +443,50 @@ __all__ = [
     "CanvasEncounterEnsureCanvasEncounterV1ResponseStatus",
     "CanvasEncounterEnsureCanvasEncounterV1ResponseTask",
     "CanvasEncounterEnsureCanvasEncounterV1ResponseTasksElementType",
+    "CanvasEncounterGetCanvasEncounterV1Response",
+    "CanvasEncounterGetCanvasEncounterV1ResponseCancellationReason",
+    "CanvasEncounterGetCanvasEncounterV1ResponseClaimStatus",
+    "CanvasEncounterGetCanvasEncounterV1ResponseCoverageStatus",
+    "CanvasEncounterGetCanvasEncounterV1ResponseLocation",
+    "CanvasEncounterGetCanvasEncounterV1ResponseLocationFieldCountry",
+    "CanvasEncounterGetCanvasEncounterV1ResponseLocationFieldState",
+    "CanvasEncounterGetCanvasEncounterV1ResponseMetadata",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibility",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibilityFieldAmount",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibilityFieldAmountFieldDeductibleType",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePatientResponsibilityFieldStatus",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePayment",
+    "CanvasEncounterGetCanvasEncounterV1ResponsePaymentsElementType",
+    "CanvasEncounterGetCanvasEncounterV1ResponseProvider",
+    "CanvasEncounterGetCanvasEncounterV1ResponseProviderFieldType",
+    "CanvasEncounterGetCanvasEncounterV1ResponseResponsibleParty",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibility",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldClinicalInfo",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldClinicalInfoFieldDiagnosis",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementCondition",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementConditionsElementDiagnosis",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimit",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldMetric",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldPeriod",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldType",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementLimitFieldUnits",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibility",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibilitiesElementPatientResponsibilityFieldDeductibleType",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldConditionalPatientResponsibility",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldMessage",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldPatientResponsibility",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldPatientResponsibilityFieldDeductibleType",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldPolicyId",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldProvider",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldProvidersElementType",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldState",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceEligibilityFieldStatus",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceType",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldNoteField",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldPlaceOfService",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldProviderType",
+    "CanvasEncounterGetCanvasEncounterV1ResponseServiceTypeFieldProviderTypesElement",
+    "CanvasEncounterGetCanvasEncounterV1ResponseStatus",
+    "CanvasEncounterGetCanvasEncounterV1ResponseTask",
+    "CanvasEncounterGetCanvasEncounterV1ResponseTasksElementType",
 ]

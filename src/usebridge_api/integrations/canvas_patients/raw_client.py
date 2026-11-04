@@ -6,10 +6,12 @@ from json.decoder import JSONDecodeError
 from ...core.api_error import ApiError
 from ...core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
 from ...core.http_response import AsyncHttpResponse, HttpResponse
+from ...core.jsonable_encoder import encode_path_param
 from ...core.parse_error import ParsingError
 from ...core.pydantic_utilities import parse_obj_as
 from ...core.request_options import RequestOptions
 from .types.canvas_patient_ensure_canvas_patient_v_1_response import CanvasPatientEnsureCanvasPatientV1Response
+from .types.canvas_patient_get_canvas_patient_v_1_response import CanvasPatientGetCanvasPatientV1Response
 from pydantic import ValidationError
 
 # this is used as the default value for optional parameters
@@ -65,6 +67,47 @@ class RawCanvasPatientsClient:
             )
         raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response_json)
 
+    def get_canvas_patient_canvas_patient(
+        self, id: str, *, request_options: typing.Optional[RequestOptions] = None
+    ) -> HttpResponse[CanvasPatientGetCanvasPatientV1Response]:
+        """
+        Returns the linked Bridge Patient for a Canvas Patient ID.
+
+        Parameters
+        ----------
+        id : str
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        HttpResponse[CanvasPatientGetCanvasPatientV1Response]
+        """
+        _response = self._client_wrapper.httpx_client.request(
+            f"api/integrations/canvas/patients/{encode_path_param(id)}",
+            method="GET",
+            request_options=request_options,
+        )
+        try:
+            if 200 <= _response.status_code < 300:
+                _data = typing.cast(
+                    CanvasPatientGetCanvasPatientV1Response,
+                    parse_obj_as(
+                        type_=CanvasPatientGetCanvasPatientV1Response,  # type: ignore
+                        object_=_response.json(),
+                    ),
+                )
+                return HttpResponse(response=_response, data=_data)
+            _response_json = _response.json()
+        except JSONDecodeError:
+            raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response.text)
+        except ValidationError as e:
+            raise ParsingError(
+                status_code=_response.status_code, headers=dict(_response.headers), body=_response.json(), cause=e
+            )
+        raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response_json)
+
 
 class AsyncRawCanvasPatientsClient:
     def __init__(self, *, client_wrapper: AsyncClientWrapper):
@@ -102,6 +145,47 @@ class AsyncRawCanvasPatientsClient:
                     CanvasPatientEnsureCanvasPatientV1Response,
                     parse_obj_as(
                         type_=CanvasPatientEnsureCanvasPatientV1Response,  # type: ignore
+                        object_=_response.json(),
+                    ),
+                )
+                return AsyncHttpResponse(response=_response, data=_data)
+            _response_json = _response.json()
+        except JSONDecodeError:
+            raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response.text)
+        except ValidationError as e:
+            raise ParsingError(
+                status_code=_response.status_code, headers=dict(_response.headers), body=_response.json(), cause=e
+            )
+        raise ApiError(status_code=_response.status_code, headers=dict(_response.headers), body=_response_json)
+
+    async def get_canvas_patient_canvas_patient(
+        self, id: str, *, request_options: typing.Optional[RequestOptions] = None
+    ) -> AsyncHttpResponse[CanvasPatientGetCanvasPatientV1Response]:
+        """
+        Returns the linked Bridge Patient for a Canvas Patient ID.
+
+        Parameters
+        ----------
+        id : str
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        AsyncHttpResponse[CanvasPatientGetCanvasPatientV1Response]
+        """
+        _response = await self._client_wrapper.httpx_client.request(
+            f"api/integrations/canvas/patients/{encode_path_param(id)}",
+            method="GET",
+            request_options=request_options,
+        )
+        try:
+            if 200 <= _response.status_code < 300:
+                _data = typing.cast(
+                    CanvasPatientGetCanvasPatientV1Response,
+                    parse_obj_as(
+                        type_=CanvasPatientGetCanvasPatientV1Response,  # type: ignore
                         object_=_response.json(),
                     ),
                 )

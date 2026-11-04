@@ -8,6 +8,9 @@ from .raw_client import AsyncRawHealthieServicesClient, RawHealthieServicesClien
 from .types.healthie_service_ensure_healthie_appointment_v_1_response import (
     HealthieServiceEnsureHealthieAppointmentV1Response,
 )
+from .types.healthie_service_get_healthie_appointment_v_1_response import (
+    HealthieServiceGetHealthieAppointmentV1Response,
+)
 
 # this is used as the default value for optional parameters
 OMIT = typing.cast(typing.Any, ...)
@@ -59,6 +62,37 @@ class HealthieServicesClient:
         _response = self._raw_client.ensure_healthie_appointment_healthie_service(
             healthie_appointment_id=healthie_appointment_id, request_options=request_options
         )
+        return _response.data
+
+    def get_healthie_appointment_healthie_service(
+        self, id: str, *, request_options: typing.Optional[RequestOptions] = None
+    ) -> HealthieServiceGetHealthieAppointmentV1Response:
+        """
+        Returns the linked Bridge Service for a Healthie appointment id.
+
+        Parameters
+        ----------
+        id : str
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        HealthieServiceGetHealthieAppointmentV1Response
+
+        Examples
+        --------
+        from usebridge_api import BridgeApiClient
+
+        client = BridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+        client.integrations.healthie_services.get_healthie_appointment_healthie_service(
+            id="id",
+        )
+        """
+        _response = self._raw_client.get_healthie_appointment_healthie_service(id, request_options=request_options)
         return _response.data
 
 
@@ -115,5 +149,46 @@ class AsyncHealthieServicesClient:
         """
         _response = await self._raw_client.ensure_healthie_appointment_healthie_service(
             healthie_appointment_id=healthie_appointment_id, request_options=request_options
+        )
+        return _response.data
+
+    async def get_healthie_appointment_healthie_service(
+        self, id: str, *, request_options: typing.Optional[RequestOptions] = None
+    ) -> HealthieServiceGetHealthieAppointmentV1Response:
+        """
+        Returns the linked Bridge Service for a Healthie appointment id.
+
+        Parameters
+        ----------
+        id : str
+
+        request_options : typing.Optional[RequestOptions]
+            Request-specific configuration.
+
+        Returns
+        -------
+        HealthieServiceGetHealthieAppointmentV1Response
+
+        Examples
+        --------
+        import asyncio
+
+        from usebridge_api import AsyncBridgeApiClient
+
+        client = AsyncBridgeApiClient(
+            api_key="YOUR_API_KEY",
+        )
+
+
+        async def main() -> None:
+            await client.integrations.healthie_services.get_healthie_appointment_healthie_service(
+                id="id",
+            )
+
+
+        asyncio.run(main())
+        """
+        _response = await self._raw_client.get_healthie_appointment_healthie_service(
+            id, request_options=request_options
         )
         return _response.data
