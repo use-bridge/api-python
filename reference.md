@@ -3623,6 +3623,14 @@ client.providers.list_providers()
 <dl>
 <dd>
 
+**filter_name:** `typing.Optional[str]` — Value should be JSON-encoded, for example filter.name="Ada"
+    
+</dd>
+</dl>
+
+<dl>
+<dd>
+
 **page:** `typing.Optional[int]` 
     
 </dd>

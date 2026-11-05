@@ -90,6 +90,7 @@ class ProvidersClient:
         self,
         *,
         filter_active: typing.Optional[bool] = None,
+        filter_name: typing.Optional[str] = None,
         page: typing.Optional[int] = None,
         limit: typing.Optional[int] = None,
         request_options: typing.Optional[RequestOptions] = None,
@@ -99,6 +100,9 @@ class ProvidersClient:
         ----------
         filter_active : typing.Optional[bool]
             Value is a raw boolean, example filter.active=true
+
+        filter_name : typing.Optional[str]
+            Value should be JSON-encoded, for example filter.name="Ada"
 
         page : typing.Optional[int]
 
@@ -121,7 +125,11 @@ class ProvidersClient:
         client.providers.list_providers()
         """
         _response = self._raw_client.list_providers(
-            filter_active=filter_active, page=page, limit=limit, request_options=request_options
+            filter_active=filter_active,
+            filter_name=filter_name,
+            page=page,
+            limit=limit,
+            request_options=request_options,
         )
         return _response.data
 
@@ -277,6 +285,7 @@ class AsyncProvidersClient:
         self,
         *,
         filter_active: typing.Optional[bool] = None,
+        filter_name: typing.Optional[str] = None,
         page: typing.Optional[int] = None,
         limit: typing.Optional[int] = None,
         request_options: typing.Optional[RequestOptions] = None,
@@ -286,6 +295,9 @@ class AsyncProvidersClient:
         ----------
         filter_active : typing.Optional[bool]
             Value is a raw boolean, example filter.active=true
+
+        filter_name : typing.Optional[str]
+            Value should be JSON-encoded, for example filter.name="Ada"
 
         page : typing.Optional[int]
 
@@ -316,7 +328,11 @@ class AsyncProvidersClient:
         asyncio.run(main())
         """
         _response = await self._raw_client.list_providers(
-            filter_active=filter_active, page=page, limit=limit, request_options=request_options
+            filter_active=filter_active,
+            filter_name=filter_name,
+            page=page,
+            limit=limit,
+            request_options=request_options,
         )
         return _response.data
 

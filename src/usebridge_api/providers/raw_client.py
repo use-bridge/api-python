@@ -80,6 +80,7 @@ class RawProvidersClient:
         self,
         *,
         filter_active: typing.Optional[bool] = None,
+        filter_name: typing.Optional[str] = None,
         page: typing.Optional[int] = None,
         limit: typing.Optional[int] = None,
         request_options: typing.Optional[RequestOptions] = None,
@@ -89,6 +90,9 @@ class RawProvidersClient:
         ----------
         filter_active : typing.Optional[bool]
             Value is a raw boolean, example filter.active=true
+
+        filter_name : typing.Optional[str]
+            Value should be JSON-encoded, for example filter.name="Ada"
 
         page : typing.Optional[int]
 
@@ -106,6 +110,7 @@ class RawProvidersClient:
             method="GET",
             params={
                 "filter.active": filter_active,
+                "filter.name": filter_name,
                 "page": page,
                 "limit": limit,
             },
@@ -277,6 +282,7 @@ class AsyncRawProvidersClient:
         self,
         *,
         filter_active: typing.Optional[bool] = None,
+        filter_name: typing.Optional[str] = None,
         page: typing.Optional[int] = None,
         limit: typing.Optional[int] = None,
         request_options: typing.Optional[RequestOptions] = None,
@@ -286,6 +292,9 @@ class AsyncRawProvidersClient:
         ----------
         filter_active : typing.Optional[bool]
             Value is a raw boolean, example filter.active=true
+
+        filter_name : typing.Optional[str]
+            Value should be JSON-encoded, for example filter.name="Ada"
 
         page : typing.Optional[int]
 
@@ -303,6 +312,7 @@ class AsyncRawProvidersClient:
             method="GET",
             params={
                 "filter.active": filter_active,
+                "filter.name": filter_name,
                 "page": page,
                 "limit": limit,
             },
