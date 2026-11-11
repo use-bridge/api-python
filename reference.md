@@ -4810,65 +4810,6 @@ client.services.get_service_note(
 </dl>
 </details>
 
-<details><summary><code>client.services.<a href="src/usebridge_api/services/client.py">delete_service_note</a>(...)</code></summary>
-<dl>
-<dd>
-
-#### 🔌 Usage
-
-<dl>
-<dd>
-
-<dl>
-<dd>
-
-```python
-from usebridge_api import BridgeApiClient
-from usebridge_api.environment import BridgeApiClientEnvironment
-
-client = BridgeApiClient(
-    api_key="<value>",
-    environment=BridgeApiClientEnvironment.PRODUCTION,
-)
-
-client.services.delete_service_note(
-    id="id",
-)
-
-```
-</dd>
-</dl>
-</dd>
-</dl>
-
-#### ⚙️ Parameters
-
-<dl>
-<dd>
-
-<dl>
-<dd>
-
-**id:** `str` 
-    
-</dd>
-</dl>
-
-<dl>
-<dd>
-
-**request_options:** `typing.Optional[RequestOptions]` — Request-specific configuration.
-    
-</dd>
-</dl>
-</dd>
-</dl>
-
-
-</dd>
-</dl>
-</details>
-
 ## Services Payments
 <details><summary><code>client.services.payments.<a href="src/usebridge_api/services/payments/client.py">list_service_payments</a>(...) -> ServicePaymentsListV1Response</code></summary>
 <dl>

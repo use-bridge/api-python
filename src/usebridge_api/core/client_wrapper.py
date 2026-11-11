@@ -33,12 +33,12 @@ class BaseClientWrapper:
         import platform
 
         headers: typing.Dict[str, str] = {
-            "User-Agent": "usebridge-api/1.0.2",
+            "User-Agent": "usebridge-api/1.0.3",
             "X-Fern-Language": "Python",
             "X-Fern-Runtime": f"python/{platform.python_version()}",
             "X-Fern-Platform": f"{platform.system().lower()}/{platform.release()}",
             "X-Fern-SDK-Name": "usebridge-api",
-            "X-Fern-SDK-Version": "1.0.2",
+            "X-Fern-SDK-Version": "1.0.3",
             **(self.get_custom_headers() or {}),
         }
         headers["X-API-Key"] = self.api_key

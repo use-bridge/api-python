@@ -382,33 +382,6 @@ class ServicesClient:
         _response = self._raw_client.get_service_note(id, request_options=request_options)
         return _response.data
 
-    def delete_service_note(self, id: str, *, request_options: typing.Optional[RequestOptions] = None) -> None:
-        """
-        Parameters
-        ----------
-        id : str
-
-        request_options : typing.Optional[RequestOptions]
-            Request-specific configuration.
-
-        Returns
-        -------
-        None
-
-        Examples
-        --------
-        from usebridge_api import BridgeApiClient
-
-        client = BridgeApiClient(
-            api_key="YOUR_API_KEY",
-        )
-        client.services.delete_service_note(
-            id="id",
-        )
-        """
-        _response = self._raw_client.delete_service_note(id, request_options=request_options)
-        return _response.data
-
     @property
     def payments(self):
         if self._payments is None:
@@ -841,41 +814,6 @@ class AsyncServicesClient:
         asyncio.run(main())
         """
         _response = await self._raw_client.get_service_note(id, request_options=request_options)
-        return _response.data
-
-    async def delete_service_note(self, id: str, *, request_options: typing.Optional[RequestOptions] = None) -> None:
-        """
-        Parameters
-        ----------
-        id : str
-
-        request_options : typing.Optional[RequestOptions]
-            Request-specific configuration.
-
-        Returns
-        -------
-        None
-
-        Examples
-        --------
-        import asyncio
-
-        from usebridge_api import AsyncBridgeApiClient
-
-        client = AsyncBridgeApiClient(
-            api_key="YOUR_API_KEY",
-        )
-
-
-        async def main() -> None:
-            await client.services.delete_service_note(
-                id="id",
-            )
-
-
-        asyncio.run(main())
-        """
-        _response = await self._raw_client.delete_service_note(id, request_options=request_options)
         return _response.data
 
     @property
